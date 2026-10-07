@@ -17,7 +17,7 @@ Kav-FastwebAgent:使用者用說的建立「流程」(內部叫配方,JSON),Clau
 
 # 進行中(未完成勿刪)
 
-- [ ] **展示網站(Codex)**：Astro 首版與 10/07 新敘事已完成本機前端驗證，含錄製示意、抓取／驗證／Claude 判斷原理圖與 591 實驗；2026-10-07 已部署 Cloudflare Pages(專案 `kav-fastwebagent`,https://kav-fastwebagent.pages.dev,直接上傳 dist、未接 Git);自訂網域 `kav.kaiwu.com.tw` 已掛到專案但 **DNS CNAME 待使用者在後台加**(wrangler 登入沒有改 DNS 的 scope)。待使用者成品回饋。接續見 [CONTEXT](records/261002-showcase-build-CONTEXT.md)。Impeccable 安裝產物仍未提交。
+- [ ] **展示網站(Codex)**：Astro 首版與 10/07 新敘事已完成本機前端驗證，含錄製示意、抓取／驗證／Claude 判斷原理圖與 591 實驗；2026-10-07 已部署 Cloudflare Pages(專案 `kav-fastwebagent`,https://kav-fastwebagent.pages.dev,直接上傳 dist、未接 Git);自訂網域 **https://kav.kaiwu.com.tw** 已生效(使用者在後台加了 DNS;wrangler 登入沒有改 DNS 的 scope);GitHub About 的 website、description、topics 與 README 三語首行都指向它。待使用者成品回饋。接續見 [CONTEXT](records/261002-showcase-build-CONTEXT.md)。Impeccable 安裝產物仍未提交。
 
 - [x] **專案方向**:2026-10-07 使用者決定——敘事改為「引擎抓資料 + Claude 判斷」,Kev 降為選配(DECISIONS 同日;README 三語已改)。漏列可見已做:結果帶 `rows_skipped`(同一列表不符 pattern 的列數),done 附 `note`、失敗併入 hint、pick 的候選也帶;skill 的 recipe-rules 加「pattern 只鎖錨」原則
 - [x] 展示網站(`website/`,codex 線)已依 DECISIONS 2026-10-07 更新新敘事與實驗範圍;驗證見 [record](records/261007-showcase-narrative.md)

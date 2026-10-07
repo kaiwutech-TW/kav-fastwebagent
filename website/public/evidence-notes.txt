@@ -41,4 +41,4 @@ pattern 曾漏 4/30 列；最新程式回傳 rows_skipped，讓規則漏列可�
 來源記錄 ID
 260929-control-experiment-and-demo
 260929-kev-usage-accounting
-原始記錄存在專案 .flightwake/records/，公開 GitHub 入口尚未開放。
+原始記錄存在專案 .flightwake/records/，公開於 https://github.com/kaiwutech-TW/kav-fastwebagent 。

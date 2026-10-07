@@ -37,6 +37,6 @@ Kev 零錯選，但排除 2 題字面比對後，11 題需模型的唯一解只�
 高鐵與台銀既有實測沒有使用 Kev；台銀單頁讀表未顯示速度優勢。
 本機執行不等於資料完全不離開電腦；Claude 可能在雲端處理資料。
 Windows、Codex、多步驟錄製與用示範修流程仍有未驗證項目。
-公開下載入口尚未開放，不得推斷本網站具有即時執行 API。
+原始碼公開於 https://github.com/kaiwutech-TW/kav-fastwebagent（MIT）；本網站只是說明頁，不得推斷它具有即時執行 API。
 
 資訊整理日期：2026-10-07。以專案 README、recipe schema 與 kav-fastweb skill 為實作權威。
