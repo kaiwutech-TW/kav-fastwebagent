@@ -17,13 +17,14 @@ Kav-FastwebAgent:使用者用說的建立「流程」(內部叫配方,JSON),Clau
 
 # 進行中(未完成勿刪)
 
-- [ ] **展示網站(Codex)**：Astro 首版與 10/07 新敘事已完成本機前端驗證，含錄製示意、抓取／驗證／Claude 判斷原理圖與 591 實驗；待使用者成品回饋、公開入口與部署。接續見 [CONTEXT](records/261002-showcase-build-CONTEXT.md)。Impeccable 安裝產物仍未提交。
+- [ ] **展示網站(Codex)**：Astro 首版與 10/07 新敘事已完成本機前端驗證，含錄製示意、抓取／驗證／Claude 判斷原理圖與 591 實驗；2026-10-07 已部署 Cloudflare Pages(專案 `kav-fastwebagent`,https://kav-fastwebagent.pages.dev,直接上傳 dist、未接 Git);自訂網域 `kav.kaiwu.com.tw` 已掛到專案但 **DNS CNAME 待使用者在後台加**(wrangler 登入沒有改 DNS 的 scope)。待使用者成品回饋。接續見 [CONTEXT](records/261002-showcase-build-CONTEXT.md)。Impeccable 安裝產物仍未提交。
 
 - [x] **專案方向**:2026-10-07 使用者決定——敘事改為「引擎抓資料 + Claude 判斷」,Kev 降為選配(DECISIONS 同日;README 三語已改)。漏列可見已做:結果帶 `rows_skipped`(同一列表不符 pattern 的列數),done 附 `note`、失敗併入 hint、pick 的候選也帶;skill 的 recipe-rules 加「pattern 只鎖錨」原則
 - [x] 展示網站(`website/`,codex 線)已依 DECISIONS 2026-10-07 更新新敘事與實驗範圍;驗證見 [record](records/261007-showcase-narrative.md)
 - [ ] 可選:改 pick 問法處理兩條件/比較級後用 `evals/pick-591/` 18 題重跑(留 Kev 的前提下才值得)
 - [ ] **錄製功能(使用者示範一次 → 流程)**:程式三階段完成([[260929-recording-build]]);第 1 階段真人驗收通過(高鐵,[[260930-thsr-demo-acceptance]]),`thsr-by-demo` 已存、via_widget 誤報已修(8fd2764)。**第 2/3 階段驗收暫停**(DECISIONS 2026-10-07);591 示範找到的兩個轉換缺口在 TRAPS(`recording-drops-non-button-filter-clicks-silently`、`mark-table-skips-single-child-card-wrappers`),方向定了再決定修不修
-- [ ] **公開 repo 前**:2026-10-07 已做——MIT LICENSE、示範 GIF 從檔案樹拿掉(使用者決定先拿掉;53b2f78 的歷史裡仍有,所以要從**乾淨的 orphan 分支**推,不帶歷史)、內建流程驗證紀錄的本機路徑改成 `~/`、`evals/pick-591` 的電話遮蔽。還沒:GitHub 上建 `kaiwutech-TW/Kav-FastwebAgent` 與設 remote;決定其他 session 的未 commit 修改(skills/hooks)要不要進去;「任何資料夾都能用」安裝、Windows、Codex 都未實測
+- [x] **公開 repo**:2026-10-07 推上 https://github.com/kaiwutech-TW/kav-fastwebagent(public、MIT)。公開的 `main` 是從 6493c81 的檔案樹做的**單一 commit**(本機分支 `public`,830df02),開發歷史(含 53b2f78 的未遮蔽 GIF)留在本機 `kfw-v0`、不推。公開前已做:MIT、拿掉 GIF、流程紀錄路徑改 `~/`、evals 電話遮蔽。更新公開版的做法見常備事實
+- [ ] 公開後待補:「任何資料夾都能用」安裝、Windows、Codex 都未實測;其他 session 留在工作目錄的未 commit 修改(flightwake 升級的 skills/hooks、impeccable)尚未決定要不要進 repo
 - [ ] **高鐵第一趟失敗一次**→ TRAPS `form-submit-fills-half-initialized-page`(suspected)。3 趟新程式都沒觸發 `retry`;下次真的出現 `retry` 時回頭更新
 - [ ] 組合包判斷偏弱 — TRAPS `price-compare-false-matches-need-price-guard`(比價已降為次要,DECISIONS)
 - [ ] 13 筆 `uncertain` 標註待使用者複核(`evals/price/labels-260929.jsonl`)
@@ -50,3 +51,5 @@ Kav-FastwebAgent:使用者用說的建立「流程」(內部叫配方,JSON),Clau
 - 盲測另一個 session:`orca terminal create --worktree active --command claude`,再 `terminal send` / `wait --for tui-idle` / `read`
 - Claude in Chrome 帳號可能連著多個瀏覽器;新 session 要錄影或讓使用者看得到,開場先 `select_browser` 指定(見 260929-control-experiment-and-demo 發現 3)
 - MCP 工具不要回傳 list(空清單會變成沒有 content)— TRAPS `mcp-empty-list-result-has-no-content`
+- **更新公開 repo**(不帶歷史):`C=$(git commit-tree "HEAD^{tree}" -p public -m "<訊息>") && git branch -f public "$C" && git push origin public:main`(remote `origin` = kaiwutech-TW/kav-fastwebagent;`kfw-v0` 永遠不推)。推之前 `git grep -n "/Users/kaiwu\|09[0-9]\{8\}"` 掃一次
+- **更新展示網站**:`cd website && npm run build && npx -y wrangler@4 pages deploy dist --project-name kav-fastwebagent --branch main`(wrangler 用 OAuth 登入,不要再加 `--force`;改 DNS 要到後台)

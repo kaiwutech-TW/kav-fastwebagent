@@ -2,6 +2,8 @@
 
 [繁體中文](README.md) | **English** | [简体中文](README.zh-CN.md)
 
+🌐 Illustrated guide: **https://kav.kaiwu.com.tw**
+
 **Describe a web task you do all the time once, and it becomes a "flow". After that, one sentence runs it locally in about 6 seconds, and code checks the result.**
 
 Ask an AI agent to look up a train timetable and it takes a screenshot, clicks, takes another screenshot... and works the page out from scratch every single time: two minutes and close to a million tokens.
