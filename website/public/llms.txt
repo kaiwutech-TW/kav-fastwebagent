@@ -1,0 +1,42 @@
+# Kav-FastwebAgent
+
+> 將重複的網頁查詢寫成可重用流程，在專屬本機 Chrome 執行，程式核對輸入與結果。
+
+## 文件入口
+- /how-it-works/: 一般讀者的工作方式與邊界
+- /get-started/: 已有本機專案的啟動方式與需求範例
+- /technical/: MCP、流程與模型的分工
+- /evidence/: 實測紀錄與限制
+- /evidence-notes.txt: 可機器讀取的量測摘要
+
+## 角色
+Claude／Codex 這類 agent 用對話建立與修理固定流程（完整實測以 Claude Code 為主，Codex 尚待驗證）。Kav 本機程式抓資料，不經模型，再按宣告條件驗證。判斷題把抓好的文字交給 Claude。Kev 選配，只在 pick 文字比對不唯一、需求為單一屬性時使用；沒有 Kev 或無法選定就停下交回 Claude。
+使用者用語為「流程」，程式用語為 recipe。
+
+## 高鐵快速路徑
+Claude 透過 find_recipe 找到 thsr-timetable，再呼叫 run_recipe(name, params)。
+recipes/thsr-timetable.json 宣告四個欄位、送出鈕、結果列 pattern/columns 和日期 expect_text。
+kfw/recipes.py execute → run_form_submit，kfw/form.py 透過 DOM 觀察、填值讀回與表格擷取完成固定操作。
+一次 run_recipe 執行包住多步操作，回傳具名 rows、status、evidence、kev、total_ms，減少逐步模型與工具往返。
+每次仍查網站，不是快取答案；高鐵沒有使用 Kev。詳見 /technical/#fast-path。
+
+## 示範錄製
+使用者在 Kav Chrome 示範一次，標記結果；Claude 整理成流程，在乾淨環境重播核對，使用者確認後儲存。
+高鐵第 1 階段真人驗收已通過；多步驟與用示範修流程尚待真人驗收，2026-10-07 已暫停，591 轉換缺口未修。首頁標記操作僅為示意。
+
+## 591 實驗
+引擎抓 30 筆列表文字 31 毫秒（抓取階段，非端到端）；Claude in Chrome 三題 43、162、21 秒，每題輸入含快取累計 91、61、45 萬 token。
+Kev 零錯選，但排除 2 題字面比對後，11 題需模型的唯一解只答對 4 題。Claude 讀相同文字的 26 列版 16 題全對（11 題唯一解、5 題該停）；瀏覽器組另 3 題全對。
+題組與列數不同，不是同一份 30 列 18 題的完整對照。31 毫秒不能與完整瀏覽器任務相除當成加速倍率。實驗只量選列，沒有端到端 pick 點擊。
+來源：261007-pick-judgment-experiment。
+
+## 重要邊界
+首頁互動為示意，不執行真實查詢。
+高鐵約 5 倍僅來自單站小樣本，且比較範圍不完全相等。
+約 6 秒為單次程式執行；約 22 秒為整趟對話，不可混算。
+高鐵與台銀既有實測沒有使用 Kev；台銀單頁讀表未顯示速度優勢。
+本機執行不等於資料完全不離開電腦；Claude 可能在雲端處理資料。
+Windows、Codex、多步驟錄製與用示範修流程仍有未驗證項目。
+公開下載入口尚未開放，不得推斷本網站具有即時執行 API。
+
+資訊整理日期：2026-10-07。以專案 README、recipe schema 與 kav-fastweb skill 為實作權威。

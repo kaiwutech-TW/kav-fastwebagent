@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { firstFlowPrompt } from '../data/evidence';
+---
+<Layout title="從第一個常做的查詢開始">
+  <header class="doc-heading"><div class="wrap"><h1>從第一個<br />常做的查詢開始。</h1><p>準備好環境後，把需求交給 Claude Code。你要做的是看結果對不對。</p></div></header>
+  <div class="doc-layout wrap"><nav class="doc-toc" aria-label="本頁內容"><a href="#ready">準備環境</a><a href="#first">第一個流程</a><a href="#record">示範錄製</a><a href="#next">之後怎麼說</a><a href="#faq">常見問題</a></nav><article class="prose">
+    <h2 id="ready">先確認適不適合</h2><p>目前已實測的環境是 <strong>Mac、Google Chrome 與 Claude Code</strong>。高鐵、匯率抓資料由本機程式完成，不需要模型。判斷題把抓好的文字交給 Claude；Kev 是選配。</p><div class="callout"><p><strong>公開下載尚未開放。</strong>專案的公開 GitHub 入口仍在準備中。如果你已有本機專案，可依下方步驟啟動；還沒有專案的話，可以先看看流程如何描述。</p></div><h3>已有專案的本機啟動方式</h3><ol><li>先安裝 Chrome 與 <a href="https://docs.astral.sh/uv/">uv</a>。</li><li>在 Kav 專案目錄執行 <code>uv sync</code>。</li><li>在同一個目錄開啟 Claude Code，核准專案的 <code>kav-fastweb</code> MCP 設定。</li><li>說「kav 的狀態」，確認工具可用。Chrome 會使用 Kav 的專屬設定檔。</li></ol><p>Kev 是選用元件；現有比價實測使用 Apple Silicon、36GB 記憶體與 Kev-4B。Kev 的安裝與啟動方式見本機專案 README。</p>
+    <h2 id="first">把這段貼給 Claude Code</h2><p>先選擇一個公開、可重複查詢的網站。用「會換什麼」與「怎樣才算對」說明，比只說「幫我查一下」更清楚。</p><div class="copy-block"><pre id="flow-prompt">{firstFlowPrompt}</pre><button class="copy-button" id="copy-prompt" type="button">複製需求範例</button><span class="copy-status" id="copy-status" role="status"></span></div><p>Claude 試跑後會給你看結果。對了就說「對」，存成流程；不對就指出少了什麼或哪裡讀錯。</p>
+    <h2 id="record">不容易用說的？示範一次</h2><p>先對 Claude 說「<strong>我示範給你看</strong>」。這特別適合不容易描述操作的網站；如果 Claude 已能直接寫好流程，就不必每次都錄製。</p><ol><li>在 Kav 開好的 Chrome 分頁，照平常方式完成一組真實查詢。</li><li>按「標記結果」，點選你要的整塊資料，再按「完成」。</li><li>Claude 把示範整理成流程，在乾淨環境重播，核對結果與你標記的內容是否一致。</li><li>核對通過後，確認結果才儲存；以後再用新條件執行。</li></ol><p>目前高鐵單頁示範已通過真人驗收；多步驟與用示範修流程仍待真人驗收，已於 2026/10/07 暫停；591 示範發現的轉換缺口尚未修復。錄製限同一個分頁，不支援新分頁、iframe 內操作或敏感資料輸入。<a href="/evidence/#recording-proof">查看實際驗收過程</a>。</p>
+    <h2 id="next">之後，像平常一樣說話</h2><div class="table-scroll"><table><thead><tr><th scope="col">想做什麼</th><th scope="col">可以這樣說</th></tr></thead><tbody><tr><th scope="row">換條件查詢</th><td>查 10/20 新竹到台南，早上九點以後的高鐵。</td></tr><tr><th scope="row">修正結果</th><td>結果不對，我要看的是抵達時間。</td></tr><tr><th scope="row">查看流程</th><td>我有哪些流程？</td></tr><tr><th scope="row">移除流程</th><td>刪掉這個流程。</td></tr></tbody></table></div>
+    <h2 id="faq">你可能也想知道</h2><details><summary>一定要有高階電腦嗎？</summary><p>不需要 Kev 的高鐵、匯率流程，只需能執行 Chrome 與 Claude Code 的 Mac。判斷題可以交給 Claude，不必為此安裝 Kev。既有比價流程使用 Kev；若選用本機模型，才需要考慮它的硬體需求。</p></details><details><summary>Windows 或 Codex 可以用嗎？</summary><p>Kav 是 MCP 工具，專案已有相關設定說明，但 Windows 與 Codex 的使用路徑還沒完整實測。這裡不把它們列為已驗證安裝方式。</p></details><details><summary>網站需要登入怎麼辦？</summary><p>你可以在 Kav 專屬 Chrome 自己登入。Kav 不會代填密碼、不會解驗證碼，也不會為了網站擋自動化而嘗試繞過。</p></details><details><summary>資料全部都在本機嗎？</summary><p>Chrome 操作、流程執行與程式驗證在本機，Kev 也在本機。Claude 仍可能在雲端處理需求和工具結果，因此「本機執行」不等於「資料完全不離開電腦」。</p></details>
+  </article></div>
+</Layout>
+<script>
+  document.querySelector<HTMLButtonElement>('#copy-prompt')?.addEventListener('click', async () => {
+    const text = document.querySelector<HTMLElement>('#flow-prompt')!.textContent ?? '';
+    const status = document.querySelector<HTMLElement>('#copy-status')!;
+    try { await navigator.clipboard.writeText(text); status.textContent = '已複製，可以貼到 Claude Code。'; }
+    catch { status.textContent = '無法自動複製，請選取上方文字手動複製。'; }
+  });
+</script>

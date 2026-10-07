@@ -1,0 +1,25 @@
+   -267.7ms  n=  122  binding ctx#2 ev kind=input tag=INPUT key=None seq=5 verdict=ok
+      0.0ms  n=  122  ## STEP S5b-cross-site-browser-initiated(b.test->a.test, Page.navigate): ACTION
+      1.6ms  n=  124  Page.frameStartedLoading frame=..6806
+      2.2ms  n=  125  binding ctx#2 beforeunload kind=None tag=None key=None seq=6 verdict=ok
+      3.9ms  n=  126  ctx CLEARED (all)
+      4.2ms  n=  127  ctx CLEARED (all)
+      4.3ms  n=  128  Page.frameNavigated frame=..6806 parent=- type=Navigation url=http://a.test:18461/p1
+      6.2ms  n=  129  Target.targetInfoChanged target=..E56806 type=page url=http://a.test:18461/p1 attached=True session=.. waiting=None
+      6.9ms  n=  130  ctx CREATED id=1 uid=..170198 name='' default=True type=default frame=..6806 origin=http://a.test:18461
+      6.9ms  n=  131  ctx CREATED id=2 uid=..755369 name='kfw_rec' default=False type=isolated frame=..6806 origin=http://a.test:18461
+      7.0ms  n=  132  binding ctx#2 hello restored=False persisted=False navType=navigate rs=loading body=False early=no-documentElement jsT=4.2 known_ctx=True -> epoch tok6
+     13.6ms  n=  133  Page.domContentEventFired
+     14.4ms  n=  134  Page.loadEventFired
+     14.6ms  n=  135  Page.frameStoppedLoading frame=..6806
+     14.6ms  n=  136  binding ctx#2 armed token=tok6 preArm=0 preKinds=[] ok=True
+     14.7ms  n=  136  PY arm(contextId) ctx#2 -> 'armed' 
+    139.0ms  n=  136  ## EXERCISE click #btn, click #inp, key x, insertText yz
+    140.7ms  n=  137  binding ctx#2 ev kind=pointerdown tag=BUTTON key=None seq=1 verdict=ok
+    148.2ms  n=  138  binding ctx#2 ev kind=pointerdown tag=INPUT key=None seq=2 verdict=ok
+    149.4ms  n=  139  binding ctx#2 ev kind=keydown tag=INPUT key=x seq=3 verdict=ok
+    149.7ms  n=  140  binding ctx#2 ev kind=input tag=INPUT key=None seq=4 verdict=ok
+    150.8ms  n=  141  binding ctx#2 ev kind=input tag=INPUT key=None seq=5 verdict=ok
+    188.9ms  n=  142  Target.targetCreated target=..23CBFE type=other url= attached=False session=.. waiting=None
+    227.0ms  n=  143  Target.targetInfoChanged target=..23CBFE type=background_page url=chrome-extension://nmmhkkegccagdldgiimedpiccmgmieda/_generat attached=False session=.. waiting=None
+    232.9ms  n=  144  Target.targetCreated target=..2BB44B type=service_worker url=chrome-extension://ghbmnnjooekpmoecnnnilnnbdlolhkhi/service_ attached=False session=.. waiting=None

@@ -1,0 +1,8 @@
+vendor/
+.venv/
+__pycache__/
+runs/
+*.pyc
+# screenshots stay local (user decision 2026-09-29)
+results/**/*.jpg
+.claude/worktrees/

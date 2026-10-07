@@ -1,0 +1,3 @@
+<!doctype html><meta charset="utf-8"><title>replace</title>
+<div id="host"><label>名稱 <input id="nm" name="nm" value="old"></label></div>
+<button id="swap" onclick="const h=document.getElementById('host'); h.textContent=''; const l=document.createElement('label'); l.append('名稱 '); const i=document.createElement('input'); i.name='nm'; i.value='new'; l.append(i); h.append(l);">重繪</button>

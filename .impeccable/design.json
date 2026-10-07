@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-02T01:40:59.465012+00:00",
+  "title": "Design System: Kav-FastwebAgent 展示網站",
+  "extensions": {
+    "colorMeta": {
+      "forest": {
+        "role": "primary",
+        "displayName": "Forest",
+        "tonalRamp": [
+          "oklch(15.0% 0.0608 175.73)",
+          "oklch(26.4% 0.0608 175.73)",
+          "oklch(37.9% 0.0608 175.73)",
+          "oklch(49.3% 0.0608 175.73)",
+          "oklch(60.7% 0.0608 175.73)",
+          "oklch(72.1% 0.0608 175.73)",
+          "oklch(83.6% 0.0608 175.73)",
+          "oklch(95.0% 0.0608 175.73)"
+        ]
+      },
+      "forest-dark": {
+        "role": "primary",
+        "displayName": "Forest Dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.0499 176.68)",
+          "oklch(26.4% 0.0499 176.68)",
+          "oklch(37.9% 0.0499 176.68)",
+          "oklch(49.3% 0.0499 176.68)",
+          "oklch(60.7% 0.0499 176.68)",
+          "oklch(72.1% 0.0499 176.68)",
+          "oklch(83.6% 0.0499 176.68)",
+          "oklch(95.0% 0.0499 176.68)"
+        ]
+      },
+      "lime": {
+        "role": "primary",
+        "displayName": "Lime",
+        "tonalRamp": [
+          "oklch(15.0% 0.1251 119.25)",
+          "oklch(26.4% 0.1251 119.25)",
+          "oklch(37.9% 0.1251 119.25)",
+          "oklch(49.3% 0.1251 119.25)",
+          "oklch(60.7% 0.1251 119.25)",
+          "oklch(72.1% 0.1251 119.25)",
+          "oklch(83.6% 0.1251 119.25)",
+          "oklch(95.0% 0.1251 119.25)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15.0% 0.0069 124.45)",
+          "oklch(26.4% 0.0069 124.45)",
+          "oklch(37.9% 0.0069 124.45)",
+          "oklch(49.3% 0.0069 124.45)",
+          "oklch(60.7% 0.0069 124.45)",
+          "oklch(72.1% 0.0069 124.45)",
+          "oklch(83.6% 0.0069 124.45)",
+          "oklch(95.0% 0.0069 124.45)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15.0% 0.0277 176.57)",
+          "oklch(26.4% 0.0277 176.57)",
+          "oklch(37.9% 0.0277 176.57)",
+          "oklch(49.3% 0.0277 176.57)",
+          "oklch(60.7% 0.0277 176.57)",
+          "oklch(72.1% 0.0277 176.57)",
+          "oklch(83.6% 0.0277 176.57)",
+          "oklch(95.0% 0.0277 176.57)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15.0% 0.0290 167.25)",
+          "oklch(26.4% 0.0290 167.25)",
+          "oklch(37.9% 0.0290 167.25)",
+          "oklch(49.3% 0.0290 167.25)",
+          "oklch(60.7% 0.0290 167.25)",
+          "oklch(72.1% 0.0290 167.25)",
+          "oklch(83.6% 0.0290 167.25)",
+          "oklch(95.0% 0.0290 167.25)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15.0% 0.0145 148.76)",
+          "oklch(26.4% 0.0145 148.76)",
+          "oklch(37.9% 0.0145 148.76)",
+          "oklch(49.3% 0.0145 148.76)",
+          "oklch(60.7% 0.0145 148.76)",
+          "oklch(72.1% 0.0145 148.76)",
+          "oklch(83.6% 0.0145 148.76)",
+          "oklch(95.0% 0.0145 148.76)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15.0% 0.0000 89.88)",
+          "oklch(26.4% 0.0000 89.88)",
+          "oklch(37.9% 0.0000 89.88)",
+          "oklch(49.3% 0.0000 89.88)",
+          "oklch(60.7% 0.0000 89.88)",
+          "oklch(72.1% 0.0000 89.88)",
+          "oklch(83.6% 0.0000 89.88)",
+          "oklch(95.0% 0.0000 89.88)"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Error",
+        "tonalRamp": [
+          "oklch(15.0% 0.1544 30.53)",
+          "oklch(26.4% 0.1544 30.53)",
+          "oklch(37.9% 0.1544 30.53)",
+          "oklch(49.3% 0.1544 30.53)",
+          "oklch(60.7% 0.1544 30.53)",
+          "oklch(72.1% 0.1544 30.53)",
+          "oklch(83.6% 0.1544 30.53)",
+          "oklch(95.0% 0.1544 30.53)"
+        ]
+      },
+      "sage-surface": {
+        "role": "neutral",
+        "displayName": "Sage Surface",
+        "tonalRamp": [
+          "oklch(15.0% 0.0209 124.67)",
+          "oklch(26.4% 0.0209 124.67)",
+          "oklch(37.9% 0.0209 124.67)",
+          "oklch(49.3% 0.0209 124.67)",
+          "oklch(60.7% 0.0209 124.67)",
+          "oklch(72.1% 0.0209 124.67)",
+          "oklch(83.6% 0.0209 124.67)",
+          "oklch(95.0% 0.0209 124.67)"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus",
+        "tonalRamp": [
+          "oklch(15.0% 0.1405 54.49)",
+          "oklch(26.4% 0.1405 54.49)",
+          "oklch(37.9% 0.1405 54.49)",
+          "oklch(49.3% 0.1405 54.49)",
+          "oklch(60.7% 0.1405 54.49)",
+          "oklch(72.1% 0.1405 54.49)",
+          "oklch(83.6% 0.1405 54.49)",
+          "oklch(95.0% 0.1405 54.49)"
+        ]
+      },
+      "lime-hover": {
+        "role": "primary",
+        "displayName": "Lime Hover",
+        "tonalRamp": [
+          "oklch(15.0% 0.0827 119.53)",
+          "oklch(26.4% 0.0827 119.53)",
+          "oklch(37.9% 0.0827 119.53)",
+          "oklch(49.3% 0.0827 119.53)",
+          "oklch(60.7% 0.0827 119.53)",
+          "oklch(72.1% 0.0827 119.53)",
+          "oklch(83.6% 0.0827 119.53)",
+          "oklch(95.0% 0.0827 119.53)"
+        ]
+      },
+      "dark-hover": {
+        "role": "primary",
+        "displayName": "Dark Hover",
+        "tonalRamp": [
+          "oklch(15.0% 0.0650 173.29)",
+          "oklch(26.4% 0.0650 173.29)",
+          "oklch(37.9% 0.0650 173.29)",
+          "oklch(49.3% 0.0650 173.29)",
+          "oklch(60.7% 0.0650 173.29)",
+          "oklch(72.1% 0.0650 173.29)",
+          "oklch(83.6% 0.0650 173.29)",
+          "oklch(95.0% 0.0650 173.29)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Primary page statements."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section statements."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Subheadings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Site reading."
+      },
+      "prose": {
+        "displayName": "Prose",
+        "purpose": "Long-form reading."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Compact supporting text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "foldout-ambient",
+        "value": "0 20px 45px #0c322a40",
+        "purpose": "Only the interactive itinerary paper."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-color",
+        "value": ".18s",
+        "purpose": "Button background and text-color transitions."
+      },
+      {
+        "name": "result-unfold",
+        "value": ".55s cubic-bezier(.16,1,.3,1)",
+        "purpose": "Clip-path reveal of completed demo rows."
+      },
+      {
+        "name": "demo-step",
+        "value": "420ms",
+        "purpose": "Demonstration pacing; reduced motion uses 30ms."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-max",
+        "value": "760px"
+      },
+      {
+        "name": "compact-max",
+        "value": "1050px"
+      },
+      {
+        "name": "wide-min",
+        "value": "1500px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Lime Button",
+      "kind": "button",
+      "refersTo": "button-lime",
+      "description": "Primary filled link action.",
+      "html": "<a class=\"ds-button-lime\" href=\"#\">看看能幫上什麼忙<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.7\"/></svg></a>",
+      "css": ".ds-button-lime{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;min-height:56px;box-sizing:border-box;padding:14px 23px;background:var(--lime,#ddf391);color:var(--forest-dark,#123d34);font:600 15px/1.8 var(--font-body,\"Noto Sans TC Variable\",sans-serif);text-decoration:none;border-radius:0;transition:background .18s,color .18s}.ds-button-lime:hover{background:var(--lime-hover,#efffc0)}.ds-button-lime:focus-visible{outline:3px solid var(--focus,#c56b21);outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-button-lime{transition:none}}"
+    },
+    {
+      "name": "Dark Button",
+      "kind": "button",
+      "refersTo": "button-dark",
+      "description": "Primary filled link action.",
+      "html": "<a class=\"ds-button-dark\" href=\"#\">建立你的第一個流程<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.7\"/></svg></a>",
+      "css": ".ds-button-dark{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;min-height:56px;box-sizing:border-box;padding:14px 23px;background:var(--forest-dark,#123d34);color:var(--lime,#ddf391);font:600 15px/1.8 var(--font-body,\"Noto Sans TC Variable\",sans-serif);text-decoration:none;border-radius:0;transition:background .18s,color .18s}.ds-button-dark:hover{background:var(--dark-hover,#265f50)}.ds-button-dark:focus-visible{outline:3px solid var(--focus,#c56b21);outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-button-dark{transition:none}}"
+    },
+    {
+      "name": "Route Select",
+      "kind": "input",
+      "refersTo": "route-select",
+      "description": "A visible label with a native bottom-ruled station select.",
+      "html": "<label class=\"ds-field\">從哪裡出發<select class=\"ds-select\"><option>台中</option><option>新竹</option><option>台北</option></select></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:2px;max-width:240px;color:var(--muted,#53685f);font:11px/1.8 var(--font-body,\"Noto Sans TC Variable\",sans-serif)}.ds-select{background:transparent;border:0;border-bottom:1px solid #bccdc1;color:var(--ink,#192d28);min-height:42px;width:100%;border-radius:0;font:600 29px/1.5 var(--font-body,\"Noto Sans TC Variable\",sans-serif);cursor:pointer}.ds-select:focus-visible{outline:3px solid var(--focus,#c56b21);outline-offset:5px;}.ds-select:disabled{cursor:wait}"
+    },
+    {
+      "name": "Main Navigation",
+      "kind": "nav",
+      "description": "Visible text links with underlined hover and current-page states.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"主要導覽\"><a href=\"#\">實際用途</a><a href=\"#\">示範錄製</a><a href=\"#\" aria-current=\"page\">如何運作</a><a href=\"#\">實測紀錄</a></nav>",
+      "css": ".ds-nav{display:flex;gap:34px;flex-wrap:wrap;color:var(--ink,#192d28);font:14px/1.8 var(--font-body,\"Noto Sans TC Variable\",sans-serif)}.ds-nav a{color:inherit;text-decoration:none;text-underline-offset:5px}.ds-nav a:hover,.ds-nav a[aria-current]{text-decoration:underline}.ds-nav a:focus-visible{outline:3px solid var(--focus,#c56b21);outline-offset:5px;}@media(max-width:760px){.ds-nav{font-size:12px;gap:15px;justify-content:space-between}}"
+    },
+    {
+      "name": "Demonstration Tag",
+      "kind": "chip",
+      "refersTo": "demo-tag",
+      "description": "Noninteractive status disclosure used on the lime foldout heading.",
+      "html": "<div class=\"ds-tag-surface\"><span class=\"ds-tag\">互動示意</span></div>",
+      "css": ".ds-tag-surface{background:var(--lime,#ddf391);padding:15px 25px;color:var(--ink,#192d28)}.ds-tag{font:400 11px/1.8 var(--font-body,\"Noto Sans TC Variable\",sans-serif);border:1px solid #73894d;padding:1px 7px;border-radius:3px}"
+    },
+    {
+      "name": "Reading Callout",
+      "kind": "card",
+      "refersTo": "callout",
+      "description": "Flat explanatory surface from the getting-started page.",
+      "html": "<div class=\"ds-callout\"><p><strong>公開下載尚未開放。</strong>專案的公開 GitHub 入口仍在準備中。</p></div>",
+      "css": ".ds-callout{padding:22px;background:var(--sage-surface,#e7edde);color:var(--muted,#53685f);font:15px/1.95 var(--font-body,\"Noto Sans TC Variable\",sans-serif)}.ds-callout p{margin:0}.ds-callout strong{font-weight:650;color:var(--ink,#192d28)}"
+    },
+    {
+      "name": "Itinerary Results",
+      "kind": "custom",
+      "refersTo": "foldout",
+      "description": "Paper foldout with its lime edge, dashed boundary, and aligned sample results.",
+      "html": "<section class=\"ds-foldout\"><div class=\"ds-foldout-title\">你的高鐵查詢流程</div><div class=\"ds-results\"><h3>台中到台北</h3><table class=\"ds-results-table\"><thead><tr><th>車次</th><th>出發</th><th>抵達</th></tr></thead><tbody><tr><td>0648</td><td>15:00</td><td>15:59</td></tr></tbody></table><p>示意結果，非即時時刻表</p></div></section>",
+      "css": ".ds-foldout{max-width:480px;background:var(--paper,#f5f7f2);color:var(--ink,#192d28);box-shadow:0 20px 45px #0c322a40;transform:rotate(1deg);font:13px/1.8 var(--font-body,\"Noto Sans TC Variable\",sans-serif)}.ds-foldout-title{padding:15px 25px;background:var(--lime,#ddf391);border-bottom:1px solid #bed176;font-weight:600}.ds-results{padding:15px 27px 19px;margin-top:21px;border-top:1px dashed #bdcbc1}.ds-results h3{font:650 15px/1.35 var(--font-display,\"Manrope Variable\",\"Noto Sans TC Variable\",sans-serif);margin:1px 0 7px}.ds-results-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}.ds-results-table th{font-size:12px;font-weight:400;color:var(--muted,#53685f)}.ds-results-table td{font-family:var(--font-display,\"Manrope Variable\",\"Noto Sans TC Variable\",sans-serif);font-weight:550}.ds-results-table td,.ds-results-table th{text-align:left;padding:5px 0;border-bottom:1px solid var(--line,#d5ded6)}.ds-results-table td:last-child,.ds-results-table th:last-child{text-align:right}.ds-results p{font-size:12px;color:var(--muted,#53685f);line-height:1.6;margin:10px 0 0}@media(max-width:760px){.ds-foldout{transform:none}}"
+    },
+    {
+      "name": "Mark Result Button",
+      "kind": "button",
+      "refersTo": "button-mark",
+      "description": "Outlined toggle used to mark the recording result.",
+      "html": "<button class=\"ds-mark\" type=\"button\" aria-pressed=\"false\">標記這張結果表</button>",
+      "css": ".ds-mark{min-height:44px;padding:10px 14px;font:13px/1.8 var(--font-body,\"Noto Sans TC Variable\",sans-serif);color:var(--forest,#184f43);background:transparent;border:1px solid var(--forest,#184f43);border-radius:0;cursor:pointer}.ds-mark:hover{background:var(--sage-surface,#e7edde)}.ds-mark:focus-visible{outline:3px solid var(--focus,#c56b21);outline-offset:5px;}"
+    },
+    {
+      "name": "Finish Demonstration Button",
+      "kind": "button",
+      "refersTo": "button-finish",
+      "description": "Forest action enabled after a result is selected.",
+      "html": "<button class=\"ds-finish\" type=\"button\">完成示範<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.7\"/></svg></button>",
+      "css": ".ds-finish{display:flex;align-items:center;gap:16px;min-height:44px;padding:10px 14px;font:13px/1.8 var(--font-body,\"Noto Sans TC Variable\",sans-serif);color:var(--paper,#f5f7f2);background:var(--forest,#184f43);border:0;border-radius:0;cursor:pointer}.ds-finish:hover:not(:disabled){background:var(--forest-dark,#123d34)}.ds-finish:disabled{opacity:.5;cursor:not-allowed}.ds-finish:focus-visible{outline:3px solid var(--focus,#c56b21);outline-offset:5px;}"
+    },
+    {
+      "name": "Marked Result Region",
+      "kind": "custom",
+      "description": "Selected recording result uses an outline, tonal fill, and explicit confirmation.",
+      "html": "<div class=\"ds-marked\"><h3>台中到台北</h3><p class=\"ds-selected-label\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"m5 12 4 4L19 6\" stroke=\"currentColor\" stroke-width=\"1.7\"/></svg>已標記：整張車次結果</p></div>",
+      "css": ".ds-marked{padding:15px;outline:2px solid var(--forest,#184f43);outline-offset:0;background:#eaf0e0;color:var(--ink,#192d28)}.ds-marked h3{font:650 17px/1.35 var(--font-display,\"Manrope Variable\",\"Noto Sans TC Variable\",sans-serif);margin:0;letter-spacing:-.02em}.ds-selected-label{display:flex;align-items:center;gap:8px;color:var(--forest,#184f43);font:12px/1.8 var(--font-body,\"Noto Sans TC Variable\",sans-serif);margin:12px 0 0}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Everyday Itinerary Foldout",
+    "overview": "Kav’s implemented website presents reusable queries as an orderly paper itinerary: strong forest fields surround pale working surfaces, and lime connects actions with the foldout edge. Traditional Chinese reading comes first, with clear conditions, numbered progress, and aligned results.\n\nThis is a scan of the finished Astro implementation, not a claim of user-selected visual identity. The user approved Astro and code-first work; the itinerary metaphor, descriptive color names, and palette remain provisional implementation decisions. The source of truth is website/src/styles/global.css, supported by Layout.astro, FlowDemo.astro, RecordingDemo.astro, Mechanism.astro, and the implemented pages. The surface-specific direction remains in .impeccable/surfaces/website-src-pages-index-astro.md.",
+    "keyCharacteristics": [
+      "Large forest fields and lime action surfaces.",
+      "Square paper panels, fine rules, and tabular results.",
+      "Self-hosted Traditional Chinese and Latin variable typography.",
+      "Responsive reading layouts with explicit demonstration and evidence labels."
+    ],
+    "rules": [
+      {
+        "name": "The Legible Pairing Rule",
+        "body": "Keep lime actions paired with dark forest text, and forest fields paired with pale text; a pale accent is not body text on paper.",
+        "section": "colors"
+      },
+      {
+        "name": "The Reading First Rule",
+        "body": "Use the Chinese-capable body stack for explanations and labels; use the display stack for headings and aligned numeric results.",
+        "section": "typography"
+      },
+      {
+        "name": "The Foldout Depth Rule",
+        "body": "Reserve the ambient shadow and slight rotation for the interactive itinerary; supporting sections and reading surfaces use rules and tonal fields.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the forest, lime, and paper role relationships.",
+      "Do keep form labels, result captions, and evidence limitations visible beside the material they explain.",
+      "Do stack paired content and move the table of contents into normal flow on narrow screens.",
+      "Do preserve keyboard focus outlines and the reduced-motion behavior."
+    ],
+    "donts": [
+      "Don't make every content group inherit the foldout shadow or rotation.",
+      "Don't style demonstration results so that their non-live status disappears.",
+      "Don't replace aligned result tables with decorative cards that obscure field relationships."
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+     -0.9ms  n=  375  ctx CREATED id=1 uid=..319160 name='' default=True type=default frame=..3664 origin=://
+     -0.0ms  n=  375  ## START target=..713664 session=..CC810E mainFrame=..3664 script=1
+      0.0ms  n=  375  ## STEP 8-csp-script-none: ACTION
+      1.1ms  n=  377  Page.frameStartedLoading frame=..3664
+      4.2ms  n=  378  ctx CLEARED (all)
+      4.8ms  n=  379  ctx CLEARED (all)
+      4.9ms  n=  380  Page.frameNavigated frame=..3664 parent=- type=Navigation url=http://a.test:18461/csp-script
+      6.8ms  n=  381  Target.targetInfoChanged target=..713664 type=page url=http://a.test:18461/csp-script attached=True session=.. waiting=None
+      7.1ms  n=  382  ctx CREATED id=2 uid=..362028 name='' default=True type=default frame=..3664 origin=http://a.test:18461
+      7.1ms  n=  383  ctx CREATED id=3 uid=..389276 name='kfw_rec' default=False type=isolated frame=..3664 origin=http://a.test:18461
+      7.2ms  n=  384  binding ctx#3 hello restored=False persisted=False navType=navigate rs=loading body=False early=no-documentElement jsT=5.1 known_ctx=True -> epoch tok1
+     12.5ms  n=  385  Page.domContentEventFired
+     12.8ms  n=  386  Page.loadEventFired
+     13.7ms  n=  387  Page.frameStoppedLoading frame=..3664
+     13.8ms  n=  388  binding ctx#3 armed token=tok1 preArm=0 preKinds=[] ok=True
+     13.8ms  n=  388  PY arm(contextId) ctx#3 -> 'armed' 
+    141.1ms  n=  388  ## EXERCISE click #btn, click #inp, key x, insertText yz
+    142.8ms  n=  389  binding ctx#3 ev kind=pointerdown tag=BUTTON key=None seq=1 verdict=ok
+    150.0ms  n=  390  binding ctx#3 ev kind=pointerdown tag=INPUT key=None seq=2 verdict=ok
+    151.1ms  n=  391  binding ctx#3 ev kind=keydown tag=INPUT key=x seq=3 verdict=ok
+    151.4ms  n=  392  binding ctx#3 ev kind=input tag=INPUT key=None seq=4 verdict=ok
+    152.4ms  n=  393  binding ctx#3 ev kind=input tag=INPUT key=None seq=5 verdict=ok
+    463.9ms  n=  393  ## EXERCISE click recorder UI button
+    465.0ms  n=  394  binding ctx#3 ui_click kind=None tag=None key=None seq=6 verdict=ok

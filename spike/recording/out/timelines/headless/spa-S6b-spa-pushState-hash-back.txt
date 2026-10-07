@@ -1,0 +1,16 @@
+   -183.3ms  n=  172  binding ctx#3 ev kind=input tag=INPUT key=None seq=5 verdict=ok
+      0.0ms  n=  172  ## STEP S6b-spa-pushState-hash-back: ACTION
+      2.6ms  n=  173  binding ctx#3 ev kind=pointerdown tag=BUTTON key=None seq=6 verdict=ok
+      4.3ms  n=  174  Page.frameStartedLoading frame=..39B8
+      6.4ms  n=  175  Target.targetInfoChanged target=..1239B8 type=page url=http://a.test:18461/spa/x1 attached=True session=.. waiting=None
+      6.9ms  n=  176  Page.navigatedWithinDocument type=historyApi url=http://a.test:18461/spa/x1
+      7.3ms  n=  177  Page.frameStoppedLoading frame=..39B8
+    317.5ms  n=  178  binding ctx#3 ev kind=pointerdown tag=BUTTON key=None seq=7 verdict=ok
+    318.3ms  n=  180  Page.frameStartedLoading frame=..39B8
+    319.4ms  n=  181  Target.targetInfoChanged target=..1239B8 type=page url=http://a.test:18461/spa/x1#h2 attached=True session=.. waiting=None
+    319.7ms  n=  182  Page.navigatedWithinDocument type=fragment url=http://a.test:18461/spa/x1#h2
+    319.7ms  n=  183  Page.frameStoppedLoading frame=..39B8
+    631.4ms  n=  186  Page.frameStartedLoading frame=..39B8
+    635.0ms  n=  187  Target.targetInfoChanged target=..1239B8 type=page url=http://a.test:18461/spa/x1 attached=True session=.. waiting=None
+    635.4ms  n=  188  Page.navigatedWithinDocument type=fragment url=http://a.test:18461/spa/x1
+    635.6ms  n=  189  Page.frameStoppedLoading frame=..39B8

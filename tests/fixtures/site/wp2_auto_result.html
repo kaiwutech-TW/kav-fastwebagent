@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><title>wp2 auto result</title>
+<style>body{font:16px sans-serif;margin:20px} table{border-collapse:collapse;margin:14px 0} td,th{border:1px solid #888;padding:4px 10px} label,input,select,button{display:block;margin:6px 0}</style>
+<table id="t"><thead><tr><th>代碼</th><th>項目</th></tr></thead><tbody id="tb"></tbody></table>
+<script>
+const code = new URLSearchParams(location.search).get('code') || 'none';
+for (const v of ['x1', 'x2']) { const tr = document.createElement('tr'); for (const c of [code, v]) { const td = document.createElement('td'); td.textContent = c; tr.appendChild(td); } document.getElementById('tb').appendChild(tr); }
+</script>

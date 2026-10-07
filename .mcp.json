@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "kav-fastweb": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "--project", ".", "python", "-m", "kfw.mcp_server"]
+    }
+  }
+}

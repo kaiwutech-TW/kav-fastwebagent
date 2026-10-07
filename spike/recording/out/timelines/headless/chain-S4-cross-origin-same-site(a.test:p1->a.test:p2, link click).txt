@@ -1,0 +1,23 @@
+   -153.7ms  n=   76  binding ctx#7 ev kind=input tag=INPUT key=None seq=5 verdict=ok
+      0.0ms  n=   76  ## STEP S4-cross-origin-same-site(a.test:p1->a.test:p2, link click): ACTION
+      3.6ms  n=   77  binding ctx#7 ev kind=pointerdown tag=A key=None seq=6 verdict=ok
+      4.5ms  n=   80  binding ctx#7 beforeunload kind=None tag=None key=None seq=7 verdict=ok
+      5.7ms  n=   82  Page.frameStartedLoading frame=..6806
+      8.2ms  n=   84  ctx CLEARED (all)
+      8.7ms  n=   85  ctx CLEARED (all)
+      8.8ms  n=   86  Page.frameNavigated frame=..6806 parent=- type=Navigation url=http://a.test:18462/p1?to=http%3A%2F%2Fb.test%3A18461%2Fp1
+     11.0ms  n=   87  Target.targetInfoChanged target=..E56806 type=page url=http://a.test:18462/p1?to=http%3A%2F%2Fb.test%3A18461%2Fp1 attached=True session=.. waiting=None
+     14.7ms  n=   88  ctx CREATED id=8 uid=..211418 name='' default=True type=default frame=..6806 origin=http://a.test:18462
+     14.7ms  n=   89  ctx CREATED id=9 uid=..806021 name='kfw_rec' default=False type=isolated frame=..6806 origin=http://a.test:18462
+     14.9ms  n=   90  binding ctx#9 hello restored=False persisted=False navType=navigate rs=loading body=False early=no-documentElement jsT=5.7 known_ctx=True -> epoch tok4
+     15.3ms  n=   91  Page.domContentEventFired
+     15.4ms  n=   92  Page.loadEventFired
+     16.3ms  n=   93  Page.frameStoppedLoading frame=..6806
+     17.8ms  n=   94  binding ctx#9 armed token=tok4 preArm=0 preKinds=[] ok=True
+     17.8ms  n=   94  PY arm(contextId) ctx#9 -> 'armed' 
+    137.6ms  n=   94  ## EXERCISE click #btn, click #inp, key x, insertText yz
+    139.0ms  n=   95  binding ctx#9 ev kind=pointerdown tag=BUTTON key=None seq=1 verdict=ok
+    148.3ms  n=   96  binding ctx#9 ev kind=pointerdown tag=INPUT key=None seq=2 verdict=ok
+    148.8ms  n=   97  binding ctx#9 ev kind=keydown tag=INPUT key=x seq=3 verdict=ok
+    149.1ms  n=   98  binding ctx#9 ev kind=input tag=INPUT key=None seq=4 verdict=ok
+    149.8ms  n=   99  binding ctx#9 ev kind=input tag=INPUT key=None seq=5 verdict=ok

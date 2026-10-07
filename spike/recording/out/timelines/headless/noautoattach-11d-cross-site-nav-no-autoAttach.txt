@@ -1,0 +1,32 @@
+   -160.7ms  n=  639  binding ctx#3 ev kind=input tag=INPUT key=None seq=5 verdict=ok
+      0.0ms  n=  639  ## STEP 11d-cross-site-nav-no-autoAttach: ACTION
+      9.6ms  n=  640  binding ctx#3 ev kind=pointerdown tag=A key=None seq=6 verdict=ok
+     10.5ms  n=  643  binding ctx#3 beforeunload kind=None tag=None key=None seq=7 verdict=ok
+     14.4ms  n=  645  Page.frameStartedLoading frame=..B1C8
+     18.7ms  n=  647  ctx CLEARED (all)
+     19.5ms  n=  648  ctx CLEARED (all)
+     19.7ms  n=  649  Page.frameNavigated frame=..B1C8 parent=- type=Navigation url=http://b.test:18461/iframehost
+     21.9ms  n=  650  Target.targetInfoChanged target=..C4B1C8 type=page url=http://b.test:18461/iframehost attached=True session=.. waiting=None
+     24.3ms  n=  651  ctx CREATED id=1 uid=..910595 name='' default=True type=default frame=..B1C8 origin=http://b.test:18461
+     24.5ms  n=  652  ctx CREATED id=2 uid=..865651 name='kfw_rec' default=False type=isolated frame=..B1C8 origin=http://b.test:18461
+     24.6ms  n=  653  binding ctx#2 hello restored=False persisted=False navType=navigate rs=loading body=False early=no-documentElement jsT=11.0 known_ctx=True -> epoch tok2
+     25.7ms  n=  657  Page.frameStartedLoading frame=..7083
+     26.6ms  n=  661  Page.frameStartedLoading frame=..198A
+     27.1ms  n=  662  Target.targetCreated target=..FF7083 type=iframe url= attached=False session=.. waiting=None
+     29.1ms  n=  663  Target.targetInfoChanged target=..FF7083 type=iframe url=http://a.test:18462/p2 attached=False session=.. waiting=None
+     33.5ms  n=  664  Page.domContentEventFired
+     34.5ms  n=  665  Page.frameNavigated frame=..198A parent=..B1C8 type=Navigation url=http://b.test:18461/p2
+     35.6ms  n=  666  ctx CREATED id=3 uid=..554567 name='' default=True type=default frame=..198A origin=http://b.test:18461
+     35.9ms  n=  667  ctx CREATED id=4 uid=..014022 name='kfw_rec' default=False type=isolated frame=..198A origin=http://b.test:18461
+     36.0ms  n=  668  binding ctx#2 armed token=tok2 preArm=0 preKinds=[] ok=True
+     36.2ms  n=  668  PY arm(contextId) ctx#2 -> 'armed' 
+     36.3ms  n=  669  Page.frameDetached frame=..7083
+     37.0ms  n=  670  Page.frameStoppedLoading frame=..198A
+     37.2ms  n=  671  Page.loadEventFired
+     37.5ms  n=  672  Page.frameStoppedLoading frame=..B1C8
+    149.6ms  n=  672  ## EXERCISE click #btn, click #inp, key x, insertText yz
+    151.5ms  n=  673  binding ctx#2 ev kind=pointerdown tag=BUTTON key=None seq=1 verdict=ok
+    168.1ms  n=  674  binding ctx#2 ev kind=pointerdown tag=INPUT key=None seq=2 verdict=ok
+    169.3ms  n=  675  binding ctx#2 ev kind=keydown tag=INPUT key=x seq=3 verdict=ok
+    169.7ms  n=  676  binding ctx#2 ev kind=input tag=INPUT key=None seq=4 verdict=ok
+    170.8ms  n=  677  binding ctx#2 ev kind=input tag=INPUT key=None seq=5 verdict=ok

@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><title>rec a</title>
+<style>body{font:16px sans-serif;margin:20px} input,button,a,p{display:block;margin:8px 0}</style>
+<script>window.__pageshows = []; window.__loadId = Math.random().toString(36).slice(2);
+addEventListener('pageshow', e => window.__pageshows.push(e.persisted));</script>
+<h1>A</h1>
+<input id="inp" aria-label="輸入">
+<button id="push" type="button" onclick="history.pushState({}, '', '/spa/x' + (++window.__spa))">推狀態</button>
+<a id="tob" href="#">去 b.test</a>
+<a id="tosame" href="rec_result.html">同站結果</a>
+<script>window.__spa = 0; document.getElementById('tob').href = 'http://b.test:' + location.port + '/rec_b.html';</script>

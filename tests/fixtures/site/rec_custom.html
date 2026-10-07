@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><title>rec custom</title>
+<style>body{font:16px sans-serif;margin:20px} my-widget,my-open,#hostdiv{display:block;margin:12px 0;padding:6px;border:1px solid #888;width:220px}</style>
+<my-widget id="w1"></my-widget>
+<my-open id="w2"></my-open>
+<div id="hostdiv"></div>
+<button id="native" type="button">原生按鈕</button>
+<script>
+customElements.define('my-widget', class extends HTMLElement {
+  constructor() { super(); const r = this.attachShadow({mode: 'closed'}); const b = document.createElement('button'); b.textContent = '元件內按鈕';
+    b.onclick = () => { b.textContent = '已按'; }; r.appendChild(b); } });
+customElements.define('my-open', class extends HTMLElement {
+  constructor() { super(); const r = this.attachShadow({mode: 'open'}); const i = document.createElement('input'); i.setAttribute('aria-label', '元件內輸入'); r.appendChild(i); } });
+const r = document.getElementById('hostdiv').attachShadow({mode: 'closed'}); const b = document.createElement('button'); b.textContent = '普通 div 內按鈕'; r.appendChild(b);
+</script>

@@ -1,0 +1,11 @@
+---
+import Icon from './Icon.astro';
+---
+<section class="mechanism-section" id="why-faster" aria-labelledby="mechanism-title">
+  <div class="wrap">
+    <div class="mechanism-intro"><h2 id="mechanism-title">快，是因為不用<br />每次重新摸索。</h2><div><p>第一次，用對話請 agent 建立並試跑流程。<br />之後網站照樣重新查，固定步驟交給本機確定性程式。</p><a class="text-link" href="/technical/#fast-path">看高鐵從呼叫到回傳的細節 <Icon /></a></div></div>
+    <div class="mechanism-before"><h3>每次逐步操作網頁</h3><p>Claude 看畫面 <span>→</span> 決定怎麼填 <span>→</span> 呼叫工具操作 <span>→</span> 再看畫面、再決定下一步……</p><p>每一步都可能需要模型判斷與工具往返。</p></div>
+    <div class="mechanism-after"><h3>傳入條件後，重用已存好的流程</h3><ol><li><span class="step-number">1</span><div><h4>引擎抓資料</h4><p>本機程式依流程操作 Chrome，從 DOM 讀取當次資料；抓取不經模型。</p></div></li><li><span class="step-number">2</span><div><h4>程式驗證</h4><p>核對欄位、日期與結果條件，回傳資料及證據；無法證明就停下。</p></div></li><li><span class="step-number">3</span><div><h4>需要判斷時，交給 Claude</h4><p>把抓好的文字交給 Claude 理解需求、比較候選；一般查詢只需整理結果。</p></div></li></ol></div>
+    <p class="mechanism-note">省下的是<strong>重複執行時的摸索與模型往返</strong>。Kev 是選配，只適合部分單一屬性判斷；沒有 Kev 或無法選定時，交回 Claude。建立、修理流程與 Claude 判斷仍有時間與雲端 token 成本。</p>
+  </div>
+</section>

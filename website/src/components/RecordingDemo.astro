@@ -1,0 +1,65 @@
+---
+import Icon from './Icon.astro';
+import { historicalTrains } from '../data/evidence';
+---
+<section class="recording-section" id="recording" aria-labelledby="recording-title">
+  <div class="wrap">
+    <div class="recording-intro"><div><h2 id="recording-title">說不清楚怎麼查？<br />做一次，給它看。</h2><p>選單要怎麼點、哪一塊才是你要的結果，<br />不必每一步都描述。說「我示範給你看」，照平常的方式操作一次。</p></div><a class="text-link" href="/get-started/#record">了解怎麼開始錄製 <Icon /></a></div>
+    <div class="recording-grid">
+      <ol class="recording-story"><li><span class="step-number">1</span><div><h3>你操作一次</h3><p>在 Kav 開好的 Chrome 分頁，照平常的方式完成查詢。</p></div></li><li><span class="step-number">2</span><div><h3>標記你要的結果</h3><p>點「標記結果」，選中車次表或需要的資料，再按「完成」。</p></div></li><li><span class="step-number">3</span><div><h3>重播核對，再確認儲存</h3><p>Claude 整理成流程，在乾淨環境重播。結果與示範一致，再請你確認。</p></div></li></ol>
+      <div class="recording-demo" aria-label="標記結果互動示意">
+        <div class="recording-toolbar"><span>體驗「標記結果」</span><span class="demo-tag">互動示意</span></div>
+        <div class="recording-content">
+          <p class="recording-instruction" id="recording-instruction">假設你已示範完查詢。接著，告訴 Kav 哪一塊是你要的結果。</p>
+          <div class="recording-selection" id="recording-selection">
+            <div class="recording-route"><h3>台中到台北</h3><span>10 月 12 日 · 班次示意</span></div>
+            <table class="demo-table"><caption class="sr-only">可標記的示意車次結果</caption><thead><tr><th scope="col">車次</th><th scope="col">出發</th><th scope="col">抵達</th></tr></thead><tbody>{historicalTrains.map(train => <tr><td>{train.number}</td><td>{train.departure}</td><td>{train.arrival}</td></tr>)}</tbody></table>
+            <p class="selection-label" id="selection-label" hidden><Icon name="check" /> 已標記：整張車次結果</p>
+          </div>
+          <div class="recording-actions"><button type="button" id="record-mark" class="record-mark" aria-pressed="false">標記這張結果表</button><button type="button" id="record-finish" class="record-finish" disabled>完成示範 <Icon /></button></div>
+          <div class="recording-next" id="recording-next" hidden><h3>接下來，才交給 Claude。</h3><p>整理流程 → 乾淨環境重播 → 核對示範結果 → 由你確認儲存。</p><p>這裡只演示標記，不會錄下操作或儲存流程。</p><button type="button" id="record-reset">再試一次標記</button></div>
+          <p class="recording-status" id="recording-status" role="status">請先標記結果，再完成示範。</p>
+          <noscript><p class="demo-disclaimer">這是靜態錄製說明；啟用 JavaScript 後可體驗標記。</p></noscript>
+        </div>
+      </div>
+    </div>
+    <div class="recording-proof"><p><strong>已真人驗收：高鐵單頁示範。</strong>乾淨環境重播與標記的 5 班車逐格一致，換一組條件也通過。</p><p>多步驟錄製、用示範修流程仍待真人驗收；2026/10/07 已暫停，591 轉換缺口尚未修復。<a href="/evidence/#recording-proof">看錄製驗收紀錄</a></p></div>
+  </div>
+</section>
+<script>
+  const mark = document.querySelector<HTMLButtonElement>('#record-mark')!;
+  const finish = document.querySelector<HTMLButtonElement>('#record-finish')!;
+  const selection = document.querySelector<HTMLElement>('#recording-selection')!;
+  const label = document.querySelector<HTMLElement>('#selection-label')!;
+  const next = document.querySelector<HTMLElement>('#recording-next')!;
+  const status = document.querySelector<HTMLElement>('#recording-status')!;
+  mark.addEventListener('click', () => {
+    const selected = mark.getAttribute('aria-pressed') !== 'true';
+    mark.setAttribute('aria-pressed', String(selected));
+    mark.textContent = selected ? '取消標記' : '標記這張結果表';
+    selection.classList.toggle('is-selected', selected);
+    label.hidden = !selected;
+    finish.disabled = !selected;
+    status.textContent = selected ? '已選中整張車次結果，可以完成示範。' : '請先標記結果，再完成示範。';
+  });
+  finish.addEventListener('click', () => {
+    if (finish.disabled) return;
+    next.hidden = false;
+    mark.hidden = true;
+    finish.hidden = true;
+    status.textContent = '標記體驗完成。實際使用時，重播核對通過後才會請你確認儲存。';
+    document.querySelector<HTMLButtonElement>('#record-reset')!.focus();
+  });
+  document.querySelector<HTMLButtonElement>('#record-reset')!.addEventListener('click', () => {
+    next.hidden = true;
+    mark.hidden = false;
+    finish.hidden = false;
+    finish.disabled = true;
+    mark.setAttribute('aria-pressed', 'false');
+    mark.textContent = '標記這張結果表';
+    selection.classList.remove('is-selected');
+    label.hidden = true;
+    status.textContent = '請先標記結果，再完成示範。';
+    mark.focus();
+  });
+</script>

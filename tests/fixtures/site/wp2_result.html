@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><title>wp2 result</title>
+<style>body{font:16px sans-serif;margin:20px} table{border-collapse:collapse;margin:14px 0} td,th{border:1px solid #888;padding:4px 10px} label,input,select,button{display:block;margin:6px 0}</style>
+<h1>結果</h1><p id="who"></p>
+<table id="t"><thead><tr><th>車次</th><th>時間</th><th>目的地</th></tr></thead><tbody id="tb"></tbody></table>
+<script>
+const q = new URLSearchParams(location.search), c = q.get('city') || '?';
+document.getElementById('who').textContent = '查詢者 ' + (q.get('who') || '') + ' 日期 ' + (q.get('date') || '');
+for (const [n, t] of [['0101', '08:00'], ['0103', '09:00'], ['0105', '10:30']]) {
+  const tr = document.createElement('tr');
+  for (const v of [n, t, c]) { const td = document.createElement('td'); td.textContent = v; tr.appendChild(td); }
+  document.getElementById('tb').appendChild(tr);
+}
+</script>

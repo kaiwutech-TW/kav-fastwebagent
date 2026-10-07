@@ -1,0 +1,73 @@
+{
+ "name": "tw-shop-compare",
+ "type": "search_compare",
+ "description": "台灣電商比價:PChome 24h / momo / Yahoo 購物 / 酷澎同時搜尋,挑出就是該商品的項目,回傳商品頁驗證過的一次付清最低價",
+ "domains": [
+  "pchome",
+  "momo",
+  "yahoo購物",
+  "酷澎",
+  "coupang",
+  "電商"
+ ],
+ "intents": [
+  "比價",
+  "最便宜",
+  "價格",
+  "哪裡買",
+  "多少錢"
+ ],
+ "params": {
+  "query": {
+   "description": "每個網站搜尋框要打的關鍵字",
+   "example": "AirPods Pro 3"
+  },
+  "spec": {
+   "description": "一行中文描述商品(Kev 用來判斷配件、組合包、福利品)",
+   "example": "Apple AirPods Pro 3 耳機本體(全新)"
+  },
+  "must": {
+   "description": "list of groups:每組至少命中一個詞(小寫、去空白後比對標題)",
+   "example": "[[\"airpodspro3\"]]"
+  },
+  "must_not": {
+   "description": "出現就排除的相近型號",
+   "example": "[\"airpods4\",\"airpods5\"]",
+   "required": false
+  }
+ },
+ "search": {
+  "pchome": "https://24h.pchome.com.tw/search/?q={query}",
+  "momo": "https://www.momoshop.com.tw/search/searchShop.jsp?keyword={query}",
+  "yahoo": "https://tw.buy.yahoo.com/search/product?p={query}",
+  "coupang": "https://www.tw.coupang.com/search?q={query}"
+ },
+ "per_site": 10,
+ "verify_top": 3,
+ "status": "verified",
+ "verified_runs": [
+  {
+   "at": "2026-09-29T10:57:57",
+   "params": {
+    "query": "Nintendo Switch 2",
+    "spec": "Nintendo Switch 2 主機(全新,單機)",
+    "must": [
+     [
+      "switch2",
+      "ns2"
+     ],
+     [
+      "主機"
+     ]
+    ],
+    "must_not": [
+     "lite",
+     "oled"
+    ]
+   },
+   "evidence": {
+    "dir": "~/.kav-fastweb/runs/260929-105751"
+   }
+  }
+ ]
+}

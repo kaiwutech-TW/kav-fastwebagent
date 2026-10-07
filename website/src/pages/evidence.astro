@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { benchmarks } from '../data/evidence';
+import JudgmentEvidence from '../components/JudgmentEvidence.astro';
+---
+<Layout title="數字背後，有完整的範圍">
+  <header class="doc-heading"><div class="wrap"><h1>數字背後，<br />有完整的範圍。</h1><p>這裡是已做過的實驗與仍待驗證的部分。首頁演示不是即時查詢，以下截圖才是歷史實測資料。</p></div></header>
+  <div class="doc-layout wrap"><nav class="doc-toc" aria-label="本頁內容"><a href="#thsr">高鐵查詢</a><a href="#exchange">台銀匯率</a><a href="#judgment">591 判斷實驗</a><a href="#shopping">多站比價</a><a href="#recording-proof">錄製驗收</a><a href="#limits">量測限制</a></nav><article class="prose">
+    <h2 id="thsr">高鐵：固定的多步驟查詢</h2><p>同一句「查 10/12 下午三點以後台中到台北的高鐵」，分別交給 Kav 流程與 Claude in Chrome 逐步操作瀏覽器。2026/09/29 的紀錄如下。</p>
+    <div class="table-scroll"><table><caption class="sr-only">整趟對話時間比較</caption><thead><tr><th scope="col">任務</th><th scope="col">Kav</th><th scope="col">逐步操作瀏覽器</th></tr></thead><tbody>{benchmarks.map(item => <tr><th scope="row">{item.task}</th><td>{item.kav}</td><td>{item.browser}</td></tr>)}</tbody></table></div>
+    <p><strong>約 22 秒與 116 秒是整趟對話時間</strong>，從使用者提出需求，到最後一則回覆。另一份單次紀錄中，Kav 程式本身執行高鐵流程花了 6.4 秒，Kev 呼叫 0 次。兩種計時不能混為一談。</p>
+    <figure><img src="/images/thsr-result.jpg" width="1280" height="900" alt="2026 年 9 月 29 日高鐵查詢實測畫面，0648 車次 15:00 出發、15:59 抵達" /><figcaption>歷史實測截圖：查詢 2026/10/12 台中至台北，不是即時時刻表。</figcaption></figure>
+    <h3>原始對照，不藏失敗</h3><ul><li>Kav：22 秒（修正前誤讀抵達時間）、20 秒、23 秒。</li><li>逐步操作瀏覽器：118、151、98、98 秒；151 秒那次曾誤點並重填。</li><li>Kav 列出 5 班，對照有時翻頁查到更多班次，因此工作量不完全相等。</li><li>首次誤讀後，流程增加欄名，重跑答案才與官網一致。</li></ul>
+    <h2 id="exchange">台銀：這一次，沒有比較快</h2><p>各做一次「讀今天美元與日圓現金賣出匯率」。Kav 19 秒，逐步操作瀏覽器 20 秒。單頁讀表本來就短，這份實驗沒有顯示速度優勢。</p><p>這個流程另有一個實用條件：核對掛牌日期。如果不是今天，就不能拿舊資料充數。台銀流程不使用 Kev。</p><figure><img src="/images/bot-fx-rates.jpg" width="1280" height="900" loading="lazy" alt="台銀 2026 年 9 月 29 日牌告匯率歷史截圖，含掛牌日期與現金、即期欄名" /><figcaption>歷史畫面只用來說明日期與欄位核對，不提供目前匯率。</figcaption></figure>
+    <h2 id="judgment">591：省在抓取，判斷仍交給 Claude</h2><JudgmentEvidence detailed />
+    <h2 id="shopping">比價：曾使用 Kev 的歷史樣本</h2><p>Switch 2 在四家網站搜尋的既有紀錄為 5.6–7.8 秒。Kev 呼叫 18–31 次，約 6–11 千 token，在本機執行。價格還會回到商品頁核對一次。</p><p>這不是與另一種方法的速度對照。組合包判斷仍有誤判，部分網站也會阻擋自動化，因此不能宣稱查到的就是全網最低價。</p>
+    <h2 id="recording-proof">錄製：真人示範，重播核對</h2><p>2026/09/30 在真實高鐵網站進行第 1 階段驗收。前兩次遇到錄製／轉草稿問題；修正後，第 3 次示範成功產出流程草稿。這不是第一次操作就全部成功。</p><ul><li>示範值在乾淨環境重播：第一次被 cookie 視窗擋住；補上對應步驟後，6.2 秒完成，與使用者標記的 5 班車逐格一致。</li><li>換一組參數（台中到左營、10/07 09:00）：6.8 秒完成，5 列結果與截圖一致。</li><li>修正後那次使用者示範約 63 秒；這是示範成本，不能與重用流程的執行時間混算。</li><li>使用者於 2026/10/01 確認儲存，2026/10/07 已存成高鐵示範流程。</li><li>第 2 階段多步驟、第 3 階段用示範修流程，仍待真人驗收；2026/10/07 已暫停，591 示範發現的篩選遺漏與結果區塊辨識缺口尚未修復。</li></ul><p>高鐵本來就能直接寫出流程，示範不一定更省時間。錄製更值得驗證的用途，是難以用語言描述、或 Claude 無法直接寫對的網站。</p><p class="source-note">來源：260930-thsr-demo-acceptance 與 2026/10/07 專案狀態。</p>
+    <h2 id="limits">這些限制，還需要更多驗證</h2><ul><li>高鐵是單站小樣本；台銀每組只有一次。</li><li>對照 session 可能讀到釘選記憶，不是完全乾淨的盲測。</li><li>一次性建立流程、修復與安裝時間不包含在重用查詢比較內。</li><li>修復只盲測過一個網站、兩種壞法。</li><li>多步驟錄製、用示範修流程、Windows 與 Codex 使用方式仍有未驗證項目。</li></ul>
+    <p class="source-note">來源：專案歷史紀錄 260929-control-experiment-and-demo、260929-kev-usage-accounting，以及 2026/10/07 專案狀態。<a href="/evidence-notes.txt">閱讀可下載的量測摘要</a>。</p>
+  </article></div>
+</Layout>

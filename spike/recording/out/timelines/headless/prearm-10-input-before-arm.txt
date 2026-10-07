@@ -1,0 +1,23 @@
+     -0.8ms  n=  483  ctx CREATED id=1 uid=..759330 name='' default=True type=default frame=..90CD origin=://
+     -0.0ms  n=  483  ## START target=..1590CD session=..9A3905 mainFrame=..90CD script=1
+      0.0ms  n=  483  ## STEP 10-input-before-arm: ACTION
+      1.0ms  n=  485  Page.frameStartedLoading frame=..90CD
+      2.5ms  n=  486  ctx CLEARED (all)
+      3.2ms  n=  487  ctx CLEARED (all)
+      3.3ms  n=  488  Page.frameNavigated frame=..90CD parent=- type=Navigation url=http://a.test:18461/p1
+      5.3ms  n=  489  Target.targetInfoChanged target=..1590CD type=page url=http://a.test:18461/p1 attached=True session=.. waiting=None
+      5.6ms  n=  490  ctx CREATED id=2 uid=..997451 name='' default=True type=default frame=..90CD origin=http://a.test:18461
+      5.7ms  n=  491  ctx CREATED id=3 uid=..240643 name='kfw_rec' default=False type=isolated frame=..90CD origin=http://a.test:18461
+      5.8ms  n=  492  binding ctx#3 hello restored=False persisted=False navType=navigate rs=loading body=False early=no-documentElement jsT=3.7 known_ctx=True -> epoch tok1
+     19.3ms  n=  493  Page.domContentEventFired
+     19.6ms  n=  494  Page.loadEventFired
+     20.4ms  n=  495  Page.frameStoppedLoading frame=..90CD
+    143.4ms  n=  495  ## EXERCISE before arm
+    581.1ms  n=  496  binding ctx#3 armed token=tok1 preArm=5 preKinds=['pointerdown', 'pointerdown', 'keydown', 'input', 'input'] ok=True
+    581.2ms  n=  496  PY arm(contextId) ctx#3 -> 'armed' 
+    581.2ms  n=  496  ## EXERCISE click #btn, click #inp, key x, insertText yz
+    582.8ms  n=  497  binding ctx#3 ev kind=pointerdown tag=BUTTON key=None seq=1 verdict=ok
+    595.9ms  n=  498  binding ctx#3 ev kind=pointerdown tag=INPUT key=None seq=2 verdict=ok
+    596.5ms  n=  499  binding ctx#3 ev kind=keydown tag=INPUT key=x seq=3 verdict=ok
+    596.7ms  n=  500  binding ctx#3 ev kind=input tag=INPUT key=None seq=4 verdict=ok
+    597.2ms  n=  501  binding ctx#3 ev kind=input tag=INPUT key=None seq=5 verdict=ok

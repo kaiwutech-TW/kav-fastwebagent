@@ -1,0 +1,217 @@
+{"i": 0, "gold": "A", "kind": "A", "p_is": 0.10770000000000002, "probs": {"accessory": 0.8923, "bundle": 0.1968, "refurb": 0.1262, "installment": 0.115}}
+{"i": 1, "gold": "A", "kind": "A", "p_is": 0.16110000000000002, "probs": {"accessory": 0.8389, "bundle": 0.2042, "refurb": 0.1781, "installment": 0.118}}
+{"i": 2, "gold": "A", "kind": "A", "p_is": 0.09009999999999996, "probs": {"accessory": 0.9099, "bundle": 0.2529, "refurb": 0.1166, "installment": 0.1409}}
+{"i": 3, "gold": "A", "kind": "A", "p_is": 0.123, "probs": {"accessory": 0.877, "bundle": 0.169, "refurb": 0.1399, "installment": 0.1195}}
+{"i": 4, "gold": "A", "kind": "A", "p_is": 0.15910000000000002, "probs": {"accessory": 0.8409, "bundle": 0.2446, "refurb": 0.1405, "installment": 0.1051}}
+{"i": 5, "gold": "A", "kind": "A", "p_is": 0.11160000000000003, "probs": {"accessory": 0.8884, "bundle": 0.2258, "refurb": 0.1662, "installment": 0.1149}}
+{"i": 6, "gold": "B", "kind": "B", "p_is": 0.1835, "probs": {"accessory": 0.3047, "bundle": 0.8165, "refurb": 0.1781, "installment": 0.1384}}
+{"i": 7, "gold": "A", "kind": "A", "p_is": 0.09999999999999998, "probs": {"accessory": 0.9, "bundle": 0.2068, "refurb": 0.1942, "installment": 0.1034}}
+{"i": 8, "gold": "A", "kind": "A", "p_is": 0.11009999999999998, "probs": {"accessory": 0.8899, "bundle": 0.2222, "refurb": 0.1642, "installment": 0.1211}}
+{"i": 9, "gold": "A", "kind": "A", "p_is": 0.14890000000000003, "probs": {"accessory": 0.8511, "bundle": 0.1832, "refurb": 0.1893, "installment": 0.2254}}
+{"i": 10, "gold": "A", "kind": "A", "p_is": 0.11150000000000004, "probs": {"accessory": 0.8885, "bundle": 0.3369, "refurb": 0.172, "installment": 0.2403}}
+{"i": 11, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 12, "gold": "A", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 13, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 14, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 15, "gold": "E", "kind": "E", "p_is": 0.7981, "probs": {"accessory": 0.2019, "bundle": 0.1748, "refurb": 0.1623, "installment": 0.1526}}
+{"i": 16, "gold": "B", "kind": "A", "p_is": 0.18669999999999998, "probs": {"accessory": 0.8133, "bundle": 0.3035, "refurb": 0.179, "installment": 0.1818}}
+{"i": 17, "gold": "R", "kind": "R", "p_is": 0.052100000000000035, "probs": {"accessory": 0.2329, "bundle": 0.166, "refurb": 0.9479, "installment": 0.2046}}
+{"i": 18, "gold": "E", "kind": "E", "p_is": 0.7918000000000001, "probs": {"accessory": 0.1968, "bundle": 0.2082, "refurb": 0.1643, "installment": 0.1784}}
+{"i": 19, "gold": "B", "kind": "A", "p_is": 0.18669999999999998, "probs": {"accessory": 0.8133, "bundle": 0.3035, "refurb": 0.179, "installment": 0.1818}}
+{"i": 20, "gold": "E", "kind": "E", "p_is": 0.7407, "probs": {"accessory": 0.1718, "bundle": 0.2593, "refurb": 0.1395, "installment": 0.1576}}
+{"i": 21, "gold": "E", "kind": "E", "p_is": 0.7812, "probs": {"accessory": 0.1537, "bundle": 0.2188, "refurb": 0.1003, "installment": 0.1793}}
+{"i": 22, "gold": "E", "kind": "E", "p_is": 0.7953, "probs": {"accessory": 0.1779, "bundle": 0.2047, "refurb": 0.1613, "installment": 0.1357}}
+{"i": 23, "gold": "E", "kind": "E", "p_is": 0.5667, "probs": {"accessory": 0.2903, "bundle": 0.4333, "refurb": 0.1369, "installment": 0.159}}
+{"i": 24, "gold": "E", "kind": "E", "p_is": 0.6717, "probs": {"accessory": 0.3283, "bundle": 0.2525, "refurb": 0.1339, "installment": 0.1395}}
+{"i": 25, "gold": "E", "kind": "E", "p_is": 0.7919, "probs": {"accessory": 0.1693, "bundle": 0.2081, "refurb": 0.1326, "installment": 0.1269}}
+{"i": 26, "gold": "E", "kind": "E", "p_is": 0.7547, "probs": {"accessory": 0.2453, "bundle": 0.2232, "refurb": 0.174, "installment": 0.1407}}
+{"i": 27, "gold": "E", "kind": "E", "p_is": 0.8004, "probs": {"accessory": 0.1712, "bundle": 0.1996, "refurb": 0.1631, "installment": 0.1697}}
+{"i": 28, "gold": "E", "kind": "E", "p_is": 0.7925, "probs": {"accessory": 0.1812, "bundle": 0.2075, "refurb": 0.1734, "installment": 0.149}}
+{"i": 29, "gold": "E", "kind": "E", "p_is": 0.7776000000000001, "probs": {"accessory": 0.1863, "bundle": 0.2224, "refurb": 0.1604, "installment": 0.1594}}
+{"i": 30, "gold": "E", "kind": "E", "p_is": 0.7209, "probs": {"accessory": 0.2044, "bundle": 0.1611, "refurb": 0.098, "installment": 0.2791}}
+{"i": 31, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 32, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 33, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 34, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 35, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 36, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 37, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 38, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 39, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 40, "gold": "A", "kind": "E", "p_is": 0.5966, "probs": {"accessory": 0.4034, "bundle": 0.3804, "refurb": 0.0917, "installment": 0.094}}
+{"i": 41, "gold": "B", "kind": "E", "p_is": 0.7413000000000001, "probs": {"accessory": 0.1841, "bundle": 0.2587, "refurb": 0.1008, "installment": 0.1062}}
+{"i": 42, "gold": "B", "kind": "E", "p_is": 0.5257000000000001, "probs": {"accessory": 0.183, "bundle": 0.4743, "refurb": 0.0637, "installment": 0.1132}}
+{"i": 43, "gold": "B", "kind": "B", "p_is": 0.22799999999999998, "probs": {"accessory": 0.209, "bundle": 0.772, "refurb": 0.1508, "installment": 0.1206}}
+{"i": 44, "gold": "A", "kind": "E", "p_is": 0.5925, "probs": {"accessory": 0.4075, "bundle": 0.227, "refurb": 0.0795, "installment": 0.094}}
+{"i": 45, "gold": "B", "kind": "B", "p_is": 0.40280000000000005, "probs": {"accessory": 0.3952, "bundle": 0.5972, "refurb": 0.1597, "installment": 0.1059}}
+{"i": 46, "gold": "A", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 47, "gold": "A", "kind": "B", "p_is": 0.4716, "probs": {"accessory": 0.4312, "bundle": 0.5284, "refurb": 0.1608, "installment": 0.1239}}
+{"i": 48, "gold": "A", "kind": "A", "p_is": 0.4971, "probs": {"accessory": 0.5029, "bundle": 0.272, "refurb": 0.1841, "installment": 0.1221}}
+{"i": 49, "gold": "A", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 50, "gold": "B", "kind": "B", "p_is": 0.399, "probs": {"accessory": 0.3261, "bundle": 0.601, "refurb": 0.1349, "installment": 0.2105}}
+{"i": 51, "gold": "A", "kind": "B", "p_is": 0.30189999999999995, "probs": {"accessory": 0.3943, "bundle": 0.6981, "refurb": 0.0918, "installment": 0.1968}}
+{"i": 52, "gold": "A", "kind": "A", "p_is": 0.473, "probs": {"accessory": 0.527, "bundle": 0.4259, "refurb": 0.0992, "installment": 0.1901}}
+{"i": 53, "gold": "A", "kind": "A", "p_is": 0.488, "probs": {"accessory": 0.512, "bundle": 0.4336, "refurb": 0.1277, "installment": 0.2158}}
+{"i": 54, "gold": "B", "kind": "B", "p_is": 0.17569999999999997, "probs": {"accessory": 0.1937, "bundle": 0.8243, "refurb": 0.1044, "installment": 0.2092}}
+{"i": 55, "gold": "E", "kind": "E", "p_is": 0.7613, "probs": {"accessory": 0.0631, "bundle": 0.2344, "refurb": 0.1034, "installment": 0.2387}}
+{"i": 56, "gold": "B", "kind": "E", "p_is": 0.53, "probs": {"accessory": 0.2943, "bundle": 0.47, "refurb": 0.1037, "installment": 0.1515}}
+{"i": 57, "gold": "E", "kind": "E", "p_is": 0.6679999999999999, "probs": {"accessory": 0.0576, "bundle": 0.2307, "refurb": 0.1017, "installment": 0.332}}
+{"i": 58, "gold": "B", "kind": "B", "p_is": 0.4589, "probs": {"accessory": 0.2966, "bundle": 0.5411, "refurb": 0.1305, "installment": 0.2169}}
+{"i": 59, "gold": "A", "kind": "A", "p_is": 0.08360000000000001, "probs": {"accessory": 0.9164, "bundle": 0.2233, "refurb": 0.1175, "installment": 0.1881}}
+{"i": 60, "gold": "E", "kind": "E", "p_is": 0.7327, "probs": {"accessory": 0.0597, "bundle": 0.2673, "refurb": 0.0655, "installment": 0.1294}}
+{"i": 61, "gold": "A", "kind": "A", "p_is": 0.4879, "probs": {"accessory": 0.5121, "bundle": 0.3802, "refurb": 0.1219, "installment": 0.1357}}
+{"i": 62, "gold": "A", "kind": "E", "p_is": 0.5307, "probs": {"accessory": 0.4107, "bundle": 0.4693, "refurb": 0.096, "installment": 0.1145}}
+{"i": 63, "gold": "A", "kind": "E", "p_is": 0.7155, "probs": {"accessory": 0.1854, "bundle": 0.2845, "refurb": 0.106, "installment": 0.129}}
+{"i": 64, "gold": "A", "kind": "E", "p_is": 0.6491, "probs": {"accessory": 0.1628, "bundle": 0.3509, "refurb": 0.1151, "installment": 0.1411}}
+{"i": 65, "gold": "A", "kind": "B", "p_is": 0.4374, "probs": {"accessory": 0.2871, "bundle": 0.5626, "refurb": 0.1033, "installment": 0.1306}}
+{"i": 66, "gold": "A", "kind": "E", "p_is": 0.7079, "probs": {"accessory": 0.2551, "bundle": 0.2921, "refurb": 0.1127, "installment": 0.1467}}
+{"i": 67, "gold": "A", "kind": "B", "p_is": 0.2784, "probs": {"accessory": 0.3327, "bundle": 0.7216, "refurb": 0.1109, "installment": 0.1448}}
+{"i": 68, "gold": "A", "kind": "B", "p_is": 0.34850000000000003, "probs": {"accessory": 0.2751, "bundle": 0.6515, "refurb": 0.1191, "installment": 0.1432}}
+{"i": 69, "gold": "A", "kind": "E", "p_is": 0.5791, "probs": {"accessory": 0.311, "bundle": 0.4209, "refurb": 0.1058, "installment": 0.1336}}
+{"i": 70, "gold": "E", "kind": "E", "p_is": 0.7823, "probs": {"accessory": 0.0577, "bundle": 0.2177, "refurb": 0.095, "installment": 0.129}}
+{"i": 71, "gold": "B", "kind": "B", "p_is": 0.21340000000000003, "probs": {"accessory": 0.2158, "bundle": 0.7866, "refurb": 0.1021, "installment": 0.1273}}
+{"i": 72, "gold": "B", "kind": "E", "p_is": 0.5565, "probs": {"accessory": 0.1941, "bundle": 0.4435, "refurb": 0.1398, "installment": 0.1249}}
+{"i": 73, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 74, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 75, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 76, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 77, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 78, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 79, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 80, "gold": "E", "kind": "E", "p_is": 0.7388, "probs": {"accessory": 0.0806, "bundle": 0.2612, "refurb": 0.1255, "installment": 0.1937}}
+{"i": 81, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 82, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 83, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 84, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 85, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 86, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 87, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 88, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 89, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 90, "gold": "E", "kind": "E", "p_is": 0.7021, "probs": {"accessory": 0.0872, "bundle": 0.2979, "refurb": 0.1197, "installment": 0.2358}}
+{"i": 91, "gold": "A", "kind": "A", "p_is": 0.07720000000000005, "probs": {"accessory": 0.9228, "bundle": 0.2526, "refurb": 0.1077, "installment": 0.1778}}
+{"i": 92, "gold": "A", "kind": "A", "p_is": 0.0907, "probs": {"accessory": 0.9093, "bundle": 0.1829, "refurb": 0.1238, "installment": 0.2072}}
+{"i": 93, "gold": "E", "kind": "E", "p_is": 0.7568, "probs": {"accessory": 0.1603, "bundle": 0.2432, "refurb": 0.0682, "installment": 0.1544}}
+{"i": 94, "gold": "A", "kind": "A", "p_is": 0.06779999999999997, "probs": {"accessory": 0.9322, "bundle": 0.2174, "refurb": 0.1078, "installment": 0.1472}}
+{"i": 95, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 96, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 97, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 98, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 99, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 100, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 101, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 102, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 103, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 104, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 105, "gold": "E", "kind": "E", "p_is": 0.7352000000000001, "probs": {"accessory": 0.1314, "bundle": 0.2141, "refurb": 0.145, "installment": 0.2648}}
+{"i": 106, "gold": "E", "kind": "E", "p_is": 0.8343, "probs": {"accessory": 0.1657, "bundle": 0.1304, "refurb": 0.0473, "installment": 0.1374}}
+{"i": 107, "gold": "E", "kind": "E", "p_is": 0.7976, "probs": {"accessory": 0.1672, "bundle": 0.2024, "refurb": 0.0708, "installment": 0.1401}}
+{"i": 108, "gold": "E", "kind": "E", "p_is": 0.7814, "probs": {"accessory": 0.2186, "bundle": 0.2152, "refurb": 0.0436, "installment": 0.1559}}
+{"i": 109, "gold": "E", "kind": "E", "p_is": 0.7746, "probs": {"accessory": 0.1253, "bundle": 0.2254, "refurb": 0.1066, "installment": 0.1957}}
+{"i": 110, "gold": "E", "kind": "E", "p_is": 0.8408, "probs": {"accessory": 0.1592, "bundle": 0.1416, "refurb": 0.0416, "installment": 0.1459}}
+{"i": 111, "gold": "E", "kind": "E", "p_is": 0.8263, "probs": {"accessory": 0.1344, "bundle": 0.1665, "refurb": 0.0922, "installment": 0.1737}}
+{"i": 112, "gold": "E", "kind": "E", "p_is": 0.7655000000000001, "probs": {"accessory": 0.1625, "bundle": 0.2345, "refurb": 0.0626, "installment": 0.1164}}
+{"i": 113, "gold": "E", "kind": "E", "p_is": 0.7678, "probs": {"accessory": 0.1306, "bundle": 0.2322, "refurb": 0.1125, "installment": 0.1676}}
+{"i": 114, "gold": "E", "kind": "E", "p_is": 0.7804, "probs": {"accessory": 0.1275, "bundle": 0.2196, "refurb": 0.1019, "installment": 0.1999}}
+{"i": 115, "gold": "E", "kind": "E", "p_is": 0.7554, "probs": {"accessory": 0.1452, "bundle": 0.2446, "refurb": 0.062, "installment": 0.1727}}
+{"i": 116, "gold": "E", "kind": "E", "p_is": 0.7818, "probs": {"accessory": 0.1398, "bundle": 0.2182, "refurb": 0.0708, "installment": 0.1793}}
+{"i": 117, "gold": "E", "kind": "E", "p_is": 0.755, "probs": {"accessory": 0.1851, "bundle": 0.1685, "refurb": 0.069, "installment": 0.245}}
+{"i": 118, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 119, "gold": "E", "kind": "E", "p_is": 0.7845, "probs": {"accessory": 0.1411, "bundle": 0.2155, "refurb": 0.0692, "installment": 0.183}}
+{"i": 120, "gold": "E", "kind": "E", "p_is": 0.743, "probs": {"accessory": 0.1616, "bundle": 0.237, "refurb": 0.1188, "installment": 0.257}}
+{"i": 121, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 122, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 123, "gold": "E", "kind": "E", "p_is": 0.7813, "probs": {"accessory": 0.1272, "bundle": 0.2187, "refurb": 0.0913, "installment": 0.1175}}
+{"i": 124, "gold": "E", "kind": "E", "p_is": 0.7684, "probs": {"accessory": 0.1381, "bundle": 0.2316, "refurb": 0.0619, "installment": 0.198}}
+{"i": 125, "gold": "E", "kind": "E", "p_is": 0.8345, "probs": {"accessory": 0.155, "bundle": 0.1489, "refurb": 0.0575, "installment": 0.1655}}
+{"i": 126, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 127, "gold": "E", "kind": "E", "p_is": 0.7765, "probs": {"accessory": 0.1194, "bundle": 0.2235, "refurb": 0.1115, "installment": 0.1422}}
+{"i": 128, "gold": "E", "kind": "E", "p_is": 0.7746, "probs": {"accessory": 0.1578, "bundle": 0.2254, "refurb": 0.0651, "installment": 0.1505}}
+{"i": 129, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 130, "gold": "E", "kind": "E", "p_is": 0.7747999999999999, "probs": {"accessory": 0.1283, "bundle": 0.2252, "refurb": 0.0634, "installment": 0.1493}}
+{"i": 131, "gold": "E", "kind": "E", "p_is": 0.6456999999999999, "probs": {"accessory": 0.1357, "bundle": 0.229, "refurb": 0.0815, "installment": 0.3543}}
+{"i": 132, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 133, "gold": "E", "kind": "E", "p_is": 0.8102, "probs": {"accessory": 0.1898, "bundle": 0.1677, "refurb": 0.0937, "installment": 0.1222}}
+{"i": 134, "gold": "E", "kind": "E", "p_is": 0.7633, "probs": {"accessory": 0.1511, "bundle": 0.2367, "refurb": 0.1259, "installment": 0.1538}}
+{"i": 135, "gold": "E", "kind": "E", "p_is": 0.8139000000000001, "probs": {"accessory": 0.1861, "bundle": 0.171, "refurb": 0.1127, "installment": 0.1656}}
+{"i": 136, "gold": "E", "kind": "E", "p_is": 0.8221, "probs": {"accessory": 0.1621, "bundle": 0.1779, "refurb": 0.1181, "installment": 0.1718}}
+{"i": 137, "gold": "E", "kind": "E", "p_is": 0.8174, "probs": {"accessory": 0.1641, "bundle": 0.1826, "refurb": 0.116, "installment": 0.1676}}
+{"i": 138, "gold": "E", "kind": "E", "p_is": 0.8188, "probs": {"accessory": 0.1599, "bundle": 0.1812, "refurb": 0.1145, "installment": 0.1756}}
+{"i": 139, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 140, "gold": "E", "kind": "E", "p_is": 0.8273, "probs": {"accessory": 0.1727, "bundle": 0.1449, "refurb": 0.0885, "installment": 0.0535}}
+{"i": 141, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 142, "gold": "E", "kind": "E", "p_is": 0.8442000000000001, "probs": {"accessory": 0.1558, "bundle": 0.148, "refurb": 0.0935, "installment": 0.0553}}
+{"i": 143, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 144, "gold": "E", "kind": "E", "p_is": 0.8237, "probs": {"accessory": 0.1763, "bundle": 0.15, "refurb": 0.0779, "installment": 0.0607}}
+{"i": 145, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 146, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 147, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 148, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 149, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 150, "gold": "R", "kind": "R", "p_is": 0.05449999999999999, "probs": {"accessory": 0.0278, "bundle": 0.182, "refurb": 0.9455, "installment": 0.1157}}
+{"i": 151, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 152, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 153, "gold": "X", "kind": "X", "p_is": 0.07030000000000003, "probs": {"accessory": 0.0362, "bundle": 0.1656, "refurb": 0.1114, "installment": 0.9297}}
+{"i": 154, "gold": "E", "kind": "E", "p_is": 0.7851, "probs": {"accessory": 0.033, "bundle": 0.2149, "refurb": 0.173, "installment": 0.1136}}
+{"i": 155, "gold": "E", "kind": "E", "p_is": 0.7862, "probs": {"accessory": 0.0455, "bundle": 0.209, "refurb": 0.1883, "installment": 0.2138}}
+{"i": 156, "gold": "E", "kind": "E", "p_is": 0.7976, "probs": {"accessory": 0.0431, "bundle": 0.2024, "refurb": 0.1748, "installment": 0.1807}}
+{"i": 157, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 158, "gold": "B", "kind": "B", "p_is": 0.3912, "probs": {"accessory": 0.2015, "bundle": 0.6088, "refurb": 0.2881, "installment": 0.3562}}
+{"i": 159, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 160, "gold": "B", "kind": "B", "p_is": 0.18579999999999997, "probs": {"accessory": 0.4963, "bundle": 0.8142, "refurb": 0.2201, "installment": 0.28}}
+{"i": 161, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 162, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 163, "gold": "B", "kind": "B", "p_is": 0.4597, "probs": {"accessory": 0.2273, "bundle": 0.5403, "refurb": 0.2645, "installment": 0.369}}
+{"i": 164, "gold": "B", "kind": "B", "p_is": 0.4599, "probs": {"accessory": 0.2283, "bundle": 0.5401, "refurb": 0.2678, "installment": 0.351}}
+{"i": 165, "gold": "E", "kind": "E", "p_is": 0.7576, "probs": {"accessory": 0.0529, "bundle": 0.2424, "refurb": 0.1793, "installment": 0.1438}}
+{"i": 166, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 167, "gold": "E", "kind": "E", "p_is": 0.7612, "probs": {"accessory": 0.0484, "bundle": 0.2388, "refurb": 0.1773, "installment": 0.1431}}
+{"i": 168, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 169, "gold": "B", "kind": "B", "p_is": 0.27559999999999996, "probs": {"accessory": 0.1034, "bundle": 0.7244, "refurb": 0.1358, "installment": 0.1639}}
+{"i": 170, "gold": "E", "kind": "E", "p_is": 0.7776000000000001, "probs": {"accessory": 0.0497, "bundle": 0.2224, "refurb": 0.1861, "installment": 0.1299}}
+{"i": 171, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 172, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 173, "gold": "E", "kind": "E", "p_is": 0.7928, "probs": {"accessory": 0.034, "bundle": 0.2072, "refurb": 0.0853, "installment": 0.17}}
+{"i": 174, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 175, "gold": "E", "kind": "E", "p_is": 0.8140000000000001, "probs": {"accessory": 0.0323, "bundle": 0.1857, "refurb": 0.186, "installment": 0.1373}}
+{"i": 176, "gold": "E", "kind": "E", "p_is": 0.8022, "probs": {"accessory": 0.0323, "bundle": 0.1924, "refurb": 0.1978, "installment": 0.1341}}
+{"i": 177, "gold": "E", "kind": "E", "p_is": 0.7993, "probs": {"accessory": 0.0321, "bundle": 0.1923, "refurb": 0.2007, "installment": 0.1401}}
+{"i": 178, "gold": "E", "kind": "E", "p_is": 0.7945, "probs": {"accessory": 0.0328, "bundle": 0.1949, "refurb": 0.2055, "installment": 0.1433}}
+{"i": 179, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 180, "gold": "E", "kind": "E", "p_is": 0.8078, "probs": {"accessory": 0.0314, "bundle": 0.1922, "refurb": 0.1908, "installment": 0.1413}}
+{"i": 181, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 182, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 183, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 184, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 185, "gold": "E", "kind": "E", "p_is": 0.8295, "probs": {"accessory": 0.1544, "bundle": 0.1705, "refurb": 0.1221, "installment": 0.1094}}
+{"i": 186, "gold": "E", "kind": "E", "p_is": 0.8322, "probs": {"accessory": 0.1678, "bundle": 0.1404, "refurb": 0.092, "installment": 0.1338}}
+{"i": 187, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 188, "gold": "E", "kind": "E", "p_is": 0.7222, "probs": {"accessory": 0.2778, "bundle": 0.1533, "refurb": 0.1603, "installment": 0.1345}}
+{"i": 189, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 190, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 191, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 192, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 193, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 194, "gold": "O", "kind": "O", "p_is": 0.0, "probs": {"literal": false}}
+{"i": 195, "gold": "B", "kind": "B", "p_is": 0.4145, "probs": {"accessory": 0.1557, "bundle": 0.5855, "refurb": 0.1004, "installment": 0.2189}}
+{"i": 196, "gold": "B", "kind": "B", "p_is": 0.4173, "probs": {"accessory": 0.1794, "bundle": 0.5827, "refurb": 0.1368, "installment": 0.193}}
+{"i": 197, "gold": "B", "kind": "B", "p_is": 0.39990000000000003, "probs": {"accessory": 0.1994, "bundle": 0.6001, "refurb": 0.1053, "installment": 0.1839}}
+{"i": 198, "gold": "E", "kind": "E", "p_is": 0.7876, "probs": {"accessory": 0.1377, "bundle": 0.2124, "refurb": 0.1204, "installment": 0.2107}}
+{"i": 199, "gold": "E", "kind": "E", "p_is": 0.7784, "probs": {"accessory": 0.1114, "bundle": 0.2009, "refurb": 0.1763, "installment": 0.2216}}
+{"i": 200, "gold": "E", "kind": "E", "p_is": 0.7646999999999999, "probs": {"accessory": 0.1332, "bundle": 0.2335, "refurb": 0.202, "installment": 0.2353}}
+{"i": 201, "gold": "B", "kind": "B", "p_is": 0.4374, "probs": {"accessory": 0.1724, "bundle": 0.5626, "refurb": 0.1944, "installment": 0.2296}}
+{"i": 202, "gold": "B", "kind": "B", "p_is": 0.18920000000000003, "probs": {"accessory": 0.1586, "bundle": 0.8108, "refurb": 0.1035, "installment": 0.2178}}
+{"i": 203, "gold": "E", "kind": "E", "p_is": 0.7966, "probs": {"accessory": 0.1232, "bundle": 0.1939, "refurb": 0.199, "installment": 0.2034}}
+{"i": 204, "gold": "E", "kind": "E", "p_is": 0.7596, "probs": {"accessory": 0.1359, "bundle": 0.1881, "refurb": 0.1684, "installment": 0.2404}}
+{"i": 205, "gold": "E", "kind": "E", "p_is": 0.8458, "probs": {"accessory": 0.115, "bundle": 0.1542, "refurb": 0.1221, "installment": 0.1495}}
+{"i": 206, "gold": "E", "kind": "E", "p_is": 0.7914, "probs": {"accessory": 0.1345, "bundle": 0.1616, "refurb": 0.1084, "installment": 0.2086}}
+{"i": 207, "gold": "E", "kind": "E", "p_is": 0.8656, "probs": {"accessory": 0.1344, "bundle": 0.1268, "refurb": 0.0778, "installment": 0.0949}}
+{"i": 208, "gold": "E", "kind": "E", "p_is": 0.8757, "probs": {"accessory": 0.1224, "bundle": 0.1065, "refurb": 0.1109, "installment": 0.1243}}
+{"i": 209, "gold": "E", "kind": "E", "p_is": 0.8721, "probs": {"accessory": 0.1214, "bundle": 0.1279, "refurb": 0.0868, "installment": 0.1049}}
+{"i": 210, "gold": "E", "kind": "E", "p_is": 0.8572, "probs": {"accessory": 0.1428, "bundle": 0.1395, "refurb": 0.1251, "installment": 0.1019}}
+{"i": 211, "gold": "E", "kind": "E", "p_is": 0.8629, "probs": {"accessory": 0.1316, "bundle": 0.1371, "refurb": 0.0959, "installment": 0.1005}}
+{"i": 212, "gold": "E", "kind": "E", "p_is": 0.8488, "probs": {"accessory": 0.1512, "bundle": 0.1191, "refurb": 0.075, "installment": 0.1054}}
+{"i": 213, "gold": "E", "kind": "E", "p_is": 0.8403, "probs": {"accessory": 0.1533, "bundle": 0.1597, "refurb": 0.1039, "installment": 0.0886}}
+{"i": 214, "gold": "E", "kind": "E", "p_is": 0.8581, "probs": {"accessory": 0.1419, "bundle": 0.1213, "refurb": 0.0806, "installment": 0.1067}}
+{"i": 215, "gold": "E", "kind": "E", "p_is": 0.8738, "probs": {"accessory": 0.1259, "bundle": 0.1262, "refurb": 0.0884, "installment": 0.0963}}
+{"i": 216, "gold": "E", "kind": "E", "p_is": 0.8572, "probs": {"accessory": 0.1428, "bundle": 0.1425, "refurb": 0.104, "installment": 0.0824}}

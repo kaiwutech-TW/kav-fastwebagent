@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><title>dup labels</title>
+<form id="f1" onsubmit="return false">
+  <div><label>姓名 <input name="a" value="Ann"></label></div>
+  <div><label>姓名 <input name="b" value="Bob"></label></div>
+  <div><label for="city">城市</label><select id="city" name="city"><option>台北</option><option selected>台中</option><option disabled>高雄</option></select></div>
+  <div><label>同意條款 <input type="checkbox" name="agree" checked></label></div>
+  <div><label>男 <input type="radio" name="g" value="m"></label><label>女 <input type="radio" name="g" value="f" checked></label></div>
+  <div><label>備註 <textarea name="note">hello</textarea></label></div>
+  <div><label>唯讀 <input name="ro" value="x" readonly placeholder="ph"></label></div>
+  <button type="submit">送出</button>
+</form>
+<a href="/table_empty_cells.html">下一頁</a>
+<div role="button" aria-label="自訂按鈕">x</div>

@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><title>steps detail</title>
+<style>body{font:16px sans-serif;margin:20px}</style>
+<h1>詳情</h1>
+<div id="info"></div>
+<script>
+const q = new URLSearchParams(location.search);
+// the page remembers the cookie consent given on the home page: members see a member price (state the demo left in the browser profile)
+document.getElementById('info').textContent = '課程:' + q.get('item') + ' 價格 ' + q.get('p') + (localStorage.getItem('consent') === '1' ? ' (會員價)' : ' (一般價)');
+</script>

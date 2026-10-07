@@ -1,0 +1,34 @@
+     -1.1ms  n=  510  ctx CREATED id=1 uid=..438572 name='' default=True type=default frame=..8F81 origin=://
+     -0.0ms  n=  510  ## START target=..2D8F81 session=..CB0006 mainFrame=..8F81 script=1
+      0.0ms  n=  510  ## STEP 11a-iframehost-with-autoAttach: ACTION
+      1.1ms  n=  512  Page.frameStartedLoading frame=..8F81
+      3.1ms  n=  513  ctx CLEARED (all)
+      4.3ms  n=  514  ctx CLEARED (all)
+      4.4ms  n=  515  Page.frameNavigated frame=..8F81 parent=- type=Navigation url=http://a.test:18461/iframehost?to=http%3A%2F%2Fb.test%3A18461%2Fiframe
+      6.5ms  n=  516  Target.targetInfoChanged target=..2D8F81 type=page url=http://a.test:18461/iframehost?to=http%3A%2F%2Fb.test%3A1846 attached=True session=.. waiting=None
+      6.8ms  n=  517  ctx CREATED id=2 uid=..759675 name='' default=True type=default frame=..8F81 origin=http://a.test:18461
+      6.9ms  n=  518  ctx CREATED id=3 uid=..133322 name='kfw_rec' default=False type=isolated frame=..8F81 origin=http://a.test:18461
+      7.0ms  n=  519  binding ctx#3 hello restored=False persisted=False navType=navigate rs=loading body=False early=no-documentElement jsT=4.2 known_ctx=True -> epoch tok1
+      7.5ms  n=  523  Page.frameStartedLoading frame=..10DA
+      8.5ms  n=  527  Page.frameStartedLoading frame=..4E3C
+      9.3ms  n=  528  Target.targetCreated target=..504E3C type=iframe url= attached=False session=.. waiting=None
+      9.3ms  n=  529  Target.targetInfoChanged target=..504E3C type=iframe url= attached=True session=.. waiting=None
+      9.4ms  n=  530  Target.attachedToTarget target=..504E3C type=iframe url= attached=True session=..171096 waiting=True
+     18.0ms  n=  531  Page.domContentEventFired
+     18.3ms  n=  532  Page.frameNavigated frame=..10DA parent=..8F81 type=Navigation url=http://a.test:18462/p2
+     20.6ms  n=  533  ctx CREATED id=4 uid=..039396 name='' default=True type=default frame=..10DA origin=http://a.test:18462
+     20.6ms  n=  534  ctx CREATED id=5 uid=..442704 name='kfw_rec' default=False type=isolated frame=..10DA origin=http://a.test:18462
+     20.7ms  n=  535  binding ctx#3 armed token=tok1 preArm=0 preKinds=[] ok=True
+     20.7ms  n=  535  PY arm(contextId) ctx#3 -> 'armed' 
+     21.1ms  n=  536  Page.frameStoppedLoading frame=..10DA
+     23.2ms  n=  537  Target.targetInfoChanged target=..504E3C type=iframe url=http://b.test:18461/p2 attached=True session=.. waiting=None
+     23.3ms  n=  538  Target.targetInfoChanged target=..504E3C type=iframe url=http://b.test:18461/p2 attached=True session=.. waiting=None
+     23.5ms  n=  539  Page.frameDetached frame=..4E3C
+     30.2ms  n=  540  Page.loadEventFired
+     31.3ms  n=  541  Page.frameStoppedLoading frame=..8F81
+    136.9ms  n=  541  ## EXERCISE click #btn, click #inp, key x, insertText yz
+    138.0ms  n=  542  binding ctx#3 ev kind=pointerdown tag=BUTTON key=None seq=1 verdict=ok
+    153.9ms  n=  543  binding ctx#3 ev kind=pointerdown tag=INPUT key=None seq=2 verdict=ok
+    154.7ms  n=  544  binding ctx#3 ev kind=keydown tag=INPUT key=x seq=3 verdict=ok
+    155.0ms  n=  545  binding ctx#3 ev kind=input tag=INPUT key=None seq=4 verdict=ok
+    155.7ms  n=  546  binding ctx#3 ev kind=input tag=INPUT key=None seq=5 verdict=ok

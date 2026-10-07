@@ -1,0 +1,2881 @@
+{
+ "chrome": "Chrome/154.0.8037.58",
+ "protocol": "1.3",
+ "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+ "mode": "headed",
+ "browser_id": "eb4e9aa2-3c28-42d2-bb50-9c8256f37978",
+ "scenarios": {
+  "chain": {
+   "results": {
+    "S1-initial-navigation": {
+     "action_result": {
+      "frameId": "BAA6C5309F35E6DD2A257136D34C4AD1",
+      "loaderId": "68BFBBCB06CB333238C9FAA847568C3E",
+      "isDownload": false
+     },
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18461/p1?to=http%3A%2F%2Fa.test%3A18461%2Fp2%3Fto%3Dhttp%253A%252F%252Fa.test%253A18462%252Fp1%253Fto%253Dhttp%25253A%25252F%25252Fb.test%25253A18461%25252Fp1"
+     },
+     "armed": true,
+     "t_hello_ms": 12,
+     "hello_known_ctx": true,
+     "hello_contextId": 3,
+     "hello_jsT": 6.700000047683716,
+     "t_armed_ms": 23,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 3,
+      "value": "armed",
+      "exc": null,
+      "ms": 11.279208003543317
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 2,
+       "uid": "702637",
+       "name": "",
+       "isDefault": true,
+       "frameId": "4AD1"
+      },
+      {
+       "id": 3,
+       "uid": "166113",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "4AD1"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      3
+     ],
+     "kfw_rec_uids": [
+      "166113"
+     ],
+     "isolate": "7c9ff0b6",
+     "main_world": {
+      "early": 7.5,
+      "dataEarly": "7.5",
+      "dataTT": "allowed",
+      "loadId": "z52i7v5ykt",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18461/p1?to=http%3A%2F%2Fa.test%3A18461%2Fp2%3Fto%3Dhttp%253A%252F%252Fa.test%253A18462%252Fp1%253Fto%253Dhttp%25253A%25252F%25252Fb.test%25253A18461%25252Fp1"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "ui": {
+      "torn": false,
+      "connected": true,
+      "hostRect": [
+       1027,
+       786,
+       157,
+       44
+      ],
+      "btnRect": [
+       1108,
+       794,
+       64,
+       28
+      ],
+      "hit": true,
+      "display": "block",
+      "position": "fixed",
+      "visibility": "visible",
+      "opacity": "1",
+      "mountCount": 1,
+      "mountedAt": 8.200000047683716,
+      "bodyChildren": 6,
+      "token": "tok1",
+      "seq": 5,
+      "preArm": 0,
+      "lastErr": null,
+      "pageshows": 1,
+      "docId": "py5li2a5wr",
+      "pagehideCount": 0,
+      "buCount": 0,
+      "visCount": 0,
+      "seqNow": 5
+     },
+     "arm_by_uniqueContextId_probe": "function",
+     "ui_pixel": {
+      "png": [
+       2400,
+       1690
+      ],
+      "scale": 2.0,
+      "at": [
+       2224,
+       1616
+      ],
+      "rgb": [
+       78,
+       167,
+       121
+      ]
+     },
+     "timeline_lines": 24
+    },
+    "S2-reload": {
+     "action_result": {},
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "reload",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18461/p1?to=http%3A%2F%2Fa.test%3A18461%2Fp2%3Fto%3Dhttp%253A%252F%252Fa.test%253A18462%252Fp1%253Fto%253Dhttp%25253A%25252F%25252Fb.test%25253A18461%25252Fp1"
+     },
+     "armed": true,
+     "t_hello_ms": 7,
+     "hello_known_ctx": true,
+     "hello_contextId": 5,
+     "hello_jsT": 3.699999988079071,
+     "t_armed_ms": 7,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 5,
+      "value": "armed",
+      "exc": null,
+      "ms": 0.6711659952998161
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 4,
+       "uid": "916064",
+       "name": "",
+       "isDefault": true,
+       "frameId": "4AD1"
+      },
+      {
+       "id": 5,
+       "uid": "760982",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "4AD1"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      5
+     ],
+     "kfw_rec_uids": [
+      "760982"
+     ],
+     "isolate": "7c9ff0b6",
+     "main_world": {
+      "early": 4.099999964237213,
+      "dataEarly": "4.099999964237213",
+      "dataTT": "allowed",
+      "loadId": "hsai54sekg8",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18461/p1?to=http%3A%2F%2Fa.test%3A18461%2Fp2%3Fto%3Dhttp%253A%252F%252Fa.test%253A18462%252Fp1%253Fto%253Dhttp%25253A%25252F%25252Fb.test%25253A18461%25252Fp1"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "timeline_lines": 22
+    },
+    "S3-same-origin-page-change(link click)": {
+     "action_result": null,
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18461/p2?to=http%3A%2F%2Fa.test%3A18462%2Fp1%3Fto%3Dhttp%253A%252F%252Fb.test%253A18461%252Fp1"
+     },
+     "armed": true,
+     "t_hello_ms": 27,
+     "hello_known_ctx": true,
+     "hello_contextId": 7,
+     "hello_jsT": 5.699999988079071,
+     "t_armed_ms": 31,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 7,
+      "value": "armed",
+      "exc": null,
+      "ms": 7.015082985162735
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 6,
+       "uid": "217957",
+       "name": "",
+       "isDefault": true,
+       "frameId": "4AD1"
+      },
+      {
+       "id": 7,
+       "uid": "111899",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "4AD1"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      7
+     ],
+     "kfw_rec_uids": [
+      "111899"
+     ],
+     "isolate": "7c9ff0b6",
+     "main_world": {
+      "early": 6,
+      "dataEarly": "6",
+      "dataTT": "allowed",
+      "loadId": "4p2zkn4elr9",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18461/p2?to=http%3A%2F%2Fa.test%3A18462%2Fp1%3Fto%3Dhttp%253A%252F%252Fb.test%253A18461%252Fp1"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "timeline_lines": 26
+    },
+    "S4-cross-origin-same-site(a.test:p1->a.test:p2, link click)": {
+     "action_result": null,
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18462/p1?to=http%3A%2F%2Fb.test%3A18461%2Fp1"
+     },
+     "armed": true,
+     "t_hello_ms": 10,
+     "hello_known_ctx": true,
+     "hello_contextId": 9,
+     "hello_jsT": 4.900000035762787,
+     "t_armed_ms": 12,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 9,
+      "value": "armed",
+      "exc": null,
+      "ms": 1.6938750050030649
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 8,
+       "uid": "674084",
+       "name": "",
+       "isDefault": true,
+       "frameId": "4AD1"
+      },
+      {
+       "id": 9,
+       "uid": "108847",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "4AD1"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      9
+     ],
+     "kfw_rec_uids": [
+      "108847"
+     ],
+     "isolate": "7c9ff0b6",
+     "main_world": {
+      "early": 5.300000011920929,
+      "dataEarly": "5.300000011920929",
+      "dataTT": "allowed",
+      "loadId": "cp226jife6",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18462/p1?to=http%3A%2F%2Fb.test%3A18461%2Fp1"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "timeline_lines": 23
+    },
+    "S5-cross-site(a.test->b.test, link click)": {
+     "action_result": null,
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://b.test:18461/p1"
+     },
+     "armed": true,
+     "t_hello_ms": 12,
+     "hello_known_ctx": true,
+     "hello_contextId": 2,
+     "hello_jsT": 5.800000011920929,
+     "t_armed_ms": 20,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 2,
+      "value": "armed",
+      "exc": null,
+      "ms": 8.01870902068913
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 1,
+       "uid": "258230",
+       "name": "",
+       "isDefault": true,
+       "frameId": "4AD1"
+      },
+      {
+       "id": 2,
+       "uid": "091075",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "4AD1"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      2
+     ],
+     "kfw_rec_uids": [
+      "091075"
+     ],
+     "isolate": "b27bb6c4",
+     "main_world": {
+      "early": 6.899999976158142,
+      "dataEarly": "6.899999976158142",
+      "dataTT": "allowed",
+      "loadId": "navg24mrvg",
+      "pageshows": [
+       false
+      ],
+      "href": "http://b.test:18461/p1"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "renderers_before": [
+      90583,
+      90586,
+      90587,
+      90588,
+      90590,
+      90591,
+      90667,
+      90671,
+      90672
+     ],
+     "renderers_after": [
+      90583,
+      90586,
+      90587,
+      90588,
+      90590,
+      90591,
+      90667,
+      90671,
+      90672,
+      90683
+     ],
+     "isolate_before": "7c9ff0b6",
+     "timeline_lines": 23
+    },
+    "S5b-cross-site-browser-initiated(b.test->a.test, Page.navigate)": {
+     "action_result": {
+      "frameId": "BAA6C5309F35E6DD2A257136D34C4AD1",
+      "loaderId": "BE9C33B0079E3DD9A81A8D21EF73FFE8",
+      "isDownload": false
+     },
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18461/p1"
+     },
+     "armed": true,
+     "t_hello_ms": 7,
+     "hello_known_ctx": true,
+     "hello_contextId": 2,
+     "hello_jsT": 4.100000023841858,
+     "t_armed_ms": 16,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 2,
+      "value": "armed",
+      "exc": null,
+      "ms": 8.720625017303973
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 1,
+       "uid": "861449",
+       "name": "",
+       "isDefault": true,
+       "frameId": "4AD1"
+      },
+      {
+       "id": 2,
+       "uid": "933213",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "4AD1"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      2
+     ],
+     "kfw_rec_uids": [
+      "933213"
+     ],
+     "isolate": "b61ffc61",
+     "main_world": {
+      "early": 5.100000023841858,
+      "dataEarly": "5.100000023841858",
+      "dataTT": "allowed",
+      "loadId": "ah4araoeupf",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18461/p1"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "renderers_before": [
+      90583,
+      90586,
+      90587,
+      90588,
+      90590,
+      90591,
+      90667,
+      90671,
+      90672,
+      90683
+     ],
+     "renderers_after": [
+      90583,
+      90586,
+      90587,
+      90588,
+      90590,
+      90591,
+      90667,
+      90671,
+      90672,
+      90683,
+      90687
+     ],
+     "isolate_before": "b27bb6c4",
+     "timeline_lines": 22
+    },
+    "_contextId_reuse": {
+     "kfw_rec_contexts": 6,
+     "ids_with_multiple_uids": {
+      "2": 2
+     },
+     "all_ids": [
+      2,
+      3,
+      5,
+      7,
+      9
+     ]
+    },
+    "_all_ctx": [
+     "id=1 uid=..869218 name= default=True origin=://",
+     "id=2 uid=..702637 name= default=True origin=http://a.test:18461",
+     "id=3 uid=..166113 name=kfw_rec default=False origin=http://a.test:18461",
+     "id=4 uid=..916064 name= default=True origin=http://a.test:18461",
+     "id=5 uid=..760982 name=kfw_rec default=False origin=http://a.test:18461",
+     "id=6 uid=..217957 name= default=True origin=http://a.test:18461",
+     "id=7 uid=..111899 name=kfw_rec default=False origin=http://a.test:18461",
+     "id=8 uid=..674084 name= default=True origin=http://a.test:18462",
+     "id=9 uid=..108847 name=kfw_rec default=False origin=http://a.test:18462",
+     "id=1 uid=..258230 name= default=True origin=http://b.test:18461",
+     "id=2 uid=..091075 name=kfw_rec default=False origin=http://b.test:18461",
+     "id=1 uid=..861449 name= default=True origin=http://a.test:18461",
+     "id=2 uid=..933213 name=kfw_rec default=False origin=http://a.test:18461"
+    ]
+   },
+   "errors": []
+  },
+  "spa": {
+   "results": {
+    "S6a-navigate-spa": {
+     "action_result": {
+      "frameId": "BDCECEFD3E3E71C5805E2F839A94EF35",
+      "loaderId": "345A9D2E7F36B9A8F5370E748DC98FE8",
+      "isDownload": false
+     },
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18461/spa"
+     },
+     "armed": true,
+     "t_hello_ms": 6,
+     "hello_known_ctx": true,
+     "hello_contextId": 3,
+     "hello_jsT": 3.699999988079071,
+     "t_armed_ms": 18,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 3,
+      "value": "armed",
+      "exc": null,
+      "ms": 11.804624984506518
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 2,
+       "uid": "974019",
+       "name": "",
+       "isDefault": true,
+       "frameId": "EF35"
+      },
+      {
+       "id": 3,
+       "uid": "833822",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "EF35"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      3
+     ],
+     "kfw_rec_uids": [
+      "833822"
+     ],
+     "isolate": "d1f908e4",
+     "main_world": {
+      "early": 4.300000011920929,
+      "dataEarly": "4.199999988079071",
+      "dataTT": "allowed",
+      "loadId": "4h2gcwus574",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18461/spa"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "timeline_lines": 22
+    },
+    "S6b-spa-pushState-hash-back": {
+     "action_result": "pushState click, hash click, history.back()",
+     "hello": false,
+     "armed": false,
+     "hello_count_delta": 0,
+     "new_contexts": [],
+     "kfw_rec_ctx_ids": [],
+     "kfw_rec_uids": [],
+     "isolate": "d1f908e4",
+     "main_world": {
+      "early": 4.300000011920929,
+      "dataEarly": "4.199999988079071",
+      "dataTT": "allowed",
+      "loadId": "4h2gcwus574",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18461/spa/x1"
+     },
+     "pagehide_msgs": [],
+     "timeline_lines": 16,
+     "new_hello_after_spa": 0,
+     "epoch_token_unchanged": true,
+     "events_during_spa": [
+      {
+       "kind": "pointerdown",
+       "seq": 1,
+       "verdict": "ok"
+      },
+      {
+       "kind": "pointerdown",
+       "seq": 2,
+       "verdict": "ok"
+      },
+      {
+       "kind": "keydown",
+       "seq": 3,
+       "verdict": "ok"
+      },
+      {
+       "kind": "input",
+       "seq": 4,
+       "verdict": "ok"
+      },
+      {
+       "kind": "input",
+       "seq": 5,
+       "verdict": "ok"
+      },
+      {
+       "kind": "pointerdown",
+       "seq": 6,
+       "verdict": "ok"
+      },
+      {
+       "kind": "pointerdown",
+       "seq": 7,
+       "verdict": "ok"
+      }
+     ],
+     "exercise_after_spa": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     }
+    }
+   },
+   "errors": []
+  },
+  "bfcache-cross-site": {
+   "results": {
+    "7-cross-site-A-load": {
+     "action_result": {
+      "frameId": "3A55F2E64518507D495BE4C38AA78386",
+      "loaderId": "FC1258A5546B3C0C9421A29F53F6E81B",
+      "isDownload": false
+     },
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18461/p1?to=http%3A%2F%2Fb.test%3A18461%2Fp2"
+     },
+     "armed": true,
+     "t_hello_ms": 8,
+     "hello_known_ctx": true,
+     "hello_contextId": 3,
+     "hello_jsT": 4.199999988079071,
+     "t_armed_ms": 22,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 3,
+      "value": "armed",
+      "exc": null,
+      "ms": 14.381584012880921
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 2,
+       "uid": "089481",
+       "name": "",
+       "isDefault": true,
+       "frameId": "8386"
+      },
+      {
+       "id": 3,
+       "uid": "630728",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "8386"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      3
+     ],
+     "kfw_rec_uids": [
+      "630728"
+     ],
+     "isolate": "bb3e2d9a",
+     "main_world": {
+      "early": 4.800000011920929,
+      "dataEarly": "4.800000011920929",
+      "dataTT": "allowed",
+      "loadId": "s5z9lkzsn1",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18461/p1?to=http%3A%2F%2Fb.test%3A18461%2Fp2"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "timeline_lines": 22
+    },
+    "7-cross-site-B-click-link": {
+     "action_result": null,
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://b.test:18461/p2"
+     },
+     "armed": true,
+     "t_hello_ms": 21,
+     "hello_known_ctx": true,
+     "hello_contextId": 2,
+     "hello_jsT": 7.399999976158142,
+     "t_armed_ms": 26,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 2,
+      "value": "armed",
+      "exc": null,
+      "ms": 5.210458999499679
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 1,
+       "uid": "194286",
+       "name": "",
+       "isDefault": true,
+       "frameId": "8386"
+      },
+      {
+       "id": 2,
+       "uid": "695070",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "8386"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      2
+     ],
+     "kfw_rec_uids": [
+      "695070"
+     ],
+     "isolate": "f7caaf44",
+     "main_world": {
+      "early": 8,
+      "dataEarly": "7.899999976158142",
+      "dataTT": "allowed",
+      "loadId": "qffd75ffzre",
+      "pageshows": [
+       false
+      ],
+      "href": "http://b.test:18461/p2"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "timeline_lines": 23
+    },
+    "7-cross-site-back-to-A": {
+     "action_result": {},
+     "hello": {
+      "restored": true,
+      "persisted": true,
+      "navType": "navigate",
+      "readyState": "complete",
+      "hasBody": true,
+      "earlyAttr": "4.800000011920929",
+      "href": "http://a.test:18461/p1?to=http%3A%2F%2Fb.test%3A18461%2Fp2"
+     },
+     "armed": true,
+     "t_hello_ms": 6,
+     "hello_known_ctx": true,
+     "hello_contextId": 3,
+     "hello_jsT": 637.0999999642372,
+     "t_armed_ms": 11,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 3,
+      "value": "armed",
+      "exc": null,
+      "ms": 5.744291003793478
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 3,
+       "uid": "630728",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "8386"
+      },
+      {
+       "id": 2,
+       "uid": "089481",
+       "name": "",
+       "isDefault": true,
+       "frameId": "8386"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      3
+     ],
+     "kfw_rec_uids": [
+      "630728"
+     ],
+     "isolate": "bb3e2d9a",
+     "main_world": {
+      "early": 4.800000011920929,
+      "dataEarly": "4.800000011920929",
+      "dataTT": "allowed",
+      "loadId": "s5z9lkzsn1",
+      "pageshows": [
+       false,
+       true
+      ],
+      "href": "http://a.test:18461/p1?to=http%3A%2F%2Fb.test%3A18461%2Fp2"
+     },
+     "recorder_before_page_script": null,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "loadId_same_as_before": true,
+     "loadId_before": "s5z9lkzsn1",
+     "loadId_after": "s5z9lkzsn1",
+     "js_pageshow_persisted_list": [
+      false,
+      true
+     ],
+     "iso_info_after_restore": {
+      "torn": false,
+      "connected": true,
+      "hostRect": [
+       1027,
+       786,
+       157,
+       44
+      ],
+      "btnRect": [
+       1108,
+       794,
+       64,
+       28
+      ],
+      "hit": true,
+      "display": "block",
+      "position": "fixed",
+      "visibility": "visible",
+      "opacity": "1",
+      "mountCount": 1,
+      "mountedAt": 5.199999988079071,
+      "bodyChildren": 6,
+      "token": "tok3",
+      "seq": 5,
+      "preArm": 0,
+      "lastErr": null,
+      "pageshows": 2,
+      "docId": "hrigt3slvck",
+      "pagehideCount": 1,
+      "pagehideSent": true,
+      "buCount": 1,
+      "buSent": true,
+      "visCount": 2,
+      "visSent": true,
+      "seqNow": 5
+     },
+     "timeline_lines": 20
+    },
+    "7-cross-site-forward-to-B": {
+     "action_result": {},
+     "hello": {
+      "restored": true,
+      "persisted": true,
+      "navType": "navigate",
+      "readyState": "complete",
+      "hasBody": true,
+      "earlyAttr": "7.899999976158142",
+      "href": "http://b.test:18461/p2"
+     },
+     "armed": true,
+     "t_hello_ms": 11,
+     "hello_known_ctx": true,
+     "hello_contextId": 2,
+     "hello_jsT": 655.8000000119209,
+     "t_armed_ms": 12,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 2,
+      "value": "armed",
+      "exc": null,
+      "ms": 0.5159169668331742
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 2,
+       "uid": "695070",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "8386"
+      },
+      {
+       "id": 1,
+       "uid": "194286",
+       "name": "",
+       "isDefault": true,
+       "frameId": "8386"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      2
+     ],
+     "kfw_rec_uids": [
+      "695070"
+     ],
+     "isolate": "f7caaf44",
+     "main_world": {
+      "early": 8,
+      "dataEarly": "7.899999976158142",
+      "dataTT": "allowed",
+      "loadId": "qffd75ffzre",
+      "pageshows": [
+       false,
+       true
+      ],
+      "href": "http://b.test:18461/p2"
+     },
+     "recorder_before_page_script": null,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "js_pageshow_persisted_list": [
+      false,
+      true
+     ],
+     "timeline_lines": 20
+    }
+   },
+   "errors": []
+  },
+  "bfcache-same-site": {
+   "results": {
+    "7-same-site-A-load": {
+     "action_result": {
+      "frameId": "187655951A9512269F510AF5CB0D3FCA",
+      "loaderId": "88EB2CDF1A464A105D3FB213175AA342",
+      "isDownload": false
+     },
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18461/p1?to=http%3A%2F%2Fa.test%3A18462%2Fp2"
+     },
+     "armed": true,
+     "t_hello_ms": 6,
+     "hello_known_ctx": true,
+     "hello_contextId": 3,
+     "hello_jsT": 3.399999976158142,
+     "t_armed_ms": 12,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 3,
+      "value": "armed",
+      "exc": null,
+      "ms": 6.715875002555549
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 2,
+       "uid": "981572",
+       "name": "",
+       "isDefault": true,
+       "frameId": "3FCA"
+      },
+      {
+       "id": 3,
+       "uid": "969362",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "3FCA"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      3
+     ],
+     "kfw_rec_uids": [
+      "969362"
+     ],
+     "isolate": "20235302",
+     "main_world": {
+      "early": 3.899999976158142,
+      "dataEarly": "3.800000011920929",
+      "dataTT": "allowed",
+      "loadId": "z6agauj29ys",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18461/p1?to=http%3A%2F%2Fa.test%3A18462%2Fp2"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "timeline_lines": 22
+    },
+    "7-same-site-B-click-link": {
+     "action_result": null,
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18462/p2"
+     },
+     "armed": true,
+     "t_hello_ms": 28,
+     "hello_known_ctx": true,
+     "hello_contextId": 5,
+     "hello_jsT": 7.199999988079071,
+     "t_armed_ms": 31,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 5,
+      "value": "armed",
+      "exc": null,
+      "ms": 3.0415410292334855
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 4,
+       "uid": "142369",
+       "name": "",
+       "isDefault": true,
+       "frameId": "3FCA"
+      },
+      {
+       "id": 5,
+       "uid": "606152",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "3FCA"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      5
+     ],
+     "kfw_rec_uids": [
+      "606152"
+     ],
+     "isolate": "20235302",
+     "main_world": {
+      "early": 7.5,
+      "dataEarly": "7.5",
+      "dataTT": "allowed",
+      "loadId": "m9dio4hk2lr",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18462/p2"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "timeline_lines": 23
+    },
+    "7-same-site-back-to-A": {
+     "action_result": {},
+     "hello": {
+      "restored": true,
+      "persisted": true,
+      "navType": "navigate",
+      "readyState": "complete",
+      "hasBody": true,
+      "earlyAttr": "3.800000011920929",
+      "href": "http://a.test:18461/p1?to=http%3A%2F%2Fa.test%3A18462%2Fp2"
+     },
+     "armed": true,
+     "t_hello_ms": 7,
+     "hello_known_ctx": true,
+     "hello_contextId": 3,
+     "hello_jsT": 668.1000000238419,
+     "t_armed_ms": 10,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 3,
+      "value": "armed",
+      "exc": null,
+      "ms": 3.033416985999793
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 3,
+       "uid": "969362",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "3FCA"
+      },
+      {
+       "id": 2,
+       "uid": "981572",
+       "name": "",
+       "isDefault": true,
+       "frameId": "3FCA"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      3
+     ],
+     "kfw_rec_uids": [
+      "969362"
+     ],
+     "isolate": "20235302",
+     "main_world": {
+      "early": 3.899999976158142,
+      "dataEarly": "3.800000011920929",
+      "dataTT": "allowed",
+      "loadId": "z6agauj29ys",
+      "pageshows": [
+       false,
+       true
+      ],
+      "href": "http://a.test:18461/p1?to=http%3A%2F%2Fa.test%3A18462%2Fp2"
+     },
+     "recorder_before_page_script": null,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "loadId_same_as_before": true,
+     "loadId_before": "z6agauj29ys",
+     "loadId_after": "z6agauj29ys",
+     "js_pageshow_persisted_list": [
+      false,
+      true
+     ],
+     "iso_info_after_restore": {
+      "torn": false,
+      "connected": true,
+      "hostRect": [
+       1027,
+       786,
+       157,
+       44
+      ],
+      "btnRect": [
+       1108,
+       794,
+       64,
+       28
+      ],
+      "hit": true,
+      "display": "block",
+      "position": "fixed",
+      "visibility": "visible",
+      "opacity": "1",
+      "mountCount": 1,
+      "mountedAt": 4.199999988079071,
+      "bodyChildren": 6,
+      "token": "tok3",
+      "seq": 5,
+      "preArm": 0,
+      "lastErr": null,
+      "pageshows": 2,
+      "docId": "9u0ntl5u3e",
+      "pagehideCount": 1,
+      "pagehideSent": true,
+      "buCount": 1,
+      "buSent": true,
+      "visCount": 2,
+      "visSent": true,
+      "seqNow": 5
+     },
+     "timeline_lines": 20
+    },
+    "7-same-site-forward-to-B": {
+     "action_result": {},
+     "hello": {
+      "restored": true,
+      "persisted": true,
+      "navType": "navigate",
+      "readyState": "complete",
+      "hasBody": true,
+      "earlyAttr": "7.5",
+      "href": "http://a.test:18462/p2"
+     },
+     "armed": true,
+     "t_hello_ms": 5,
+     "hello_known_ctx": true,
+     "hello_contextId": 5,
+     "hello_jsT": 644.8999999761581,
+     "t_armed_ms": 7,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 5,
+      "value": "armed",
+      "exc": null,
+      "ms": 1.4966250164434314
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 5,
+       "uid": "606152",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "3FCA"
+      },
+      {
+       "id": 4,
+       "uid": "142369",
+       "name": "",
+       "isDefault": true,
+       "frameId": "3FCA"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      5
+     ],
+     "kfw_rec_uids": [
+      "606152"
+     ],
+     "isolate": "20235302",
+     "main_world": {
+      "early": 7.5,
+      "dataEarly": "7.5",
+      "dataTT": "allowed",
+      "loadId": "m9dio4hk2lr",
+      "pageshows": [
+       false,
+       true
+      ],
+      "href": "http://a.test:18462/p2"
+     },
+     "recorder_before_page_script": null,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "js_pageshow_persisted_list": [
+      false,
+      true
+     ],
+     "timeline_lines": 20
+    }
+   },
+   "errors": []
+  },
+  "csp-script-none": {
+   "results": {
+    "8-csp-script-none": {
+     "action_result": {
+      "frameId": "7486AB3E11C01A1F09C2EB18FA7432B8",
+      "loaderId": "D554005CC23862DC1138D2A6CA347C9C",
+      "isDownload": false
+     },
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18461/csp-script"
+     },
+     "armed": true,
+     "t_hello_ms": 7,
+     "hello_known_ctx": true,
+     "hello_contextId": 3,
+     "hello_jsT": 3.900000035762787,
+     "t_armed_ms": 15,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 3,
+      "value": "armed",
+      "exc": null,
+      "ms": 7.79158400837332
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 2,
+       "uid": "545988",
+       "name": "",
+       "isDefault": true,
+       "frameId": "32B8"
+      },
+      {
+       "id": 3,
+       "uid": "835616",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "32B8"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      3
+     ],
+     "kfw_rec_uids": [
+      "835616"
+     ],
+     "isolate": "c571e417",
+     "main_world": {
+      "dataEarly": null,
+      "dataTT": null,
+      "href": "http://a.test:18461/csp-script"
+     },
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "ui_info": {
+      "torn": false,
+      "connected": true,
+      "hostRect": [
+       1027,
+       786,
+       157,
+       44
+      ],
+      "btnRect": [
+       1108,
+       794,
+       64,
+       28
+      ],
+      "hit": true,
+      "display": "block",
+      "position": "fixed",
+      "visibility": "visible",
+      "opacity": "1",
+      "mountCount": 1,
+      "mountedAt": 4.800000011920929,
+      "bodyChildren": 5,
+      "token": "tok1",
+      "seq": 5,
+      "preArm": 0,
+      "lastErr": null,
+      "pageshows": 1,
+      "docId": "nbkcltcyy5i",
+      "pagehideCount": 0,
+      "buCount": 0,
+      "visCount": 0,
+      "seqNow": 5
+     },
+     "probe": {
+      "innerHTML": "ok",
+      "setAttribute_style_effective": true,
+      "cssText_effective": true,
+      "styleProp_effective": true,
+      "styleElement_effective": true,
+      "constructableSheet_effective": true,
+      "eval": 2
+     },
+     "main_bg": "rgb(255, 238, 238)",
+     "ui_pixel_visible": {
+      "png": [
+       2400,
+       1690
+      ],
+      "scale": 2.0,
+      "at": [
+       2224,
+       1616
+      ],
+      "rgb": [
+       78,
+       167,
+       121
+      ]
+     },
+     "body_children_before_teardown": 5,
+     "ui_button_click_received": true,
+     "ui_click_events": [
+      [
+       "ev",
+       "ok"
+      ],
+      [
+       "ev",
+       "ok"
+      ],
+      [
+       "ui_click",
+       "ok"
+      ]
+     ],
+     "timeline_lines": 24,
+     "teardown_return": "torn-down",
+     "ui_after_teardown": {
+      "torn": true,
+      "connected": false,
+      "hostRect": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "btnRect": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "hit": null,
+      "display": "",
+      "position": "",
+      "visibility": "",
+      "opacity": "",
+      "mountCount": 1,
+      "mountedAt": 4.800000011920929,
+      "bodyChildren": 4,
+      "token": null,
+      "seq": 6,
+      "preArm": 0,
+      "lastErr": null,
+      "pageshows": 1,
+      "docId": "nbkcltcyy5i",
+      "pagehideCount": 0,
+      "buCount": 0,
+      "visCount": 0,
+      "seqNow": 6
+     },
+     "body_children_after_teardown": 4,
+     "ui_pixel_after_teardown": null,
+     "events_after_teardown": 0
+    }
+   },
+   "errors": []
+  },
+  "csp-style-none": {
+   "results": {
+    "8-csp-style-none": {
+     "action_result": {
+      "frameId": "D9D958FB3F98598B2FF18BB24FF04480",
+      "loaderId": "B931449467F959070AD8DF89F2EE9261",
+      "isDownload": false
+     },
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18461/csp-style"
+     },
+     "armed": true,
+     "t_hello_ms": 6,
+     "hello_known_ctx": true,
+     "hello_contextId": 3,
+     "hello_jsT": 3.800000011920929,
+     "t_armed_ms": 14,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 3,
+      "value": "armed",
+      "exc": null,
+      "ms": 8.062375010922551
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 2,
+       "uid": "890753",
+       "name": "",
+       "isDefault": true,
+       "frameId": "4480"
+      },
+      {
+       "id": 3,
+       "uid": "510646",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "4480"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      3
+     ],
+     "kfw_rec_uids": [
+      "510646"
+     ],
+     "isolate": "bd97a370",
+     "main_world": {
+      "early": 4.399999976158142,
+      "dataEarly": "4.399999976158142",
+      "dataTT": "allowed",
+      "loadId": "hfippd23e2h",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18461/csp-style"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "ui_info": {
+      "torn": false,
+      "connected": true,
+      "hostRect": [
+       1027,
+       786,
+       157,
+       44
+      ],
+      "btnRect": [
+       1108,
+       794,
+       64,
+       28
+      ],
+      "hit": true,
+      "display": "block",
+      "position": "fixed",
+      "visibility": "visible",
+      "opacity": "1",
+      "mountCount": 1,
+      "mountedAt": 4.899999976158142,
+      "bodyChildren": 5,
+      "token": "tok1",
+      "seq": 5,
+      "preArm": 0,
+      "lastErr": null,
+      "pageshows": 1,
+      "docId": "26fzojl9y5s",
+      "pagehideCount": 0,
+      "buCount": 0,
+      "visCount": 0,
+      "seqNow": 5
+     },
+     "probe": {
+      "innerHTML": "ok",
+      "setAttribute_style_effective": false,
+      "cssText_effective": true,
+      "styleProp_effective": true,
+      "styleElement_effective": false,
+      "constructableSheet_effective": true,
+      "eval": 2
+     },
+     "main_bg": "rgba(0, 0, 0, 0)",
+     "ui_pixel_visible": {
+      "png": [
+       2400,
+       1690
+      ],
+      "scale": 2.0,
+      "at": [
+       2224,
+       1616
+      ],
+      "rgb": [
+       78,
+       167,
+       121
+      ]
+     },
+     "body_children_before_teardown": 5,
+     "ui_button_click_received": true,
+     "ui_click_events": [
+      [
+       "ev",
+       "ok"
+      ],
+      [
+       "ev",
+       "ok"
+      ],
+      [
+       "ui_click",
+       "ok"
+      ]
+     ],
+     "timeline_lines": 24,
+     "teardown_return": "torn-down",
+     "ui_after_teardown": {
+      "torn": true,
+      "connected": false,
+      "hostRect": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "btnRect": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "hit": null,
+      "display": "",
+      "position": "",
+      "visibility": "",
+      "opacity": "",
+      "mountCount": 1,
+      "mountedAt": 4.899999976158142,
+      "bodyChildren": 4,
+      "token": null,
+      "seq": 6,
+      "preArm": 0,
+      "lastErr": null,
+      "pageshows": 1,
+      "docId": "26fzojl9y5s",
+      "pagehideCount": 0,
+      "buCount": 0,
+      "visCount": 0,
+      "seqNow": 6
+     },
+     "body_children_after_teardown": 4,
+     "ui_pixel_after_teardown": null,
+     "events_after_teardown": 0
+    }
+   },
+   "errors": []
+  },
+  "csp-trusted-types": {
+   "results": {
+    "8-csp-trusted-types": {
+     "action_result": {
+      "frameId": "E7AB1D257E5C037CB99F5723D586ED87",
+      "loaderId": "3CBA779152801D63B7D3A76AA6BD76A4",
+      "isDownload": false
+     },
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18461/csp-tt"
+     },
+     "armed": true,
+     "t_hello_ms": 6,
+     "hello_known_ctx": true,
+     "hello_contextId": 3,
+     "hello_jsT": 3.399999976158142,
+     "t_armed_ms": 13,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 3,
+      "value": "armed",
+      "exc": null,
+      "ms": 7.8186659957282245
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 2,
+       "uid": "250658",
+       "name": "",
+       "isDefault": true,
+       "frameId": "ED87"
+      },
+      {
+       "id": 3,
+       "uid": "493172",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "ED87"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      3
+     ],
+     "kfw_rec_uids": [
+      "493172"
+     ],
+     "isolate": "f111a95e",
+     "main_world": {
+      "early": 3.899999976158142,
+      "dataEarly": "3.899999976158142",
+      "dataTT": "blocked",
+      "loadId": "gor2wgb7h8j",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18461/csp-tt"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "ui_info": {
+      "torn": false,
+      "connected": true,
+      "hostRect": [
+       1027,
+       786,
+       157,
+       44
+      ],
+      "btnRect": [
+       1108,
+       794,
+       64,
+       28
+      ],
+      "hit": true,
+      "display": "block",
+      "position": "fixed",
+      "visibility": "visible",
+      "opacity": "1",
+      "mountCount": 1,
+      "mountedAt": 4.600000023841858,
+      "bodyChildren": 5,
+      "token": "tok1",
+      "seq": 5,
+      "preArm": 0,
+      "lastErr": null,
+      "pageshows": 1,
+      "docId": "54g36qjld9t",
+      "pagehideCount": 0,
+      "buCount": 0,
+      "visCount": 0,
+      "seqNow": 5
+     },
+     "probe": {
+      "innerHTML": "ERR TypeError: Failed to set the 'innerHTML' property on 'Element': This document requires 'TrustedHTML' ",
+      "setAttribute_style_effective": true,
+      "cssText_effective": true,
+      "styleProp_effective": true,
+      "styleElement_effective": true,
+      "constructableSheet_effective": true,
+      "eval": 2
+     },
+     "main_bg": "rgb(255, 238, 238)",
+     "ui_pixel_visible": {
+      "png": [
+       2400,
+       1690
+      ],
+      "scale": 2.0,
+      "at": [
+       2224,
+       1616
+      ],
+      "rgb": [
+       78,
+       167,
+       121
+      ]
+     },
+     "body_children_before_teardown": 5,
+     "ui_button_click_received": true,
+     "ui_click_events": [
+      [
+       "ev",
+       "ok"
+      ],
+      [
+       "ev",
+       "ok"
+      ],
+      [
+       "ui_click",
+       "ok"
+      ]
+     ],
+     "timeline_lines": 24,
+     "teardown_return": "torn-down",
+     "ui_after_teardown": {
+      "torn": true,
+      "connected": false,
+      "hostRect": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "btnRect": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "hit": null,
+      "display": "",
+      "position": "",
+      "visibility": "",
+      "opacity": "",
+      "mountCount": 1,
+      "mountedAt": 4.600000023841858,
+      "bodyChildren": 4,
+      "token": null,
+      "seq": 6,
+      "preArm": 0,
+      "lastErr": null,
+      "pageshows": 1,
+      "docId": "54g36qjld9t",
+      "pagehideCount": 0,
+      "buCount": 0,
+      "visCount": 0,
+      "seqNow": 6
+     },
+     "body_children_after_teardown": 4,
+     "ui_pixel_after_teardown": null,
+     "events_after_teardown": 0
+    }
+   },
+   "errors": []
+  },
+  "main-world": {
+   "results": {
+    "9-main-world": {
+     "action_result": {
+      "frameId": "E41D180D4D630E166A8609CF8CBDFA9D",
+      "loaderId": "F1E608C6133E74ACF51E59C462174797",
+      "isDownload": false
+     },
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18461/p1"
+     },
+     "armed": true,
+     "t_hello_ms": 7,
+     "hello_known_ctx": true,
+     "hello_contextId": 3,
+     "hello_jsT": 4.199999988079071,
+     "t_armed_ms": 19,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 3,
+      "value": "armed",
+      "exc": null,
+      "ms": 12.01537495944649
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 2,
+       "uid": "771541",
+       "name": "",
+       "isDefault": true,
+       "frameId": "FA9D"
+      },
+      {
+       "id": 3,
+       "uid": "888470",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "FA9D"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      3
+     ],
+     "kfw_rec_uids": [
+      "888470"
+     ],
+     "isolate": "b21461c2",
+     "main_world": {
+      "early": 4.799999952316284,
+      "dataEarly": "4.799999952316284",
+      "dataTT": "allowed",
+      "loadId": "117t7xdrj01d",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18461/p1"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "main_typeof": [
+      "undefined",
+      "undefined",
+      "undefined",
+      "undefined",
+      "undefined",
+      ""
+     ],
+     "main_call_binding": {
+      "exception": "TypeError: window.__kfwRec is not a function\n    at <anonymous>:1:8"
+     },
+     "main_call_arm": {
+      "exception": "TypeError: window.__kfwArm is not a function\n    at <anonymous>:1:8"
+     },
+     "bindingCalled_after_main_calls": 0,
+     "iso_typeof_positive_control": [
+      "function",
+      "function"
+     ],
+     "other_isolated_world_typeof": [
+      "undefined",
+      "undefined"
+     ],
+     "main_defines_fake_then_calls": "fake",
+     "iso_binding_still_real": "function",
+     "evs_with_bad_verdict_after": [],
+     "timeline_lines": 17
+    }
+   },
+   "errors": []
+  },
+  "prearm": {
+   "results": {
+    "10-input-before-arm": {
+     "action_result": {
+      "frameId": "4C1B680A855978D13D8ABF249F8A9E7E",
+      "loaderId": "93D729FC0DDF930297A51F706EF84213",
+      "isDownload": false
+     },
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18461/p1"
+     },
+     "armed": false,
+     "t_hello_ms": 6,
+     "hello_known_ctx": true,
+     "hello_contextId": 3,
+     "hello_jsT": 3.700000047683716,
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 2,
+       "uid": "757924",
+       "name": "",
+       "isDefault": true,
+       "frameId": "9E7E"
+      },
+      {
+       "id": 3,
+       "uid": "677824",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "9E7E"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      3
+     ],
+     "kfw_rec_uids": [
+      "677824"
+     ],
+     "isolate": "a8db4724",
+     "main_world": {
+      "early": 4.300000011920929,
+      "dataEarly": "4.200000047683716",
+      "dataTT": "allowed",
+      "loadId": "19k6zg2n45v",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18461/p1"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise_before_arm": null,
+     "events_received_before_arm": 0,
+     "armed_msg": {
+      "type": "armed",
+      "token": "tok1",
+      "preArm": 5,
+      "preKinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "t": 561.1000000238419
+     },
+     "exercise_after_arm": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "timeline_lines": 24
+    }
+   },
+   "errors": []
+  },
+  "autoattach": {
+   "results": {
+    "11a-iframehost-with-autoAttach": {
+     "action_result": {
+      "frameId": "F7138045A32F939A66A7D28B7D2D8F81",
+      "loaderId": "4BAF1BCA5D2258A1BE3584FD30FB321E",
+      "isDownload": false
+     },
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18461/iframehost?to=http%3A%2F%2Fb.test%3A18461%2Fiframehost"
+     },
+     "armed": true,
+     "t_hello_ms": 7,
+     "hello_known_ctx": true,
+     "hello_contextId": 3,
+     "hello_jsT": 4.199999988079071,
+     "t_armed_ms": 21,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 3,
+      "value": "armed",
+      "exc": null,
+      "ms": 13.577750010881573
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 2,
+       "uid": "759675",
+       "name": "",
+       "isDefault": true,
+       "frameId": "8F81"
+      },
+      {
+       "id": 3,
+       "uid": "133322",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "8F81"
+      },
+      {
+       "id": 4,
+       "uid": "039396",
+       "name": "",
+       "isDefault": true,
+       "frameId": "10DA"
+      },
+      {
+       "id": 5,
+       "uid": "442704",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "10DA"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      3,
+      5
+     ],
+     "kfw_rec_uids": [
+      "133322",
+      "442704"
+     ],
+     "isolate": "9794c8b5",
+     "main_world": {
+      "early": 4.800000011920929,
+      "dataEarly": "4.800000011920929",
+      "dataTT": "allowed",
+      "loadId": "eauyikhshob",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18461/iframehost?to=http%3A%2F%2Fb.test%3A18461%2Fiframehost"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "kfw_rec_contexts_all_frames": [
+      {
+       "id": 3,
+       "frame_is_main": true
+      },
+      {
+       "id": 5,
+       "frame_is_main": false
+      }
+     ],
+     "frame_tree": [
+      "http://a.test:18462/p2"
+     ],
+     "timeline_lines": 34
+    },
+    "11b-cross-site-nav-with-autoAttach": {
+     "action_result": null,
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://b.test:18461/iframehost"
+     },
+     "armed": true,
+     "t_hello_ms": 12,
+     "hello_known_ctx": true,
+     "hello_contextId": 2,
+     "hello_jsT": 6.400000035762787,
+     "t_armed_ms": 28,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 2,
+      "value": "armed",
+      "exc": null,
+      "ms": 15.407334023620933
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 1,
+       "uid": "803075",
+       "name": "",
+       "isDefault": true,
+       "frameId": "8F81"
+      },
+      {
+       "id": 2,
+       "uid": "330384",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "8F81"
+      },
+      {
+       "id": 3,
+       "uid": "833850",
+       "name": "",
+       "isDefault": true,
+       "frameId": "2DAB"
+      },
+      {
+       "id": 4,
+       "uid": "561419",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "2DAB"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      2,
+      4
+     ],
+     "kfw_rec_uids": [
+      "330384",
+      "561419"
+     ],
+     "isolate": "c5d61672",
+     "main_world": {
+      "early": 7.400000035762787,
+      "dataEarly": "7.400000035762787",
+      "dataTT": "allowed",
+      "loadId": "aekuy6y0wei",
+      "pageshows": [
+       false
+      ],
+      "href": "http://b.test:18461/iframehost"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "timeline_lines": 37
+    }
+   },
+   "errors": []
+  },
+  "no-autoattach": {
+   "results": {
+    "11c-iframehost-no-autoAttach": {
+     "action_result": {
+      "frameId": "6809FCA31C1E8F026EA023C833E7C76B",
+      "loaderId": "F7A5E998EF8E6360BF6964B6CD40320C",
+      "isDownload": false
+     },
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://a.test:18461/iframehost?to=http%3A%2F%2Fb.test%3A18461%2Fiframehost"
+     },
+     "armed": true,
+     "t_hello_ms": 6,
+     "hello_known_ctx": true,
+     "hello_contextId": 3,
+     "hello_jsT": 3.5,
+     "t_armed_ms": 18,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 3,
+      "value": "armed",
+      "exc": null,
+      "ms": 12.103124987334013
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 2,
+       "uid": "615670",
+       "name": "",
+       "isDefault": true,
+       "frameId": "C76B"
+      },
+      {
+       "id": 3,
+       "uid": "236146",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "C76B"
+      },
+      {
+       "id": 4,
+       "uid": "991703",
+       "name": "",
+       "isDefault": true,
+       "frameId": "7B22"
+      },
+      {
+       "id": 5,
+       "uid": "510843",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "7B22"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      3,
+      5
+     ],
+     "kfw_rec_uids": [
+      "236146",
+      "510843"
+     ],
+     "isolate": "a1dbc0ac",
+     "main_world": {
+      "early": 4.100000023841858,
+      "dataEarly": "4.100000023841858",
+      "dataTT": "allowed",
+      "loadId": "r3m2s1kxi7l",
+      "pageshows": [
+       false
+      ],
+      "href": "http://a.test:18461/iframehost?to=http%3A%2F%2Fb.test%3A18461%2Fiframehost"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "kfw_rec_contexts": [
+      {
+       "id": 3,
+       "frame_is_main": true
+      },
+      {
+       "id": 5,
+       "frame_is_main": false
+      }
+     ],
+     "frame_tree": [
+      "http://a.test:18462/p2"
+     ],
+     "timeline_lines": 31
+    },
+    "11d-cross-site-nav-no-autoAttach": {
+     "action_result": null,
+     "hello": {
+      "restored": false,
+      "persisted": false,
+      "navType": "navigate",
+      "readyState": "loading",
+      "hasBody": false,
+      "earlyAttr": "no-documentElement",
+      "href": "http://b.test:18461/iframehost"
+     },
+     "armed": true,
+     "t_hello_ms": 20,
+     "hello_known_ctx": true,
+     "hello_contextId": 2,
+     "hello_jsT": 7.100000023841858,
+     "t_armed_ms": 30,
+     "arm_result": {
+      "by": "contextId",
+      "ctx": 2,
+      "value": "armed",
+      "exc": null,
+      "ms": 10.49704197794199
+     },
+     "hello_count_delta": 1,
+     "new_contexts": [
+      {
+       "id": 1,
+       "uid": "176667",
+       "name": "",
+       "isDefault": true,
+       "frameId": "C76B"
+      },
+      {
+       "id": 2,
+       "uid": "306610",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "C76B"
+      },
+      {
+       "id": 3,
+       "uid": "696955",
+       "name": "",
+       "isDefault": true,
+       "frameId": "70DE"
+      },
+      {
+       "id": 4,
+       "uid": "741721",
+       "name": "kfw_rec",
+       "isDefault": false,
+       "frameId": "70DE"
+      }
+     ],
+     "kfw_rec_ctx_ids": [
+      2,
+      4
+     ],
+     "kfw_rec_uids": [
+      "306610",
+      "741721"
+     ],
+     "isolate": "a97c9095",
+     "main_world": {
+      "early": 8.199999988079071,
+      "dataEarly": "8.100000023841858",
+      "dataTT": "allowed",
+      "loadId": "a7w39l6fk17",
+      "pageshows": [
+       false
+      ],
+      "href": "http://b.test:18461/iframehost"
+     },
+     "recorder_before_page_script": true,
+     "hello_earlyAttr_null": false,
+     "pagehide_msgs": [],
+     "exercise": {
+      "expected": 5,
+      "received": 5,
+      "kinds": [
+       "pointerdown",
+       "pointerdown",
+       "keydown",
+       "input",
+       "input"
+      ],
+      "verdicts": [
+       "ok"
+      ],
+      "seqs": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "timeline_lines": 32
+    }
+   },
+   "errors": []
+  }
+ },
+ "server_hosts_seen": {
+  "a.test:18461": 15,
+  "a.test:18462": 7,
+  "b.test:18461": 9
+ }
+}

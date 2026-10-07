@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><title>wp2 state result</title>
+<style>body{font:16px sans-serif;margin:20px} table{border-collapse:collapse;margin:14px 0} td,th{border:1px solid #888;padding:4px 10px} label,input,select,button{display:block;margin:6px 0}</style>
+<table id="t"><thead><tr><th>詞</th><th>類型</th><th>序號</th></tr></thead><tbody id="tb"></tbody></table>
+<script>
+const q = new URLSearchParams(location.search).get('q') || '';
+const rows = [[q, '基本', '1'], [q, '基本', '2']];
+if (localStorage.getItem('mode') === 'adv') rows.push([q, '進階', '3'], [q, '進階', '4']);
+for (const r of rows) { const tr = document.createElement('tr'); for (const v of r) { const td = document.createElement('td'); td.textContent = v; tr.appendChild(td); } document.getElementById('tb').appendChild(tr); }
+</script>

@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><title>sensitive</title>
+<form id="login" action="/x" onsubmit="return false">
+  <label>帳號 <input name="user" autocomplete="username" value="kai"></label>
+  <label>密碼 <input type="password" name="pw" value="s3cret-pw"></label>
+  <label>卡號 <input name="cc" autocomplete="cc-number" value="4111111111111111"></label>
+  <label>驗證碼 <input name="otp" autocomplete="one-time-code" value=""></label>
+  <label>新密碼 <input name="np" autocomplete="new-password" value="n3w"></label>
+  <label>暱稱 <input name="nick" autocomplete="nickname" value="K"></label>
+  <button>繼續</button>
+</form>
+<form id="search" onsubmit="return false"><label>關鍵字 <input name="q" value="abc"></label><button>搜尋</button></form>
+<label>外部欄位 <input name="ext" form="login" value="e"></label>
+<button form="login">外置送出</button>
+<button type="button">無 form 按鈕</button>

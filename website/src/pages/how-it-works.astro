@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Icon from '../components/Icon.astro';
+---
+<Layout title="你說需求，它記住流程">
+  <header class="doc-heading"><div class="wrap"><h1>你說需求，<br />它記住流程。</h1><p>用對話建立、修理固定的網頁流程，之後由本機程式執行與驗證。抓資料不經模型，需要判斷才把文字交給 Claude。</p></div></header>
+  <div class="doc-layout wrap"><nav class="doc-toc" aria-label="本頁內容"><a href="#people">各自負責什麼</a><a href="#repeat">從第一次到下一次</a><a href="#repair">網站變了怎麼辦</a><a href="#boundaries">做得到與做不到</a></nav><article class="prose">
+    <h2 id="people">三個角色，一份流程</h2><h3>Claude／Codex：用對話建立與修理流程</h3><p>你告訴它要查哪個網站、哪些條件會改、想看到什麼結果。agent 讀懂網頁後，把操作寫成流程，試跑並請你確認；壞了再用對話修理。目前完整使用路徑以 Claude Code 實測，Codex 尚待驗證。</p><h3>Kav：照著方法做，核對有沒有完成</h3><p>Kav 是在你電腦上執行的程式。它開啟專屬 Chrome、填欄位、送出查詢，再檢查輸入是否填對、結果是否符合流程設定。無法證明完成時，就回報原因與截圖。</p><h3>判斷題交給 Claude；Kev 是選配</h3><p>引擎先抓好文字，再交給 Claude 理解口語條件、比較候選。Kev 只在 pick 文字比對不唯一、需求為單一屬性時選用；沒有 Kev 或無法選定就停下交回 Claude。591 實驗顯示兩條件與比較級仍不適合 Kev。高鐵、台銀抓資料都不經模型。</p>
+    <h3>少掉的，是重複摸索與往返</h3><p>每次查詢仍會打開網站、取得當次資料。不同的是，固定的填表、送出和讀表交給 Kav 在一次工具呼叫內執行，Claude 不用每一步都重新看畫面、決定動作。結果以有欄名的資料回來，Claude 再整理成回答。</p><p>高鐵既有實測的 Kev 呼叫為 0，加速來自可重用流程與本機程式。<a href="/technical/#fast-path">看工具呼叫、流程宣告與回傳內容</a>。</p>
+    <h2 id="repeat">第一次確認，之後重用</h2><ol><li><strong>說出需求。</strong>指定網站、會變動的條件與預期結果。</li><li><strong>試跑看看。</strong>Claude 建立流程，Kav 試跑，讓你確認結果是否正確。</li><li><strong>存起來。</strong>確認後成為可重用的流程。</li><li><strong>換條件再用。</strong>下次只說新日期或站名，不必重新摸索每一步。</li></ol><p>流程本身是資料，不是要求你維護的程式。仍需要安裝環境，以及能呼叫工具的 Claude Code。</p>
+    <h2 id="repair">網站變了，就說哪裡不對</h2><p>例如「結果不對，這個才是抵達時間」。Claude 依流程方法檢查、修正並重跑，再回報改了什麼。</p><p><strong>這項能力還在驗證。</strong>目前修復只在一個網站、兩種壞法上盲測；不能據此保證所有改版都能自動修好。</p><h3>說不清楚，也可以示範</h3><p>錄製功能讓使用者在 Kav 的 Chrome 操作一次，標記要的結果，再把示範轉成流程。第 1 階段高鐵真人驗收已通過；多步驟與用示範修流程仍待真人驗收，已於 2026/10/07 暫停；591 示範發現的兩個轉換缺口尚未修復。</p>
+    <h2 id="boundaries">知道邊界，才用得安心</h2><ul><li>不替你登入、付款、下單或破解驗證碼。</li><li>網站阻擋自動化時會停止並說明原因。</li><li>執行與程式驗證在本機，不等於所有資料都留在電腦。Claude 仍可能透過雲端處理需求與工具結果。</li><li>程式核對的是流程宣告的條件；不代表模型最後的回答一定不會誤讀。</li><li>目前主要在 Mac 與 Claude Code 上實測，其他環境有待驗證。</li></ul><a class="text-link" href="/technical/">看技術分工與格式 <Icon /></a>
+  </article></div>
+</Layout>

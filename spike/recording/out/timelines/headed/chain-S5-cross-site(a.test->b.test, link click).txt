@@ -1,0 +1,23 @@
+   -223.5ms  n=  100  binding ctx#9 ev kind=input tag=INPUT key=None seq=5 verdict=ok
+      0.0ms  n=  100  ## STEP S5-cross-site(a.test->b.test, link click): ACTION
+      2.0ms  n=  101  binding ctx#9 ev kind=pointerdown tag=A key=None seq=6 verdict=ok
+      3.2ms  n=  104  binding ctx#9 beforeunload kind=None tag=None key=None seq=7 verdict=ok
+      4.7ms  n=  106  Page.frameStartedLoading frame=..4AD1
+      6.8ms  n=  108  ctx CLEARED (all)
+      7.2ms  n=  109  ctx CLEARED (all)
+      7.3ms  n=  110  Page.frameNavigated frame=..4AD1 parent=- type=Navigation url=http://b.test:18461/p1
+      8.9ms  n=  111  Target.targetInfoChanged target=..4C4AD1 type=page url=http://b.test:18461/p1 attached=True session=.. waiting=None
+     11.6ms  n=  112  ctx CREATED id=1 uid=..258230 name='' default=True type=default frame=..4AD1 origin=http://b.test:18461
+     11.7ms  n=  113  ctx CREATED id=2 uid=..091075 name='kfw_rec' default=False type=isolated frame=..4AD1 origin=http://b.test:18461
+     11.8ms  n=  114  binding ctx#2 hello restored=False persisted=False navType=navigate rs=loading body=False early=no-documentElement jsT=5.8 known_ctx=True -> epoch tok5
+     19.6ms  n=  115  Page.domContentEventFired
+     19.7ms  n=  116  Page.loadEventFired
+     19.8ms  n=  117  Page.frameStoppedLoading frame=..4AD1
+     19.8ms  n=  118  binding ctx#2 armed token=tok5 preArm=0 preKinds=[] ok=True
+     19.9ms  n=  118  PY arm(contextId) ctx#2 -> 'armed' 
+    141.1ms  n=  118  ## EXERCISE click #btn, click #inp, key x, insertText yz
+    142.3ms  n=  119  binding ctx#2 ev kind=pointerdown tag=BUTTON key=None seq=1 verdict=ok
+    157.8ms  n=  120  binding ctx#2 ev kind=pointerdown tag=INPUT key=None seq=2 verdict=ok
+    158.8ms  n=  121  binding ctx#2 ev kind=keydown tag=INPUT key=x seq=3 verdict=ok
+    159.2ms  n=  122  binding ctx#2 ev kind=input tag=INPUT key=None seq=4 verdict=ok
+    160.2ms  n=  123  binding ctx#2 ev kind=input tag=INPUT key=None seq=5 verdict=ok

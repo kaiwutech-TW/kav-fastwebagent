@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><title>rec big</title>
+<style>body{font:14px sans-serif;margin:10px} a{display:inline-block;margin:2px 6px} input,button{display:block;margin:6px 0}</style>
+<h1>很多連結</h1><label for="q">關鍵字</label><input id="q" name="q"><button id="go" type="button">查詢</button>
+<div id="links"></div>
+<script>
+const box = document.getElementById('links');
+for (let i = 0; i < 1500; i++) { const a = document.createElement('a'); a.href = '#l' + i; a.textContent = '連結號碼 ' + i; box.appendChild(a); }
+</script>

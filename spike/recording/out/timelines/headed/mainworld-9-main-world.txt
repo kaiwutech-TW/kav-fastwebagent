@@ -1,0 +1,17 @@
+     -0.9ms  n=  457  ctx CREATED id=1 uid=..555739 name='' default=True type=default frame=..FA9D origin=://
+     -0.0ms  n=  457  ## START target=..BDFA9D session=..460180 mainFrame=..FA9D script=1
+      0.0ms  n=  457  ## STEP 9-main-world: ACTION
+      1.1ms  n=  459  Page.frameStartedLoading frame=..FA9D
+      3.1ms  n=  460  ctx CLEARED (all)
+      3.9ms  n=  461  ctx CLEARED (all)
+      4.1ms  n=  462  Page.frameNavigated frame=..FA9D parent=- type=Navigation url=http://a.test:18461/p1
+      6.1ms  n=  463  Target.targetInfoChanged target=..BDFA9D type=page url=http://a.test:18461/p1 attached=True session=.. waiting=None
+      6.6ms  n=  464  ctx CREATED id=2 uid=..771541 name='' default=True type=default frame=..FA9D origin=http://a.test:18461
+      6.8ms  n=  465  ctx CREATED id=3 uid=..888470 name='kfw_rec' default=False type=isolated frame=..FA9D origin=http://a.test:18461
+      6.9ms  n=  466  binding ctx#3 hello restored=False persisted=False navType=navigate rs=loading body=False early=no-documentElement jsT=4.2 known_ctx=True -> epoch tok1
+     18.0ms  n=  467  Page.domContentEventFired
+     18.1ms  n=  468  Page.loadEventFired
+     18.8ms  n=  469  Page.frameStoppedLoading frame=..FA9D
+     18.9ms  n=  470  binding ctx#3 armed token=tok1 preArm=0 preKinds=[] ok=True
+     19.0ms  n=  470  PY arm(contextId) ctx#3 -> 'armed' 
+    549.9ms  n=  471  ctx CREATED id=4 uid=..399452 name='other' default=False type=isolated frame=..FA9D origin=http://a.test:18461

@@ -1,0 +1,16 @@
+<!doctype html><meta charset="utf-8"><title>steps home</title><script src="gate_counter.js"></script>
+<div id="cookie">本站使用 cookie <button id="deny" type="button">不同意</button></div>
+<div><label for="from">出發站</label> <select id="from"><option>請選擇</option><option>台北</option><option>台中</option><option>左營</option></select></div>
+<div><label for="date">出發日期</label> <input id="date" name="date"></div>
+<div><label><input type="checkbox" id="direct"> 只看直達車</label></div>
+<div><label><input type="radio" name="r" id="rad"> 單選A</label></div>
+<button id="go"type="button">查詢</button>
+<div id="msg"></div><div id="nav"></div>
+<script>
+document.getElementById('deny').onclick = () => document.getElementById('cookie').remove();
+document.getElementById('go').onclick = () => {
+  localStorage.setItem('q', JSON.stringify({from: from.value, date: date.value, direct: direct.checked}));
+  msg.textContent = '查詢完成';
+  nav.innerHTML = '<a href="steps_results.html">下一頁</a>';
+};
+</script>

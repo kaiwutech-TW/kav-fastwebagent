@@ -1,0 +1,925 @@
+{
+ "arm": "A",
+ "at": "2026-10-07 21:05:25",
+ "usage": {
+  "calls": 28,
+  "input_tokens": 130284,
+  "output_tokens": 17138,
+  "call_ms_sum": 27309,
+  "model_ms_sum": 27080
+ },
+ "results": [
+  {
+   "id": "Q01",
+   "rep": 1,
+   "want": "可以養寵物的",
+   "kind": "unique-semantic",
+   "expect": [
+    "c25"
+   ],
+   "chosen": "c25",
+   "verdict": "correct",
+   "how": "kev",
+   "ms": 1457,
+   "kev_ms": 1456,
+   "why": null,
+   "top3": [
+    [
+     "c25",
+     0.9648
+    ],
+    [
+     "c26",
+     0.3941
+    ],
+    [
+     "c12",
+     0.3849
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q01",
+   "rep": 2,
+   "want": "可以養寵物的",
+   "kind": "unique-semantic",
+   "expect": [
+    "c25"
+   ],
+   "chosen": "c25",
+   "verdict": "correct",
+   "how": "kev",
+   "ms": 782,
+   "kev_ms": 782,
+   "why": null,
+   "top3": [
+    [
+     "c25",
+     0.9648
+    ],
+    [
+     "c26",
+     0.3941
+    ],
+    [
+     "c12",
+     0.3849
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q02",
+   "rep": 1,
+   "want": "限女生的",
+   "kind": "multiple-should-stop",
+   "expect": [
+    "c9",
+    "c22"
+   ],
+   "chosen": null,
+   "verdict": "correct-stop",
+   "how": "kev",
+   "ms": 1112,
+   "kev_ms": 1111,
+   "why": "small_gap",
+   "top3": [
+    [
+     "c9",
+     0.9769
+    ],
+    [
+     "c22",
+     0.7525
+    ],
+    [
+     "c14",
+     0.6621
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q02",
+   "rep": 2,
+   "want": "限女生的",
+   "kind": "multiple-should-stop",
+   "expect": [
+    "c9",
+    "c22"
+   ],
+   "chosen": null,
+   "verdict": "correct-stop",
+   "how": "kev",
+   "ms": 764,
+   "kev_ms": 764,
+   "why": "small_gap",
+   "top3": [
+    [
+     "c9",
+     0.9769
+    ],
+    [
+     "c22",
+     0.7525
+    ],
+    [
+     "c14",
+     0.6621
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q03",
+   "rep": 1,
+   "want": "有電梯又有廚房的",
+   "kind": "unique-two-conditions",
+   "expect": [
+    "c12"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 1132,
+   "kev_ms": 1132,
+   "why": "small_gap",
+   "top3": [
+    [
+     "c12",
+     0.9717
+    ],
+    [
+     "c8",
+     0.8295
+    ],
+    [
+     "c3",
+     0.8147
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q03",
+   "rep": 2,
+   "want": "有電梯又有廚房的",
+   "kind": "unique-two-conditions",
+   "expect": [
+    "c12"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 789,
+   "kev_ms": 789,
+   "why": "small_gap",
+   "top3": [
+    [
+     "c12",
+     0.9717
+    ],
+    [
+     "c8",
+     0.8295
+    ],
+    [
+     "c3",
+     0.8147
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q04",
+   "rep": 1,
+   "want": "租金最便宜的",
+   "kind": "unique-comparative-hard",
+   "expect": [
+    "c13"
+   ],
+   "chosen": "c13",
+   "verdict": "correct",
+   "how": "kev",
+   "ms": 1118,
+   "kev_ms": 1117,
+   "why": null,
+   "top3": [
+    [
+     "c13",
+     0.9689
+    ],
+    [
+     "c4",
+     0.621
+    ],
+    [
+     "c17",
+     0.4706
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q04",
+   "rep": 2,
+   "want": "租金最便宜的",
+   "kind": "unique-comparative-hard",
+   "expect": [
+    "c13"
+   ],
+   "chosen": "c13",
+   "verdict": "correct",
+   "how": "kev",
+   "ms": 775,
+   "kev_ms": 775,
+   "why": null,
+   "top3": [
+    [
+     "c13",
+     0.9689
+    ],
+    [
+     "c4",
+     0.621
+    ],
+    [
+     "c17",
+     0.4706
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q05",
+   "rep": 1,
+   "want": "月租 2,900 的",
+   "kind": "unique-literal-number",
+   "expect": [
+    "c13"
+   ],
+   "chosen": "c13",
+   "verdict": "correct",
+   "how": "kev",
+   "ms": 1372,
+   "kev_ms": 1372,
+   "why": null,
+   "top3": [
+    [
+     "c13",
+     0.9923
+    ],
+    [
+     "c23",
+     0.6871
+    ],
+    [
+     "c22",
+     0.5662
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q05",
+   "rep": 2,
+   "want": "月租 2,900 的",
+   "kind": "unique-literal-number",
+   "expect": [
+    "c13"
+   ],
+   "chosen": "c13",
+   "verdict": "correct",
+   "how": "kev",
+   "ms": 815,
+   "kev_ms": 815,
+   "why": null,
+   "top3": [
+    [
+     "c13",
+     0.9923
+    ],
+    [
+     "c23",
+     0.6871
+    ],
+    [
+     "c22",
+     0.5662
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q06",
+   "rep": 1,
+   "want": "可以短租而且有陽台的",
+   "kind": "unique-two-conditions",
+   "expect": [
+    "c5"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 1133,
+   "kev_ms": 1133,
+   "why": "small_gap",
+   "top3": [
+    [
+     "c5",
+     0.98
+    ],
+    [
+     "c7",
+     0.956
+    ],
+    [
+     "c14",
+     0.9359
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q06",
+   "rep": 2,
+   "want": "可以短租而且有陽台的",
+   "kind": "unique-two-conditions",
+   "expect": [
+    "c5"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 789,
+   "kev_ms": 789,
+   "why": "small_gap",
+   "top3": [
+    [
+     "c5",
+     0.98
+    ],
+    [
+     "c7",
+     0.956
+    ],
+    [
+     "c14",
+     0.9359
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q07",
+   "rep": 1,
+   "want": "可以短租的",
+   "kind": "multiple-should-stop",
+   "expect": [
+    "c5",
+    "c17",
+    "c24"
+   ],
+   "chosen": null,
+   "verdict": "correct-stop",
+   "how": "kev",
+   "ms": 1121,
+   "kev_ms": 1121,
+   "why": "small_gap",
+   "top3": [
+    [
+     "c17",
+     0.986
+    ],
+    [
+     "c5",
+     0.9825
+    ],
+    [
+     "c18",
+     0.8069
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q07",
+   "rep": 2,
+   "want": "可以短租的",
+   "kind": "multiple-should-stop",
+   "expect": [
+    "c5",
+    "c17",
+    "c24"
+   ],
+   "chosen": null,
+   "verdict": "correct-stop",
+   "how": "kev",
+   "ms": 778,
+   "kev_ms": 778,
+   "why": "small_gap",
+   "top3": [
+    [
+     "c17",
+     0.986
+    ],
+    [
+     "c5",
+     0.9825
+    ],
+    [
+     "c18",
+     0.8069
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q08",
+   "rep": 1,
+   "want": "限男生的",
+   "kind": "unique-subtle",
+   "expect": [
+    "c17"
+   ],
+   "chosen": "c17",
+   "verdict": "correct",
+   "how": "kev",
+   "ms": 1116,
+   "kev_ms": 1116,
+   "why": null,
+   "top3": [
+    [
+     "c17",
+     0.9743
+    ],
+    [
+     "c19",
+     0.6613
+    ],
+    [
+     "c20",
+     0.656
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q08",
+   "rep": 2,
+   "want": "限男生的",
+   "kind": "unique-subtle",
+   "expect": [
+    "c17"
+   ],
+   "chosen": "c17",
+   "verdict": "correct",
+   "how": "kev",
+   "ms": 777,
+   "kev_ms": 777,
+   "why": null,
+   "top3": [
+    [
+     "c17",
+     0.9743
+    ],
+    [
+     "c19",
+     0.6613
+    ],
+    [
+     "c20",
+     0.656
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q09",
+   "rep": 1,
+   "want": "押一付一又有陽台的",
+   "kind": "unique-two-conditions",
+   "expect": [
+    "c16"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 1140,
+   "kev_ms": 1140,
+   "why": "small_gap",
+   "top3": [
+    [
+     "c16",
+     0.9747
+    ],
+    [
+     "c18",
+     0.9578
+    ],
+    [
+     "c7",
+     0.8526
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q09",
+   "rep": 2,
+   "want": "押一付一又有陽台的",
+   "kind": "unique-two-conditions",
+   "expect": [
+    "c16"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 802,
+   "kev_ms": 801,
+   "why": "small_gap",
+   "top3": [
+    [
+     "c16",
+     0.9747
+    ],
+    [
+     "c18",
+     0.9578
+    ],
+    [
+     "c7",
+     0.8526
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q10",
+   "rep": 1,
+   "want": "一樓的",
+   "kind": "unique-literal-floor",
+   "expect": [
+    "c5"
+   ],
+   "chosen": "c5",
+   "verdict": "correct",
+   "how": "kev",
+   "ms": 1121,
+   "kev_ms": 1120,
+   "why": null,
+   "top3": [
+    [
+     "c5",
+     0.9553
+    ],
+    [
+     "c23",
+     0.1695
+    ],
+    [
+     "c19",
+     0.168
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q10",
+   "rep": 2,
+   "want": "一樓的",
+   "kind": "unique-literal-floor",
+   "expect": [
+    "c5"
+   ],
+   "chosen": "c5",
+   "verdict": "correct",
+   "how": "kev",
+   "ms": 777,
+   "kev_ms": 777,
+   "why": null,
+   "top3": [
+    [
+     "c5",
+     0.9553
+    ],
+    [
+     "c23",
+     0.1695
+    ],
+    [
+     "c19",
+     0.168
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q11",
+   "rep": 1,
+   "want": "在知行路的",
+   "kind": "unique-address",
+   "expect": [
+    "c14"
+   ],
+   "chosen": "c14",
+   "verdict": "correct",
+   "how": "kev",
+   "ms": 1118,
+   "kev_ms": 1117,
+   "why": null,
+   "top3": [
+    [
+     "c14",
+     0.985
+    ],
+    [
+     "c24",
+     0.3043
+    ],
+    [
+     "c25",
+     0.2984
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q11",
+   "rep": 2,
+   "want": "在知行路的",
+   "kind": "unique-address",
+   "expect": [
+    "c14"
+   ],
+   "chosen": "c14",
+   "verdict": "correct",
+   "how": "kev",
+   "ms": 771,
+   "kev_ms": 771,
+   "why": null,
+   "top3": [
+    [
+     "c14",
+     0.985
+    ],
+    [
+     "c24",
+     0.3043
+    ],
+    [
+     "c25",
+     0.2984
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q12",
+   "rep": 1,
+   "want": "有游泳池的",
+   "kind": "none-should-stop",
+   "expect": [],
+   "chosen": null,
+   "verdict": "correct-stop",
+   "how": "kev",
+   "ms": 1107,
+   "kev_ms": 1106,
+   "why": "none_highest",
+   "top3": [
+    [
+     "none",
+     0.9436
+    ],
+    [
+     "c24",
+     0.0564
+    ],
+    [
+     "c25",
+     0.0532
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q12",
+   "rep": 2,
+   "want": "有游泳池的",
+   "kind": "none-should-stop",
+   "expect": [],
+   "chosen": null,
+   "verdict": "correct-stop",
+   "how": "kev",
+   "ms": 768,
+   "kev_ms": 768,
+   "why": "none_highest",
+   "top3": [
+    [
+     "none",
+     0.9436
+    ],
+    [
+     "c24",
+     0.0564
+    ],
+    [
+     "c25",
+     0.0532
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q13",
+   "rep": 1,
+   "want": "在文林北路、可以開伙、最便宜的",
+   "kind": "unique-comparative-hard",
+   "expect": [
+    "c21"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 1165,
+   "kev_ms": 1165,
+   "why": "low_confidence",
+   "top3": [
+    [
+     "c3",
+     0.5626
+    ],
+    [
+     "c24",
+     0.5093
+    ],
+    [
+     "c8",
+     0.5078
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q13",
+   "rep": 2,
+   "want": "在文林北路、可以開伙、最便宜的",
+   "kind": "unique-comparative-hard",
+   "expect": [
+    "c21"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 812,
+   "kev_ms": 812,
+   "why": "low_confidence",
+   "top3": [
+    [
+     "c3",
+     0.5626
+    ],
+    [
+     "c24",
+     0.5093
+    ],
+    [
+     "c8",
+     0.5078
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q14",
+   "rep": 1,
+   "want": "可以開伙又有陽台的",
+   "kind": "multiple-should-stop",
+   "expect": [
+    "c13",
+    "c26"
+   ],
+   "chosen": null,
+   "verdict": "correct-stop",
+   "how": "kev",
+   "ms": 1130,
+   "kev_ms": 1129,
+   "why": "small_gap",
+   "top3": [
+    [
+     "c13",
+     0.965
+    ],
+    [
+     "c14",
+     0.8927
+    ],
+    [
+     "c12",
+     0.8221
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q14",
+   "rep": 2,
+   "want": "可以開伙又有陽台的",
+   "kind": "multiple-should-stop",
+   "expect": [
+    "c13",
+    "c26"
+   ],
+   "chosen": null,
+   "verdict": "correct-stop",
+   "how": "kev",
+   "ms": 779,
+   "kev_ms": 779,
+   "why": "small_gap",
+   "top3": [
+    [
+     "c13",
+     0.965
+    ],
+    [
+     "c14",
+     0.8927
+    ],
+    [
+     "c12",
+     0.8221
+    ]
+   ],
+   "kev_error": null
+  },
+  {
+   "id": "Q15",
+   "rep": 1,
+   "want": "知行路",
+   "kind": "literal-text-path",
+   "expect": [
+    "c14"
+   ],
+   "chosen": "c14",
+   "verdict": "correct",
+   "how": "contains",
+   "ms": 0,
+   "kev_ms": null,
+   "why": null,
+   "top3": [],
+   "kev_error": null
+  },
+  {
+   "id": "Q15",
+   "rep": 2,
+   "want": "知行路",
+   "kind": "literal-text-path",
+   "expect": [
+    "c14"
+   ],
+   "chosen": "c14",
+   "verdict": "correct",
+   "how": "contains",
+   "ms": 0,
+   "kev_ms": null,
+   "why": null,
+   "top3": [],
+   "kev_error": null
+  },
+  {
+   "id": "Q16",
+   "rep": 1,
+   "want": "2,900元/月",
+   "kind": "literal-text-path",
+   "expect": [
+    "c13"
+   ],
+   "chosen": "c13",
+   "verdict": "correct",
+   "how": "contains",
+   "ms": 0,
+   "kev_ms": null,
+   "why": null,
+   "top3": [],
+   "kev_error": null
+  },
+  {
+   "id": "Q16",
+   "rep": 2,
+   "want": "2,900元/月",
+   "kind": "literal-text-path",
+   "expect": [
+    "c13"
+   ],
+   "chosen": "c13",
+   "verdict": "correct",
+   "how": "contains",
+   "ms": 0,
+   "kev_ms": null,
+   "why": null,
+   "top3": [],
+   "kev_error": null
+  }
+ ]
+}

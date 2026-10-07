@@ -1,0 +1,23 @@
+   -157.4ms  n=   53  binding ctx#5 ev kind=input tag=INPUT key=None seq=5 verdict=ok
+      0.0ms  n=   53  ## STEP S3-same-origin-page-change(link click): ACTION
+     12.1ms  n=   54  binding ctx#5 ev kind=pointerdown tag=A key=None seq=6 verdict=ok
+     14.0ms  n=   57  binding ctx#5 beforeunload kind=None tag=None key=None seq=7 verdict=ok
+     16.6ms  n=   59  Page.frameStartedLoading frame=..6806
+     18.7ms  n=   61  ctx CLEARED (all)
+     19.2ms  n=   62  ctx CLEARED (all)
+     19.3ms  n=   63  Page.frameNavigated frame=..6806 parent=- type=Navigation url=http://a.test:18461/p2?to=http%3A%2F%2Fa.test%3A18462%2Fp1%3Fto%3Dhttp
+     21.8ms  n=   64  Target.targetInfoChanged target=..E56806 type=page url=http://a.test:18461/p2?to=http%3A%2F%2Fa.test%3A18462%2Fp1%3 attached=True session=.. waiting=None
+     22.7ms  n=   65  ctx CREATED id=6 uid=..674292 name='' default=True type=default frame=..6806 origin=http://a.test:18461
+     22.8ms  n=   66  ctx CREATED id=7 uid=..911279 name='kfw_rec' default=False type=isolated frame=..6806 origin=http://a.test:18461
+     22.9ms  n=   67  binding ctx#7 hello restored=False persisted=False navType=navigate rs=loading body=False early=no-documentElement jsT=6.7 known_ctx=True -> epoch tok3
+     23.4ms  n=   68  Page.domContentEventFired
+     23.6ms  n=   69  Page.loadEventFired
+     24.7ms  n=   70  Page.frameStoppedLoading frame=..6806
+     26.6ms  n=   71  binding ctx#7 armed token=tok3 preArm=0 preKinds=[] ok=True
+     26.7ms  n=   71  PY arm(contextId) ctx#7 -> 'armed' 
+    143.7ms  n=   71  ## EXERCISE click #btn, click #inp, key x, insertText yz
+    144.8ms  n=   72  binding ctx#7 ev kind=pointerdown tag=BUTTON key=None seq=1 verdict=ok
+    157.8ms  n=   73  binding ctx#7 ev kind=pointerdown tag=INPUT key=None seq=2 verdict=ok
+    158.5ms  n=   74  binding ctx#7 ev kind=keydown tag=INPUT key=x seq=3 verdict=ok
+    158.7ms  n=   75  binding ctx#7 ev kind=input tag=INPUT key=None seq=4 verdict=ok
+    159.2ms  n=   76  binding ctx#7 ev kind=input tag=INPUT key=None seq=5 verdict=ok

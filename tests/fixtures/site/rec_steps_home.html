@@ -1,0 +1,16 @@
+<!doctype html><meta charset="utf-8"><title>steps home</title>
+<!-- WP2b: cookie banner (writes localStorage) -> keyword search (GET) -> rec_steps_list.html -> rec_steps_detail.html.
+     ?v=2 makes the list page call its link 詳情 instead of 查看 (a site rename). -->
+<style>body{font:16px sans-serif;margin:20px} label,input,button{display:block;margin:6px 0} input{width:240px}
+#banner{border:1px solid #888;padding:8px;margin-bottom:12px}</style>
+<div id="banner"><p>本站使用 cookie</p><button type="button" id="ok">同意</button></div>
+<form action="rec_steps_list.html" method="get">
+<label for="kw">關鍵字</label><input id="kw" name="kw">
+<input type="hidden" name="v" id="v">
+<button type="submit" id="go">查詢</button>
+</form>
+<script>
+document.getElementById('v').value = new URLSearchParams(location.search).get('v') || '1';
+if (localStorage.getItem('consent') === '1') document.getElementById('banner').remove();
+document.getElementById('ok').addEventListener('click', () => { localStorage.setItem('consent', '1'); document.getElementById('banner').remove(); });
+</script>

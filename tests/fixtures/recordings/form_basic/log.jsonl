@@ -1,0 +1,21 @@
+{"t":0.1,"epoch":1,"type":"hello","doc_id":"d1","href":"http://a.test/form.html","restored":false,"persisted":false,"nav_type":"navigate"}
+{"t":0.2,"epoch":1,"type":"armed","pre_arm_inputs":0,"pre_kinds":[]}
+{"t":0.3,"epoch":1,"type":"snapshot","id":"00c6fb694d14","links_dropped":0}
+{"t":0.4,"epoch":1,"type":"baseline","snap":"00c6fb694d14"}
+{"t":0.5,"epoch":1,"type":"group_open","gid":"g1","kind":"keyboard","target":{"tag":"SELECT","native":true,"in_controls":true,"id":"k1","label":"城市","text":"","is_button_like":false,"custom_element":false,"iframe":false},"prev_snap":"00c6fb694d14"}
+{"t":0.6,"epoch":1,"type":"snapshot","id":"421616763e4d","links_dropped":0}
+{"t":0.7,"epoch":1,"type":"group_close","gid":"g1","kind":"keyboard","snap":"421616763e4d","keys":[]}
+{"t":0.8,"epoch":1,"type":"group_open","gid":"g2","kind":"text_input","target":{"tag":"INPUT","native":true,"in_controls":true,"id":"k2","label":"姓名","text":"","is_button_like":false,"custom_element":false,"iframe":false},"prev_snap":"421616763e4d"}
+{"t":0.9,"epoch":1,"type":"snapshot","id":"b93dcae942f3","links_dropped":0}
+{"t":1.0,"epoch":1,"type":"group_close","gid":"g2","kind":"text_input","snap":"b93dcae942f3","keys":[]}
+{"t":1.1,"epoch":1,"type":"group_open","gid":"g3","kind":"pointer","target":{"tag":"TD","native":false,"in_controls":false,"id":null,"label":"","text":"","is_button_like":false,"custom_element":false,"iframe":false},"prev_snap":"b93dcae942f3"}
+{"t":1.2,"epoch":1,"type":"snapshot","id":"f4c5086dd455","links_dropped":0}
+{"t":1.3,"epoch":1,"type":"group_close","gid":"g3","kind":"pointer","snap":"f4c5086dd455","keys":[]}
+{"t":1.4,"epoch":1,"type":"group_open","gid":"g4","kind":"pointer","target":{"tag":"BUTTON","native":true,"in_controls":true,"id":"k4","label":"查詢","text":"查詢","is_button_like":true,"custom_element":false,"iframe":false},"prev_snap":"f4c5086dd455"}
+{"t":1.5,"epoch":1,"type":"group_close","gid":"g4","synthetic":true,"snap":null,"doc_navigated_after":true}
+{"t":1.6,"epoch":2,"type":"hello","doc_id":"d2","href":"http://a.test/result.html","restored":false,"persisted":false,"nav_type":"navigate"}
+{"t":1.7,"epoch":2,"type":"armed","pre_arm_inputs":0,"pre_kinds":[]}
+{"t":1.8,"epoch":2,"type":"snapshot","id":"60908ce04ff7","links_dropped":0}
+{"t":1.9,"epoch":2,"type":"baseline","snap":"60908ce04ff7"}
+{"t":2.0,"epoch":2,"type":"mark","tag":"TABLE","text":"車次 時間 目的地 0101 08:00 Taichung 0103 09:00 Taichung 0105 10:30 Taichung","text_truncated":false,"href":"http://a.test/result.html","group":{"rows":[["0101","08:00","Taichung"],["0103","09:00","Taichung"],["0105","10:30","Taichung"]],"rows_sent":3,"total":3,"truncated":false,"fingerprint":"f00d","has_th":true,"same_signature_groups":1,"headers":["車次","時間","目的地"]}}
+{"t":2.1,"epoch":2,"type":"done"}

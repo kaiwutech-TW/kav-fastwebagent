@@ -1,0 +1,34 @@
+<!doctype html><meta charset="utf-8"><title>pager</title><script src="gate_counter.js"></script>
+<!-- one-page pager. ?end=disabled|absent (what the last page shows in place of the button; default disabled)
+     &pages=N (default 3; 99 = never ends) &loop=1 (the next click on page 2 goes back to page 1's content)
+     &skeleton=1 (after a click show a placeholder for 800ms, then the new data) &dup=1 (each page repeats the
+     previous page's last row) &noexp=1 (page 3 lacks the heading 資料表) &bad=1 (button text hits a forbidden word)
+     &stateful=1 (button text hits a state-changing word) &sameclick=1 (the click does nothing) -->
+<h1 id="h">資料表</h1>
+<div id="out"></div>
+<button id="next" type="button">下一頁</button>
+<script>
+const q = new URLSearchParams(location.search);
+const end = q.get('end') || 'disabled', N = +(q.get('pages') || 3), sk = q.get('skeleton') === '1';
+let p = 1;
+const btn = document.getElementById('next');
+if (q.get('bad') === '1') btn.textContent = '付款 下一頁';
+if (q.get('stateful') === '1') btn.textContent = '收藏 下一頁';
+const rowsFor = n => {
+  const r = [['P' + n + 'A', n + '0:00'], ['P' + n + 'B', n + '1:00'], ['P' + n + 'C', n + '2:00']];
+  if (q.get('dup') === '1' && n > 1) r.unshift(['P' + (n - 1) + 'C', (n - 1) + '2:00']);
+  return r;
+};
+const table = rows => '<table><tbody>' + rows.map(r => '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>').join('') + '</tbody></table>';
+const render = () => {
+  out.innerHTML = table(rowsFor(p));
+  h.style.display = (q.get('noexp') === '1' && p === 3) ? 'none' : '';
+  if (p >= N) { if (end === 'absent') btn.remove(); else btn.disabled = true; }
+};
+render();
+btn.onclick = () => {
+  if (btn.disabled || q.get('sameclick') === '1') return;
+  const go = () => { p = (q.get('loop') === '1' && p === 2) ? 1 : p + 1; render(); };
+  if (sk) { out.innerHTML = '<table><tbody><tr><td>載入中</td></tr></tbody></table>'; setTimeout(go, 800); } else go();
+};
+</script>

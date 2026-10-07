@@ -1,0 +1,18 @@
+[
+ {"id": "Q01", "want": "可以養寵物的", "expect": ["c25"], "kind": "unique-semantic"},
+ {"id": "Q02", "want": "限女生的", "expect": ["c9", "c22"], "kind": "multiple-should-stop"},
+ {"id": "Q03", "want": "有電梯又有廚房的", "expect": ["c12"], "kind": "unique-two-conditions"},
+ {"id": "Q04", "want": "租金最便宜的", "expect": ["c13"], "kind": "unique-comparative-hard"},
+ {"id": "Q05", "want": "月租 2,900 的", "expect": ["c13"], "kind": "unique-literal-number"},
+ {"id": "Q06", "want": "可以短租而且有陽台的", "expect": ["c5"], "kind": "unique-two-conditions"},
+ {"id": "Q07", "want": "可以短租的", "expect": ["c5", "c17", "c24"], "kind": "multiple-should-stop"},
+ {"id": "Q08", "want": "限男生的", "expect": ["c17"], "kind": "unique-subtle"},
+ {"id": "Q09", "want": "押一付一又有陽台的", "expect": ["c16"], "kind": "unique-two-conditions"},
+ {"id": "Q10", "want": "一樓的", "expect": ["c5"], "kind": "unique-literal-floor"},
+ {"id": "Q11", "want": "在知行路的", "expect": ["c14"], "kind": "unique-address"},
+ {"id": "Q12", "want": "有游泳池的", "expect": [], "kind": "none-should-stop"},
+ {"id": "Q13", "want": "在文林北路、可以開伙、最便宜的", "expect": ["c21"], "kind": "unique-comparative-hard"},
+ {"id": "Q14", "want": "可以開伙又有陽台的", "expect": ["c13", "c26"], "kind": "multiple-should-stop"},
+ {"id": "Q15", "want": "知行路", "expect": ["c14"], "kind": "literal-text-path"},
+ {"id": "Q16", "want": "2,900元/月", "expect": ["c13"], "kind": "literal-text-path"}
+]

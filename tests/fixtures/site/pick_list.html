@@ -1,0 +1,56 @@
+<!doctype html><meta charset="utf-8"><title>pick list</title><script src="gate_counter.js"></script>
+<!-- list -> detail (pick_detail.html?item=NAME). Rows are <div class="row"> with cells name / price / control.
+     ?set=basic (default) | exactwins | semantic | dupe | nomatch | empty
+     &two=1 (a second list with the same rows further down the page)
+     ?mode=normal (default) | nocontrol (no 查看 in any row) | twobtn (two 查看 per row) | cart (the button says
+       加入購物車) | noeffect (a 查看 button that does nothing)
+       | rerender / move / text (right after the FIRST groups() observation the page changes under the engine:
+         re-render reversed / swap two row nodes / swap the contents of two row nodes) | always (re-render after every observation) -->
+<h1>清單</h1>
+<div id="list"></div>
+<script>
+const q = new URLSearchParams(location.search);
+const SETS = {
+  basic: [['初階 Python 課程', 1200], ['進階 Python 課程', 2400], ['資料庫入門', 1800], ['網頁設計', 1500]],
+  exactwins: [['Python', 1000], ['Python 進階', 2000], ['資料庫入門', 1800]],
+  semantic: [['機票訂位', 0], ['退費申請表', 0], ['請假單', 0], ['發票補開', 0]],
+  dupe: [['熱門課程', 999], ['熱門課程', 999], ['冷門課程', 100]],
+  nomatch: [['機票訂位', 0], ['請假單', 0], ['發票補開', 0]],
+  empty: [],
+};
+const mode = q.get('mode') || 'normal';
+let data = (SETS[q.get('set') || 'basic']).slice();
+const button = name => {
+  const href = 'pick_detail.html?item=' + encodeURIComponent(name);
+  if (mode === 'nocontrol') return '';
+  if (mode === 'twobtn') return `<a href="${href}">查看</a><a href="${href}&b=2">查看</a>`;
+  if (mode === 'cart') return '<button type="button">加入購物車</button>';
+  if (mode === 'noeffect') return '<button type="button">查看</button>';
+  return `<a href="${href}">查看</a>`;
+};
+const rowHtml = ([name, price]) => `<div class="row"><span>${name}</span><span>NT$${price}</span><span>${button(name)}</span></div>`;
+const render = () => { list.innerHTML = data.map(rowHtml).join(''); };
+render();
+if (q.get('two') === '1') {  // a second, unrelated list that also matches the row pattern
+  const box = document.createElement('section');
+  box.innerHTML = '<h2>推薦</h2><div class="rec">' + data.map(rowHtml).join('') + '</div>';
+  document.body.appendChild(box);
+}
+
+// test hook: change the page under the engine as soon as it has observed the list (the observation bumps
+// window.__kfwGroupSeq; the change runs as a microtask, i.e. before the engine's next command)
+if (['rerender', 'move', 'text', 'always'].includes(mode)) {
+  let v = 0, armed = true;
+  window.__swaps = 0;
+  const swap = () => {
+    window.__swaps++;
+    const rows = [...list.children];
+    if (mode === 'move') { list.insertBefore(rows[1], rows[0]); return; }
+    if (mode === 'text') { const a = rows[0].innerHTML; rows[0].innerHTML = rows[1].innerHTML; rows[1].innerHTML = a; return; }
+    if (mode === 'rerender') data.reverse();
+    render();  // new nodes; 'always' just renders fresh nodes every time
+  };
+  Object.defineProperty(window, '__kfwGroupSeq', { configurable: true, get: () => v,
+    set: x => { v = x; if (armed) { if (mode !== 'always') armed = false; queueMicrotask(swap); } } });
+}
+</script>

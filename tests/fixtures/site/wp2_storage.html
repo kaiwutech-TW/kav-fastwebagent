@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><title>wp2 storage</title>
+<style>body{font:16px sans-serif;margin:20px}</style>
+<div id="out"></div><p>頁尾</p>
+<script>
+const n = (parseInt(localStorage.getItem('visits') || '0', 10) || 0) + 1;
+localStorage.setItem('visits', String(n));
+document.getElementById('out').textContent = 'visits: ' + n + ' 站點公告:正常';
+</script>

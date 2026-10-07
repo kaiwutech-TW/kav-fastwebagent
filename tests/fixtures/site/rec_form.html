@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><title>rec form</title><script src="rec_counter.js"></script>
+<style>body{font:16px sans-serif;margin:20px} label,input,textarea,select,button,a,p{display:block;margin:6px 0} input,textarea,select{width:240px}</style>
+<form action="rec_result.html" method="get" id="f">
+<label for="name">姓名</label><input id="name" name="name">
+<label for="memo">備註</label><textarea id="memo" name="memo" rows="2"></textarea>
+<label for="city">城市</label><select id="city" name="city"><option>Taipei</option><option>Taichung</option><option>Kaohsiung</option></select>
+<button type="submit" id="go">查詢</button>
+</form>
+<button type="button" id="plain" onclick="document.getElementById('out').textContent='clicked ' + (++window.__clicks)">按我</button>
+<a id="tolink" href="rec_result.html">前往結果</a>
+<p id="out"></p>
+<script>window.__clicks = 0;</script>

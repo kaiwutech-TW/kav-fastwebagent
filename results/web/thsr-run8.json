@@ -1,0 +1,168 @@
+{
+ "goal": "查詢 10 月 5 日從台北到左營、單程、早上 8 點左右出發的高鐵時刻,看到車次列表就停。",
+ "url": "https://www.thsrc.com.tw/",
+ "kev": "http://127.0.0.1:8009/v1/systemone",
+ "text_model": "mlx-community/Qwen3.5-2B-4bit",
+ "steps": [
+  {
+   "step": 0,
+   "op": "SELECT",
+   "label": "出發站 → 台北",
+   "seen": {
+    "url": "https://www.thsrc.com.tw/",
+    "len": 102,
+    "has_trains": false,
+    "head": "跳到主要內容\n時刻表與票價\n網路訂票\n自由座等候時間\n疏運期銷售資訊\n出發站\n到達站\n出發日期\n出發時間\n適用優惠\n適用優惠\n查詢\n美好，從這裡出發！\n無障礙服務\n早鳥\n大學生\n團體\n信用卡優惠\n車站資訊"
+   },
+   "kev_ms": 275,
+   "answers": {
+    "done": 0.2802,
+    "ok_7": 0.3743,
+    "val_7": "e7",
+    "ok_9": 0.9727,
+    "val_9": "e29",
+    "ok_10": 0.7494,
+    "val_10": "e30",
+    "ok_11": 0.0868,
+    "ok_12": 0.2448,
+    "submit": "e36"
+   },
+   "browser_ms": 31,
+   "elapsed_ms": 306
+  },
+  {
+   "step": 1,
+   "op": "TYPE_TEXT",
+   "label": "出發日期",
+   "seen": {
+    "url": "https://www.thsrc.com.tw/",
+    "len": 102,
+    "has_trains": false,
+    "head": "跳到主要內容\n時刻表與票價\n網路訂票\n自由座等候時間\n疏運期銷售資訊\n出發站\n到達站\n出發日期\n出發時間\n適用優惠\n適用優惠\n查詢\n美好，從這裡出發！\n無障礙服務\n早鳥\n大學生\n團體\n信用卡優惠\n車站資訊"
+   },
+   "kev_ms": 233,
+   "answers": {
+    "done": 0.2802,
+    "ok_7": 0.8843,
+    "val_7": "e7",
+    "ok_9": 0.9727,
+    "val_9": "e29",
+    "ok_10": 0.7494,
+    "val_10": "e30",
+    "ok_11": 0.0868,
+    "ok_12": 0.2448,
+    "submit": "e36"
+   },
+   "text_ms": 185.05629198625684,
+   "text": "2026/10/5",
+   "browser_ms": 27,
+   "elapsed_ms": 752
+  },
+  {
+   "step": 2,
+   "op": "TYPE_TEXT",
+   "label": "出發時間",
+   "seen": {
+    "url": "https://www.thsrc.com.tw/",
+    "len": 102,
+    "has_trains": false,
+    "head": "跳到主要內容\n時刻表與票價\n網路訂票\n自由座等候時間\n疏運期銷售資訊\n出發站\n到達站\n出發日期\n出發時間\n適用優惠\n適用優惠\n查詢\n美好，從這裡出發！\n無障礙服務\n早鳥\n大學生\n團體\n信用卡優惠\n車站資訊"
+   },
+   "kev_ms": 235,
+   "answers": {
+    "done": 0.2802,
+    "ok_7": 0.8843,
+    "val_7": "e7",
+    "ok_9": 0.9727,
+    "val_9": "e29",
+    "ok_10": 0.7494,
+    "val_10": "e30",
+    "ok_11": 0.9291,
+    "ok_12": 0.2448,
+    "submit": "e36"
+   },
+   "text_ms": 155.42712504975498,
+   "text": "08:00",
+   "browser_ms": 15,
+   "elapsed_ms": 1157
+  },
+  {
+   "step": 3,
+   "op": "CLICK",
+   "label": "查詢",
+   "seen": {
+    "url": "https://www.thsrc.com.tw/",
+    "len": 102,
+    "has_trains": false,
+    "head": "跳到主要內容\n時刻表與票價\n網路訂票\n自由座等候時間\n疏運期銷售資訊\n出發站\n到達站\n出發日期\n出發時間\n適用優惠\n適用優惠\n查詢\n美好，從這裡出發！\n無障礙服務\n早鳥\n大學生\n團體\n信用卡優惠\n車站資訊"
+   },
+   "kev_ms": 232,
+   "answers": {
+    "done": 0.2802,
+    "ok_7": 0.8843,
+    "val_7": "e7",
+    "ok_9": 0.9727,
+    "val_9": "e29",
+    "ok_10": 0.7494,
+    "val_10": "e30",
+    "ok_11": 0.9291,
+    "ok_12": 0.8651,
+    "submit": "e36"
+   },
+   "browser_ms": 1171,
+   "elapsed_ms": 2560
+  },
+  {
+   "step": 4,
+   "op": "SCROLL",
+   "label": "Scroll down",
+   "seen": {
+    "url": "https://www.thsrc.com.tw/ArticleContent/a3b630bb-1066-4352-a1ef-58c7b4e8ef7c?sea",
+    "len": 141,
+    "has_trains": false,
+    "head": "跳到主要內容\n首頁\n購票資訊\n快速查詢\n時刻表與票價查詢\n列印本頁\n時刻表與票價查詢\n時刻表下載\n出發站\n到達站\n出發日期\n出發時間\n適用優惠\n適用優惠\n查詢\n公告事項說明\n上述車廂票價為折扣後之價格；優惠折扣仍需以購票系統實際查詢之折扣為主。\n時刻表下載\n2026光復節疏運時刻表"
+   },
+   "kev_ms": 266,
+   "answers": {
+    "done": 0.3251,
+    "ok_7": 0.9222,
+    "val_7": "e8",
+    "ok_9": 0.9698,
+    "val_9": "e29",
+    "ok_10": 0.6729,
+    "val_10": "e30",
+    "ok_11": 0.8965,
+    "ok_12": 0.8718,
+    "submit": "e36"
+   },
+   "note": "repeat submit -> scroll",
+   "browser_ms": 381,
+   "elapsed_ms": 3208
+  },
+  {
+   "step": 5,
+   "op": "DONE",
+   "label": null,
+   "seen": {
+    "url": "https://www.thsrc.com.tw/ArticleContent/a3b630bb-1066-4352-a1ef-58c7b4e8ef7c?sea",
+    "len": 318,
+    "has_trains": true,
+    "head": "。\n點選車次可瀏覽列車停靠站資訊。停靠說明所示為出發時間，唯於終點站為抵達時間。\n本系統僅提供時刻表及票價查詢功能，如欲訂位，請至\n台灣高鐵網路訂票系統\n進行線上訂位及付款；如欲團體訂位，請至\n台灣高鐵團體訂位及查詢服務\n進行訂位及付款。\n時刻表下載\n2026光復節疏運時刻表\n2026/2/2起適用時刻表\n2026年中秋節及教師節疏運時刻表\n2026國慶日疏運時刻表\n常見問題\n遺失物查詢\n聯絡我們"
+   },
+   "kev_ms": 94,
+   "answers": {
+    "done": 0.5826
+   },
+   "elapsed_ms": 3302
+  }
+ ],
+ "status": "done",
+ "final_url": "https://www.thsrc.com.tw/ArticleContent/a3b630bb-1066-4352-a1ef-58c7b4e8ef7c?search=UTY/I+OF294dTQemiFptunvcvQH5wINrf4zHFTKal63jlfuYNTpoh6sxaLb3MZH6ZG/dBNy9BgGLd2f48JsdOZpu1Kqx+K6dpY2JDM9ir21suGZCZliduW04BYztqlOzFqwjQeLagCyNIhdMgkT0i9/fLyzOWSuf4zA/BipFYFUjvi8K5tcLqfrZ075UifX5pAYtjpBAs5aQtH2dTkurZw==",
+ "total_ms": 3636,
+ "verify": {
+  "台北": true,
+  "左營": true,
+  "10/05": false,
+  "車次": true
+ }
+}

@@ -1,0 +1,20 @@
+---
+interface Props { detailed?: boolean; }
+const { detailed = false } = Astro.props;
+---
+<div class="judgment-evidence">
+  <p>2026/10/07，591 租屋列表實驗把「取得資料」與「挑哪一筆」拆開測。本機引擎抓 <strong>30 筆文字只花 31 毫秒</strong>；Claude 自己操作瀏覽器，三題各花 <strong>21–162 秒、45–91 萬輸入 token</strong>（含快取累計）。省下重複網頁操作的時間與 token，才是流程的價值。</p>
+  <p>判斷端，<strong>Kev 零錯選，但需要模型的唯一解只答對 4/11</strong>；兩條件並列或「最便宜」這類題目會停下。<strong>Claude 讀同一份文字全對</strong>。因此，抓資料交給本機程式，判斷題把抓好的文字交給 Claude；Kev 保留為單一屬性、離線或零雲端判斷成本的選配。</p>
+  <p class="small muted">31 毫秒只量抓取階段，不含整趟載入、判斷與回覆，不能直接換算加速倍率。各組題數與列表版本不同：Claude 讀文字是 26 列版 16 題全對，瀏覽器組另測 3 題全對。</p>
+  {detailed && <>
+    <h3>同一實驗，三種量測範圍</h3>
+    <div class="table-scroll"><table><caption class="sr-only">591 抓取與判斷實驗範圍</caption><thead><tr><th scope="col">路徑</th><th scope="col">實測範圍</th><th scope="col">結果與時間</th></tr></thead><tbody>
+      <tr><th scope="row">引擎＋Kev</th><td>30 列、18 題；13 題唯一解含 2 題字面比對</td><td>排除字面比對後 4/11；5 題該停全停，零錯選。Kev 約 1.1 秒／題。</td></tr>
+      <tr><th scope="row">Claude 讀抓好的文字</th><td>26 列版、16 題：11 題唯一解、5 題該停</td><td>16/16 全對；整批 24.6 秒，約 1.5 秒／題。</td></tr>
+      <tr><th scope="row">Claude in Chrome</th><td>真實頁面、另測 3 題；選擇瀏覽器的回合不計時</td><td>3/3 全對；43／162／21 秒，輸入含快取累計 91／61／45 萬 token。</td></tr>
+    </tbody></table></div>
+    <p>這些 token 是 session usage 的累計輸入，含快取讀寫，不等於同樣數量的新輸入或可直接推算的費用。資料量與題組不同，這是分階段證據，不是完整同題的端到端對照。</p>
+    <p><strong>實驗只量「選哪一列」，沒有完成端到端點擊。</strong>591 卡片的標題文字每列不同，且會開新分頁，現有 <code>pick</code> 路徑無法完成。擷取規則也曾寫得太窄而漏掉 4/30 列；最新程式回傳 <code>rows_skipped</code>，讓 Claude 看得到漏列訊號，仍需要核對規則是否完整。</p>
+    <p class="source-note">來源：README「數字怎麼量的」、DECISIONS 2026-10-07 與實驗紀錄 <code>261007-pick-judgment-experiment</code>；原始題組與結果在專案 <code>evals/pick-591/</code>。</p>
+  </>}
+</div>

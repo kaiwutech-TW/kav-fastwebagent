@@ -1,0 +1,24 @@
+     -1.0ms  n=  481  ctx CREATED id=1 uid=..004029 name='' default=True type=default frame=..9E7E origin=://
+     -0.0ms  n=  481  ## START target=..8A9E7E session=..ECEB78 mainFrame=..9E7E script=1
+      0.0ms  n=  481  ## STEP 10-input-before-arm: ACTION
+      0.9ms  n=  483  Page.frameStartedLoading frame=..9E7E
+      2.5ms  n=  484  ctx CLEARED (all)
+      3.4ms  n=  485  ctx CLEARED (all)
+      3.5ms  n=  486  Page.frameNavigated frame=..9E7E parent=- type=Navigation url=http://a.test:18461/p1
+      5.5ms  n=  487  Target.targetInfoChanged target=..8A9E7E type=page url=http://a.test:18461/p1 attached=True session=.. waiting=None
+      5.8ms  n=  488  ctx CREATED id=2 uid=..757924 name='' default=True type=default frame=..9E7E origin=http://a.test:18461
+      5.8ms  n=  489  ctx CREATED id=3 uid=..677824 name='kfw_rec' default=False type=isolated frame=..9E7E origin=http://a.test:18461
+      6.0ms  n=  490  binding ctx#3 hello restored=False persisted=False navType=navigate rs=loading body=False early=no-documentElement jsT=3.7 known_ctx=True -> epoch tok1
+     19.2ms  n=  491  Page.domContentEventFired
+     19.4ms  n=  492  Page.loadEventFired
+     20.2ms  n=  493  Page.frameStoppedLoading frame=..9E7E
+     89.0ms  n=  494  Target.targetDestroyed target=..C179BC type=None url= attached=None session=.. waiting=None
+    131.7ms  n=  494  ## EXERCISE before arm
+    562.3ms  n=  495  binding ctx#3 armed token=tok1 preArm=5 preKinds=['pointerdown', 'pointerdown', 'keydown', 'input', 'input'] ok=True
+    562.4ms  n=  495  PY arm(contextId) ctx#3 -> 'armed' 
+    592.4ms  n=  495  ## EXERCISE click #btn, click #inp, key x, insertText yz
+    594.5ms  n=  496  binding ctx#3 ev kind=pointerdown tag=BUTTON key=None seq=1 verdict=ok
+    598.9ms  n=  497  binding ctx#3 ev kind=pointerdown tag=INPUT key=None seq=2 verdict=ok
+    599.9ms  n=  498  binding ctx#3 ev kind=keydown tag=INPUT key=x seq=3 verdict=ok
+    600.3ms  n=  499  binding ctx#3 ev kind=input tag=INPUT key=None seq=4 verdict=ok
+    601.0ms  n=  500  binding ctx#3 ev kind=input tag=INPUT key=None seq=5 verdict=ok

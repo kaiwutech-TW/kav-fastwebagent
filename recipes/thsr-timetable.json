@@ -1,0 +1,115 @@
+{
+ "name": "thsr-timetable",
+ "type": "form_submit",
+ "description": "台灣高鐵時刻表查詢:起訖站、日期、出發時間 → 車次列表(出發時間、行車時間、抵達時間、車次;停靠站欄列的是各站發車時間,不是抵達時間)",
+ "domains": [
+  "thsrc.com.tw",
+  "高鐵",
+  "台灣高鐵"
+ ],
+ "intents": [
+  "時刻",
+  "時刻表",
+  "車次",
+  "班次"
+ ],
+ "params": {
+  "from": {
+   "description": "出發站(官網站名)",
+   "example": "台北",
+   "pattern": "南港|台北|板橋|桃園|新竹|苗栗|台中|彰化|雲林|嘉義|台南|左營"
+  },
+  "to": {
+   "description": "到達站(官網站名)",
+   "example": "左營",
+   "pattern": "南港|台北|板橋|桃園|新竹|苗栗|台中|彰化|雲林|嘉義|台南|左營"
+  },
+  "date": {
+   "description": "出發日期 YYYY/MM/DD",
+   "example": "2026/10/05",
+   "pattern": "\\d{4}/\\d{2}/\\d{2}"
+  },
+  "time": {
+   "description": "出發時間 HH:MM;列出這個時間之後的車次",
+   "example": "08:00",
+   "pattern": "\\d{2}:\\d{2}"
+  }
+ },
+ "url": "https://www.thsrc.com.tw/",
+ "pre": [
+  {
+   "click": "不同意",
+   "optional": true
+  }
+ ],
+ "fields": [
+  {
+   "label": "出發站",
+   "kind": "select",
+   "value": "{from}"
+  },
+  {
+   "label": "到達站",
+   "kind": "select",
+   "value": "{to}"
+  },
+  {
+   "label": "出發日期",
+   "kind": "text",
+   "value": "{date}"
+  },
+  {
+   "label": "出發時間",
+   "kind": "text",
+   "value": "{time}"
+  }
+ ],
+ "submit": {
+  "click": "查詢"
+ },
+ "result": {
+  "rows": {
+   "pattern": "\\d{2}:\\d{2} \\d{2}:\\d{2} \\d{2}:\\d{2} \\d{3,4}",
+   "min_rows": 1,
+   "max_rows": 30,
+   "columns": [
+    "出發時間",
+    "行車時間",
+    "抵達時間",
+    "車次",
+    "自由座車廂",
+    "停靠站與各站發車時間"
+   ]
+  },
+  "expect_text": [
+   "{date}"
+  ]
+ },
+ "status": "verified",
+ "verified_runs": [
+  {
+   "at": "2026-09-29T12:12:47",
+   "params": {
+    "from": "台中",
+    "to": "台北",
+    "date": "2026/10/12",
+    "time": "15:00"
+   },
+   "evidence": {
+    "screenshot": "~/.kav-fastweb/runs/260929-121241-b191/result.jpg"
+   }
+  },
+  {
+   "at": "2026-09-29T12:42:18",
+   "params": {
+    "from": "台中",
+    "to": "台北",
+    "date": "2026/10/12",
+    "time": "15:00"
+   },
+   "evidence": {
+    "screenshot": "~/.kav-fastweb/runs/260929-124212-e6fb/result.jpg"
+   }
+  }
+ ]
+}

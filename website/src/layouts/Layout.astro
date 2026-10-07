@@ -1,0 +1,38 @@
+---
+import '@fontsource-variable/noto-sans-tc';
+import '@fontsource-variable/manrope';
+import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+interface Props { title?: string; description?: string; home?: boolean; }
+const { title = '查過的事，下次一句話。', description = '用對話請 Claude／Codex 建立與修理固定網頁流程，再由 Kav 本機程式執行、驗證，省下重複執行的時間與 token。Kev 為選配。', home = false } = Astro.props;
+const nav = [{ href: '/#cases', text: '實際用途' }, { href: '/#recording', text: '示範錄製' }, { href: '/how-it-works/', text: '如何運作' }, { href: '/evidence/', text: '實測紀錄' }];
+---
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#184f43" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{title} · Kav-FastwebAgent</title>
+    <meta property="og:title" content={`${title} · Kav-FastwebAgent`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class:list={[{ 'is-home': home }]}>
+    <a class="skip-link" href="#main">跳到主要內容</a>
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a class="brand" href="/" aria-label="Kav-FastwebAgent 首頁"><svg width="29" height="32" viewBox="0 0 29 32" fill="none" aria-hidden="true"><path d="M3 2v28M25 3 10 16l15 13" stroke="currentColor" stroke-width="5"/><path d="M13 16h13" stroke="currentColor" stroke-width="3"/></svg><span>Kav-FastwebAgent</span></a>
+        <nav class="main-nav" aria-label="主要導覽">{nav.map(item => <a href={item.href} aria-current={Astro.url.pathname === item.href ? 'page' : undefined}>{item.text}</a>)}</nav>
+        <a class="header-cta" href="/get-started/">開始使用 <Icon /></a>
+      </div>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer">
+      <div class="wrap footer-top"><a class="brand" href="/" aria-label="Kav-FastwebAgent 首頁">Kav-FastwebAgent</a><p>把時間留給想做的事。<br /><span>常做的查詢，交給已經學會的流程。</span></p></div>
+      <div class="wrap footer-bottom"><span>Kav-FastwebAgent · 開發中</span><nav aria-label="頁尾導覽"><a href="/technical/">技術說明</a><a href="/llms.txt">給 AI 的文件</a><a href="/evidence/">證據與限制</a></nav><span>繁體中文</span></div>
+    </footer>
+  </body>
+</html>

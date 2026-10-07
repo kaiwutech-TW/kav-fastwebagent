@@ -1,0 +1,91 @@
+{
+ "_note": "The only source of safety vocabulary. Python (kfw/safety.py) and the observation JS (kfw/form.py) both build their matchers from this file. zh = normalized containment (NFKC, lowercase, spaces removed); en = lowercase, ASCII word boundaries kept, spaces inside a phrase match one or more whitespace.",
+ "forbidden_click": {
+  "zh": [
+   "付款",
+   "結帳",
+   "下單",
+   "購買",
+   "立即購買",
+   "訂購",
+   "確認訂購",
+   "送出訂單",
+   "付費",
+   "儲值",
+   "登入",
+   "登录",
+   "註冊"
+  ],
+  "en": [
+   "pay",
+   "checkout",
+   "place order",
+   "buy now",
+   "log in",
+   "login",
+   "sign in",
+   "sign up",
+   "register"
+  ]
+ },
+ "stateful_click": {
+  "zh": [
+   "加入購物車",
+   "加入購物籃",
+   "收藏",
+   "加入收藏",
+   "訂閱",
+   "預約",
+   "刪除",
+   "移除",
+   "送出申請",
+   "加入追蹤",
+   "追蹤此商品",
+   "追蹤賣場"
+  ],
+  "en": [
+   "add to cart",
+   "add to bag",
+   "wishlist",
+   "subscribe",
+   "delete",
+   "remove",
+   "book now",
+   "follow seller"
+  ]
+ },
+ "sensitive_label": {
+  "zh": [
+   "密碼",
+   "卡號",
+   "信用卡",
+   "安全碼",
+   "驗證碼",
+   "身分證",
+   "身份證"
+  ],
+  "en": [
+   "password",
+   "card number",
+   "cvv",
+   "cvc",
+   "security code",
+   "otp"
+  ]
+ },
+ "sensitive_autocomplete": [
+  "cc-*",
+  "one-time-code",
+  "current-password",
+  "new-password"
+ ],
+ "sensitive_input_types": [
+  "password"
+ ],
+ "checkout_url_parts": [
+  "/checkout",
+  "/cart",
+  "/payment",
+  "/pay/"
+ ]
+}

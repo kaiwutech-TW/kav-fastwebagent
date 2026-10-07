@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><title>steps list</title>
+<style>body{font:16px sans-serif;margin:20px} .row span{display:inline-block;margin-right:14px}</style>
+<h1>搜尋結果</h1>
+<div id="list"></div>
+<script>
+const q = new URLSearchParams(location.search), kw = (q.get('kw') || '').toLowerCase(), word = q.get('v') === '2' ? '詳情' : '查看';
+const ITEMS = [['初階 Python 課程', 1200], ['進階 Python 課程', 2400], ['初階 Java 課程', 1300], ['進階 Java 課程', 2500], ['資料庫入門', 1800]];
+document.getElementById('list').innerHTML = ITEMS.filter(([n]) => n.toLowerCase().includes(kw))
+  .map(([n, p]) => `<div class="row"><span>${n}</span><span>NT$${p}</span><span><a href="rec_steps_detail.html?item=${encodeURIComponent(n)}&p=${p}">${word}</a></span></div>`).join('');
+</script>

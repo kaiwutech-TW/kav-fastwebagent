@@ -1,0 +1,16 @@
+<!doctype html><meta charset="utf-8"><title>wp2 form</title>
+<style>body{font:16px sans-serif;margin:20px} label,input,select,button{display:block;margin:6px 0} input,select{width:240px}
+#picker{display:grid;grid-template-columns:repeat(4,40px);gap:4px;margin:8px 0} .cell{border:1px solid #888;padding:6px;text-align:center;cursor:pointer}</style>
+<form action="wp2_result.html" method="get">
+<label for="city">城市</label><select id="city" name="city"><option>Taipei</option><option>Taichung</option><option>Kaohsiung</option></select>
+<label for="who">姓名</label><input id="who" name="who">
+<label for="date">日期</label><input id="date" name="date">
+<div id="picker"><div class="cell" data-d="2026-10-04">4</div><div class="cell" data-d="2026-10-05">5</div><div class="cell" data-d="2026-10-06">6</div><div class="cell" data-d="2026-10-07">7</div></div>
+<button type="submit" id="go">查詢</button>
+</form>
+<script>
+for (const c of document.querySelectorAll('.cell')) c.addEventListener('click', () => {
+  const d = document.getElementById('date'); d.value = c.dataset.d;
+  d.dispatchEvent(new Event('input', {bubbles: true})); d.dispatchEvent(new Event('change', {bubbles: true}));
+});
+</script>

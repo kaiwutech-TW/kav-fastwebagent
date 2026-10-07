@@ -1,0 +1,89 @@
+---
+import Icon from './Icon.astro';
+---
+<section class="flow-demo" aria-labelledby="demo-heading">
+  <div class="demo-topline"><span>你的高鐵查詢流程</span><span class="demo-tag">互動示意</span></div>
+  <h2 id="demo-heading" class="sr-only">試試看：同一流程，換條件再用</h2>
+  <form id="demo-form">
+    <div class="route-inputs">
+      <label>從哪裡出發<select name="from" id="demo-from"><option>台中</option><option>新竹</option><option>台北</option></select></label>
+      <Icon />
+      <label>要去哪裡<select name="to" id="demo-to"><option>台北</option><option>台南</option><option>台中</option></select></label>
+    </div>
+    <div class="demo-parameters"><label>出發日期<select name="date" id="demo-date"><option value="2026/10/12">10 月 12 日</option><option value="2026/10/20">10 月 20 日</option></select></label><label>出發時間<select name="time" id="demo-time"><option value="15:00">下午 3 點以後</option><option value="09:00">早上 9 點以後</option></select></label></div>
+    <div class="demo-sentence"><span>你只要說</span><p id="demo-request">「幫我查 10/12 下午 3 點以後，台中到台北的高鐵。」</p></div>
+    <p id="demo-error" class="demo-error" role="alert" hidden></p>
+    <button class="demo-run" type="submit"><span id="demo-run-label">播放流程示意</span><Icon name="play" /></button>
+  </form>
+  <div class="demo-result" id="demo-result" aria-busy="false">
+    <ol class="demo-steps" aria-label="流程步驟"><li data-step="0"><span>1</span>填入條件</li><li data-step="1"><span>2</span>執行查詢</li><li data-step="2"><span>3</span>核對結果</li></ol>
+    <div class="result-heading"><h3 id="result-title">台中到台北</h3><span id="result-status" role="status">示意班次</span></div>
+    <table class="demo-table"><caption class="sr-only">示意結果，非即時時刻表</caption><thead><tr><th scope="col">車次</th><th scope="col">出發</th><th scope="col">抵達</th><th scope="col">車程</th></tr></thead><tbody id="demo-rows"><tr><td>0648</td><td>15:00</td><td>15:59</td><td>59 分</td></tr><tr><td>1234</td><td>15:08</td><td>15:54</td><td>46 分</td></tr><tr><td>0652</td><td>15:32</td><td>16:33</td><td>61 分</td></tr></tbody></table>
+    <p class="demo-disclaimer">這是流程演示，不會連線查票；班次與播放速度不代表即時資料或實際效能。</p>
+  </div>
+  <noscript><p class="demo-disclaimer">目前顯示靜態示意。啟用 JavaScript 後可修改條件、播放流程。</p></noscript>
+</section>
+<script>
+  const form = document.querySelector<HTMLFormElement>('#demo-form')!;
+  const from = document.querySelector<HTMLSelectElement>('#demo-from')!;
+  const to = document.querySelector<HTMLSelectElement>('#demo-to')!;
+  const date = document.querySelector<HTMLSelectElement>('#demo-date')!;
+  const time = document.querySelector<HTMLSelectElement>('#demo-time')!;
+  const result = document.querySelector<HTMLElement>('#demo-result')!;
+  const status = document.querySelector<HTMLElement>('#result-status')!;
+  const error = document.querySelector<HTMLElement>('#demo-error')!;
+  const button = form.querySelector<HTMLButtonElement>('button')!;
+  const buttonLabel = document.querySelector<HTMLElement>('#demo-run-label')!;
+  const steps = [...document.querySelectorAll<HTMLElement>('[data-step]')];
+  const fields = [from, to, date, time];
+  let running = false;
+  const updateRequest = () => {
+    const shortDate = date.value.slice(5).replace('/0', '/');
+    document.querySelector<HTMLElement>('#demo-request')!.textContent = `「幫我查 ${shortDate} ${time.value === '15:00' ? '下午 3 點' : '早上 9 點'}以後，${from.value}到${to.value}的高鐵。」`;
+    error.hidden = true;
+    status.textContent = '條件已改，請播放示意';
+    document.querySelector<HTMLElement>('#result-title')!.textContent = '等待更新結果';
+    document.querySelector<HTMLElement>('#demo-rows')!.replaceChildren();
+    steps.forEach(step => step.classList.remove('is-done', 'is-active'));
+  };
+  fields.forEach(field => field.addEventListener('change', updateRequest));
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
+    if (running) return;
+    if (from.value === to.value) {
+      error.textContent = '出發站和到達站相同，請換一個站再播放。';
+      error.hidden = false;
+      to.focus();
+      return;
+    }
+    running = true;
+    error.hidden = true;
+    button.disabled = true;
+    fields.forEach(field => field.disabled = true);
+    buttonLabel.textContent = '正在播放…';
+    result.setAttribute('aria-busy', 'true');
+    result.classList.remove('is-revealed');
+    steps.forEach(step => step.classList.remove('is-done', 'is-active'));
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    for (const [index, step] of steps.entries()) {
+      step.classList.add('is-active');
+      status.textContent = ['填入站名與日期…', '送出查詢條件…', '核對每一欄結果…'][index];
+      await new Promise(resolve => window.setTimeout(resolve, reduced ? 30 : 420));
+      step.classList.replace('is-active', 'is-done');
+    }
+    const rows = document.querySelector<HTMLElement>('#demo-rows')!;
+    rows.replaceChildren();
+    const base = time.value === '15:00' ? 15 : 9;
+    const historical = from.value === '台中' && to.value === '台北' && base === 15 && date.value === '2026/10/12';
+    const values = historical ? [['0648', '15:00', '15:59', '59 分'], ['1234', '15:08', '15:54', '46 分'], ['0652', '15:32', '16:33', '61 分']] : [['示例 A', `${String(base).padStart(2, '0')}:00`, `${String(base + 1).padStart(2, '0')}:10`, '70 分'], ['示例 B', `${String(base).padStart(2, '0')}:20`, `${String(base + 1).padStart(2, '0')}:25`, '65 分'], ['示例 C', `${String(base).padStart(2, '0')}:40`, `${String(base + 1).padStart(2, '0')}:50`, '70 分']];
+    values.forEach(values => { const row = document.createElement('tr'); values.forEach(value => { const cell = document.createElement('td'); cell.textContent = value; row.append(cell); }); rows.append(row); });
+    document.querySelector<HTMLElement>('#result-title')!.textContent = `${from.value}到${to.value}`;
+    status.textContent = '演示完成 · 示意班次';
+    result.setAttribute('aria-busy', 'false');
+    result.classList.add('is-revealed');
+    buttonLabel.textContent = '再播放一次';
+    button.disabled = false;
+    fields.forEach(field => field.disabled = false);
+    running = false;
+  });
+</script>

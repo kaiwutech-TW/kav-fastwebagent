@@ -1,0 +1,22 @@
+     -0.8ms  n=  154  ctx CREATED id=1 uid=..109741 name='' default=True type=default frame=..39B8 origin=://
+     -0.0ms  n=  154  ## START target=..1239B8 session=..76963A mainFrame=..39B8 script=1
+      0.0ms  n=  154  ## STEP S6a-navigate-spa: ACTION
+      0.9ms  n=  156  Page.frameStartedLoading frame=..39B8
+      2.4ms  n=  157  ctx CLEARED (all)
+      3.0ms  n=  158  ctx CLEARED (all)
+      3.1ms  n=  159  Page.frameNavigated frame=..39B8 parent=- type=Navigation url=http://a.test:18461/spa
+      4.8ms  n=  160  Target.targetInfoChanged target=..1239B8 type=page url=http://a.test:18461/spa attached=True session=.. waiting=None
+      5.1ms  n=  161  ctx CREATED id=2 uid=..819803 name='' default=True type=default frame=..39B8 origin=http://a.test:18461
+      5.1ms  n=  162  ctx CREATED id=3 uid=..867188 name='kfw_rec' default=False type=isolated frame=..39B8 origin=http://a.test:18461
+      5.2ms  n=  163  binding ctx#3 hello restored=False persisted=False navType=navigate rs=loading body=False early=no-documentElement jsT=3.2 known_ctx=True -> epoch tok1
+     16.5ms  n=  164  Page.domContentEventFired
+     16.8ms  n=  165  Page.loadEventFired
+     17.6ms  n=  166  Page.frameStoppedLoading frame=..39B8
+     17.7ms  n=  167  binding ctx#3 armed token=tok1 preArm=0 preKinds=[] ok=True
+     17.7ms  n=  167  PY arm(contextId) ctx#3 -> 'armed' 
+    144.0ms  n=  167  ## EXERCISE click #btn, click #inp, key x, insertText yz
+    145.7ms  n=  168  binding ctx#3 ev kind=pointerdown tag=BUTTON key=None seq=1 verdict=ok
+    157.9ms  n=  169  binding ctx#3 ev kind=pointerdown tag=INPUT key=None seq=2 verdict=ok
+    158.9ms  n=  170  binding ctx#3 ev kind=keydown tag=INPUT key=x seq=3 verdict=ok
+    159.3ms  n=  171  binding ctx#3 ev kind=input tag=INPUT key=None seq=4 verdict=ok
+    160.2ms  n=  172  binding ctx#3 ev kind=input tag=INPUT key=None seq=5 verdict=ok

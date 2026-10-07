@@ -1,0 +1,317 @@
+{
+ "arm": "B",
+ "at": "2026-10-07 21:12:32",
+ "usage": {},
+ "results": [
+  {
+   "id": "Q01",
+   "rep": 1,
+   "want": "可以養寵物的",
+   "kind": "multiple-should-stop",
+   "expect": [
+    "c11",
+    "c29"
+   ],
+   "chosen": null,
+   "verdict": "correct-stop",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q02",
+   "rep": 1,
+   "want": "限女生的",
+   "kind": "multiple-should-stop",
+   "expect": [
+    "c9",
+    "c12",
+    "c26"
+   ],
+   "chosen": null,
+   "verdict": "correct-stop",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q03",
+   "rep": 1,
+   "want": "有電梯又有廚房的",
+   "kind": "unique-two-conditions",
+   "expect": [
+    "c15"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q04",
+   "rep": 1,
+   "want": "租金最便宜的",
+   "kind": "unique-comparative-hard",
+   "expect": [
+    "c16"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q05",
+   "rep": 1,
+   "want": "月租 2,900 的",
+   "kind": "unique-literal-number",
+   "expect": [
+    "c16"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q06",
+   "rep": 1,
+   "want": "可以短租而且有陽台的",
+   "kind": "unique-two-conditions",
+   "expect": [
+    "c5"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q07",
+   "rep": 1,
+   "want": "可以短租的",
+   "kind": "multiple-should-stop",
+   "expect": [
+    "c5",
+    "c21",
+    "c28"
+   ],
+   "chosen": null,
+   "verdict": "correct-stop",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q08",
+   "rep": 1,
+   "want": "限男生的",
+   "kind": "unique-subtle",
+   "expect": [
+    "c21"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q09",
+   "rep": 1,
+   "want": "押一付一又有陽台的",
+   "kind": "unique-two-conditions",
+   "expect": [
+    "c20"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q10",
+   "rep": 1,
+   "want": "一樓的",
+   "kind": "unique-literal-floor",
+   "expect": [
+    "c5"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q11",
+   "rep": 1,
+   "want": "在知行路的",
+   "kind": "unique-address",
+   "expect": [
+    "c18"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q12",
+   "rep": 1,
+   "want": "有游泳池的",
+   "kind": "none-should-stop",
+   "expect": [],
+   "chosen": null,
+   "verdict": "correct-stop",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q13",
+   "rep": 1,
+   "want": "在文林北路、可以開伙、最便宜的",
+   "kind": "unique-comparative-hard",
+   "expect": [
+    "c25"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q14",
+   "rep": 1,
+   "want": "可以開伙又有陽台的",
+   "kind": "multiple-should-stop",
+   "expect": [
+    "c16",
+    "c30"
+   ],
+   "chosen": null,
+   "verdict": "correct-stop",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q15",
+   "rep": 1,
+   "want": "知行路",
+   "kind": "literal-text-path",
+   "expect": [
+    "c18"
+   ],
+   "chosen": "c18",
+   "verdict": "correct",
+   "how": "contains",
+   "ms": 0,
+   "kev_ms": null,
+   "why": null,
+   "top3": [],
+   "kev_error": null
+  },
+  {
+   "id": "Q16",
+   "rep": 1,
+   "want": "2,900元/月",
+   "kind": "literal-text-path",
+   "expect": [
+    "c16"
+   ],
+   "chosen": "c16",
+   "verdict": "correct",
+   "how": "contains",
+   "ms": 0,
+   "kev_ms": null,
+   "why": null,
+   "top3": [],
+   "kev_error": null
+  },
+  {
+   "id": "Q17",
+   "rep": 1,
+   "want": "頂樓加蓋的",
+   "kind": "unique-literal",
+   "expect": [
+    "c12"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  },
+  {
+   "id": "Q18",
+   "rep": 1,
+   "want": "在地下室的",
+   "kind": "unique-semantic",
+   "expect": [
+    "c17"
+   ],
+   "chosen": null,
+   "verdict": "stopped",
+   "how": "kev",
+   "ms": 0,
+   "kev_ms": 0,
+   "why": "kev_error",
+   "top3": [],
+   "kev_error": "RuntimeError: no local model in this arm"
+  }
+ ]
+}

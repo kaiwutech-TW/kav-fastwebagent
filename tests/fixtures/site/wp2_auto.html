@@ -1,0 +1,19 @@
+<!doctype html><meta charset="utf-8"><title>wp2 auto</title>
+<style>body{font:16px sans-serif;margin:20px} label,input,button{display:block;margin:6px 0} .sug{border:1px solid #888;padding:4px 8px;width:220px;cursor:pointer}</style>
+<form action="wp2_auto_result.html" method="get">
+<label for="place">城市搜尋</label><input id="place" name="place" autocomplete="off"><input type="hidden" id="code" name="code" value="">
+<div id="list"></div>
+<button type="submit" id="go">查詢</button></form>
+<script>
+const place = document.getElementById('place'), list = document.getElementById('list');
+const DB = {Taichung: 'TC', Taipei: 'TP', Tainan: 'TN'};
+place.addEventListener('input', () => {
+  list.textContent = '';
+  if (!place.value) return;
+  for (const [name, code] of Object.entries(DB)) if (name.toLowerCase().startsWith(place.value.toLowerCase())) {
+    const d = document.createElement('div'); d.className = 'sug'; d.textContent = name;
+    d.addEventListener('click', () => { place.value = name; document.getElementById('code').value = code; list.textContent = ''; });
+    list.appendChild(d);
+  }
+});
+</script>

@@ -1,0 +1,6 @@
+{"t":0.1,"epoch":1,"type":"hello","doc_id":"d1","href":"http://a.test/notice.html","restored":false,"persisted":false,"nav_type":"navigate"}
+{"t":0.2,"epoch":1,"type":"armed","pre_arm_inputs":0,"pre_kinds":[]}
+{"t":0.3,"epoch":1,"type":"snapshot","id":"8662e30cdb3f","links_dropped":0}
+{"t":0.4,"epoch":1,"type":"baseline","snap":"8662e30cdb3f"}
+{"t":0.5,"epoch":1,"type":"mark","tag":"DIV","text":"今日公告 本週停駛班次:無 更新時間 08:00","text_truncated":false,"href":"http://a.test/notice.html","group":null}
+{"t":0.6,"epoch":1,"type":"done"}

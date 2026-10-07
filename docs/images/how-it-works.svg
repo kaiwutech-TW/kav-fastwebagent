@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="440" viewBox="0 0 920 440" font-family="-apple-system, 'PingFang TC', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect width="920" height="440" rx="14" fill="#ffffff"/>
+
+  <!-- Lane 1: first time -->
+  <text x="32" y="44" font-size="18" font-weight="700" fill="#111827">第一次:用說的建立流程(一次性,約 1 分鐘)</text>
+  <g font-size="14" fill="#111827">
+    <rect x="32" y="64" width="170" height="76" rx="10" fill="#f3f4f6" stroke="#d1d5db"/>
+    <text x="117" y="96" text-anchor="middle" font-weight="600">你</text>
+    <text x="117" y="118" text-anchor="middle" fill="#4b5563">「幫我做一個流程…」</text>
+
+    <rect x="250" y="64" width="190" height="76" rx="10" fill="#eef2ff" stroke="#a5b4fc"/>
+    <text x="345" y="96" text-anchor="middle" font-weight="600">Claude 寫流程</text>
+    <text x="345" y="118" text-anchor="middle" fill="#4b5563">看網頁欄位、寫成資料</text>
+
+    <rect x="488" y="64" width="190" height="76" rx="10" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="583" y="96" text-anchor="middle" font-weight="600">Kav 試跑</text>
+    <text x="583" y="118" text-anchor="middle" fill="#4b5563">程式核對結果 + 截圖</text>
+
+    <rect x="726" y="64" width="162" height="76" rx="10" fill="#f3f4f6" stroke="#d1d5db"/>
+    <text x="807" y="96" text-anchor="middle" font-weight="600">你確認</text>
+    <text x="807" y="118" text-anchor="middle" fill="#4b5563">「對」→ 存起來</text>
+  </g>
+  <g stroke="#6b7280" stroke-width="2" marker-end="url(#a)">
+    <line x1="204" y1="102" x2="246" y2="102"/>
+    <line x1="442" y1="102" x2="484" y2="102"/>
+    <line x1="680" y1="102" x2="722" y2="102"/>
+  </g>
+
+  <line x1="32" y1="176" x2="888" y2="176" stroke="#e5e7eb" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Lane 2: every time -->
+  <text x="32" y="216" font-size="18" font-weight="700" fill="#111827">之後每次:一句話,本機約 6 秒</text>
+  <g font-size="14" fill="#111827">
+    <rect x="32" y="236" width="170" height="76" rx="10" fill="#f3f4f6" stroke="#d1d5db"/>
+    <text x="117" y="268" text-anchor="middle" font-weight="600">你</text>
+    <text x="117" y="290" text-anchor="middle" fill="#4b5563">「查 10/12 台中到台北」</text>
+
+    <rect x="250" y="236" width="190" height="76" rx="10" fill="#eef2ff" stroke="#a5b4fc"/>
+    <text x="345" y="268" text-anchor="middle" font-weight="600">Claude 找到流程</text>
+    <text x="345" y="290" text-anchor="middle" fill="#4b5563">只填參數,不看截圖</text>
+
+    <rect x="488" y="236" width="190" height="130" rx="10" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="583" y="266" text-anchor="middle" font-weight="600">Kav 在你的 Mac 上跑</text>
+    <text x="583" y="290" text-anchor="middle" fill="#4b5563">專屬 Chrome 填表、讀表</text>
+    <text x="583" y="312" text-anchor="middle" fill="#4b5563">程式確認真的完成</text>
+    <text x="583" y="334" text-anchor="middle" fill="#4b5563">要語意判斷才問 Kev</text>
+    <text x="583" y="354" text-anchor="middle" fill="#9ca3af" font-size="12">(本機小模型)</text>
+
+    <rect x="726" y="236" width="162" height="76" rx="10" fill="#f3f4f6" stroke="#d1d5db"/>
+    <text x="807" y="268" text-anchor="middle" font-weight="600">答案 + 截圖</text>
+    <text x="807" y="290" text-anchor="middle" fill="#4b5563">做不到就說原因</text>
+  </g>
+  <g stroke="#6b7280" stroke-width="2" marker-end="url(#a)">
+    <line x1="204" y1="274" x2="246" y2="274"/>
+    <line x1="442" y1="274" x2="484" y2="274"/>
+    <line x1="680" y1="274" x2="722" y2="274"/>
+  </g>
+  <text x="32" y="398" font-size="13" fill="#6b7280">網站改版、結果不對 → 說「結果不對」,Claude 修好流程再回報</text>
+  <text x="32" y="420" font-size="13" fill="#6b7280">不登入、不解驗證碼、不付款:這些規則寫在本機程式裡,不交給模型決定</text>
+</svg>

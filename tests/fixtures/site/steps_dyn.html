@@ -1,0 +1,19 @@
+<!doctype html><meta charset="utf-8"><title>steps dynamic</title><script src="gate_counter.js"></script>
+<!-- ?mode=stale (click does nothing, old table stays) | changes (click swaps the table) | already (the message is there
+     before the click) | ambiguous (two 查詢 buttons) | dup (the click adds a second 查詢 button) | delay&ms=N (message and table appear N ms after the click) -->
+<label for="c">城市</label> <input id="c" name="c">
+<button id="go" type="button">查詢</button>
+<div id="msg"></div><div id="out"></div>
+<script>
+const q = new URLSearchParams(location.search), mode = q.get('mode'), ms = +(q.get('ms') || 0);
+const table = rows => '<table><tbody>' + rows.map(r => '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>').join('') + '</tbody></table>';
+const OLD = [['A1', '08:00'], ['A2', '09:00'], ['A3', '09:30']], NEW = [['B1', '10:00'], ['B2', '11:00'], ['B3', '12:00']];
+if (mode === 'stale' || mode === 'changes') out.innerHTML = table(OLD);
+if (mode === 'already') msg.textContent = '查詢完成';
+if (mode === 'ambiguous') go.insertAdjacentHTML('afterend', '<button type="button">查詢</button>');
+go.onclick = () => {
+  if (mode === 'stale') return;
+  if (mode === 'dup') { go.insertAdjacentHTML('afterend', '<button type="button">查詢</button>'); return; }
+  setTimeout(() => { msg.textContent = '查詢完成'; out.innerHTML = table(NEW); }, ms);
+};
+</script>

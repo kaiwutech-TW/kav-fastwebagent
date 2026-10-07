@@ -1,0 +1,24 @@
+     -2.5ms  n=   12  ctx CREATED id=1 uid=..869218 name='' default=True type=default frame=..4AD1 origin=://
+     -0.0ms  n=   12  ## START target=..4C4AD1 session=..6DEAAE mainFrame=..4AD1 script=1
+      0.0ms  n=   12  ## STEP S1-initial-navigation: ACTION
+      2.2ms  n=   14  Page.frameStartedLoading frame=..4AD1
+      5.4ms  n=   15  ctx CLEARED (all)
+      6.6ms  n=   16  ctx CLEARED (all)
+      6.7ms  n=   17  Page.frameNavigated frame=..4AD1 parent=- type=Navigation url=http://a.test:18461/p1?to=http%3A%2F%2Fa.test%3A18461%2Fp2%3Fto%3Dhttp
+     11.0ms  n=   18  Target.targetInfoChanged target=..4C4AD1 type=page url=http://a.test:18461/p1?to=http%3A%2F%2Fa.test%3A18461%2Fp2%3 attached=True session=.. waiting=None
+     11.2ms  n=   19  ctx CREATED id=2 uid=..702637 name='' default=True type=default frame=..4AD1 origin=http://a.test:18461
+     11.4ms  n=   20  ctx CREATED id=3 uid=..166113 name='kfw_rec' default=False type=isolated frame=..4AD1 origin=http://a.test:18461
+     11.5ms  n=   21  binding ctx#3 hello restored=False persisted=False navType=navigate rs=loading body=False early=no-documentElement jsT=6.7 known_ctx=True -> epoch tok1
+     21.8ms  n=   22  Page.domContentEventFired
+     21.8ms  n=   23  Page.loadEventFired
+     23.0ms  n=   24  Page.frameStoppedLoading frame=..4AD1
+     23.1ms  n=   25  binding ctx#3 armed token=tok1 preArm=0 preKinds=[] ok=True
+     23.2ms  n=   25  PY arm(contextId) ctx#3 -> 'armed' 
+     81.8ms  n=   26  Target.targetCreated target=..A7FCFA type=iframe url= attached=False session=.. waiting=None
+     83.0ms  n=   27  Target.targetInfoChanged target=..A7FCFA type=iframe url=chrome-untrusted://new-tab-page/one-google-bar?paramsencoded attached=False session=.. waiting=None
+    143.7ms  n=   27  ## EXERCISE click #btn, click #inp, key x, insertText yz
+    192.9ms  n=   28  binding ctx#3 ev kind=pointerdown tag=BUTTON key=None seq=1 verdict=ok
+    212.5ms  n=   29  binding ctx#3 ev kind=pointerdown tag=INPUT key=None seq=2 verdict=ok
+    213.5ms  n=   30  binding ctx#3 ev kind=keydown tag=INPUT key=x seq=3 verdict=ok
+    213.8ms  n=   31  binding ctx#3 ev kind=input tag=INPUT key=None seq=4 verdict=ok
+    214.7ms  n=   32  binding ctx#3 ev kind=input tag=INPUT key=None seq=5 verdict=ok

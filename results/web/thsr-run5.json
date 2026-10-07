@@ -1,0 +1,140 @@
+{
+ "goal": "查詢 10 月 5 日從台北到左營、單程、早上 8 點左右出發的高鐵時刻,看到車次列表就停。",
+ "url": "https://www.thsrc.com.tw/",
+ "kev": "http://127.0.0.1:8009/v1/systemone",
+ "text_model": "mlx-community/Qwen3.5-2B-4bit",
+ "steps": [
+  {
+   "step": 0,
+   "op": "SELECT",
+   "label": "出發站 → 台北",
+   "kev_ms": 245,
+   "answers": {
+    "done": 0.2802,
+    "ok_7": 0.3743,
+    "val_7": "e7",
+    "ok_9": 0.9727,
+    "val_9": "e29",
+    "ok_10": 0.7494,
+    "val_10": "e30",
+    "ok_11": 0.0868,
+    "ok_12": 0.2448,
+    "submit": "e36"
+   },
+   "browser_ms": 26,
+   "elapsed_ms": 271
+  },
+  {
+   "step": 1,
+   "op": "TYPE_TEXT",
+   "label": "出發日期",
+   "kev_ms": 234,
+   "answers": {
+    "done": 0.2802,
+    "ok_7": 0.8843,
+    "val_7": "e7",
+    "ok_9": 0.9727,
+    "val_9": "e29",
+    "ok_10": 0.7494,
+    "val_10": "e30",
+    "ok_11": 0.0868,
+    "ok_12": 0.2448,
+    "submit": "e36"
+   },
+   "text_ms": 190.61491696629673,
+   "text": "2026/10/5",
+   "browser_ms": 32,
+   "elapsed_ms": 727
+  },
+  {
+   "step": 2,
+   "op": "TYPE_TEXT",
+   "label": "出發時間",
+   "kev_ms": 233,
+   "answers": {
+    "done": 0.2802,
+    "ok_7": 0.8843,
+    "val_7": "e7",
+    "ok_9": 0.9727,
+    "val_9": "e29",
+    "ok_10": 0.7494,
+    "val_10": "e30",
+    "ok_11": 0.9291,
+    "ok_12": 0.2448,
+    "submit": "e36"
+   },
+   "text_ms": 156.1465419945307,
+   "text": "08:00",
+   "browser_ms": 12,
+   "elapsed_ms": 1128
+  },
+  {
+   "step": 3,
+   "op": "CLICK",
+   "label": "查詢",
+   "kev_ms": 234,
+   "answers": {
+    "done": 0.2802,
+    "ok_7": 0.8843,
+    "val_7": "e7",
+    "ok_9": 0.9727,
+    "val_9": "e29",
+    "ok_10": 0.7494,
+    "val_10": "e30",
+    "ok_11": 0.9291,
+    "ok_12": 0.8651,
+    "submit": "e36"
+   },
+   "browser_ms": 908,
+   "elapsed_ms": 2270
+  },
+  {
+   "step": 4,
+   "op": "CLICK",
+   "label": "查詢",
+   "kev_ms": 253,
+   "answers": {
+    "done": 0.3251,
+    "ok_7": 0.9222,
+    "val_7": "e8",
+    "ok_9": 0.9698,
+    "val_9": "e29",
+    "ok_10": 0.6729,
+    "val_10": "e30",
+    "ok_11": 0.8965,
+    "ok_12": 0.8718,
+    "submit": "e36"
+   },
+   "browser_ms": 379,
+   "elapsed_ms": 2903
+  },
+  {
+   "step": 5,
+   "op": "CLICK",
+   "label": "查詢",
+   "kev_ms": 244,
+   "answers": {
+    "done": 0.3251,
+    "ok_7": 0.9222,
+    "val_7": "e8",
+    "ok_9": 0.9698,
+    "val_9": "e29",
+    "ok_10": 0.6729,
+    "val_10": "e30",
+    "ok_11": 0.8965,
+    "ok_12": 0.8718,
+    "submit": "e36"
+   },
+   "note": "same action 3x"
+  }
+ ],
+ "status": "stuck",
+ "final_url": "https://www.thsrc.com.tw/ArticleContent/a3b630bb-1066-4352-a1ef-58c7b4e8ef7c?search=UTY/I+OF294dTQemiFptunvcvQH5wINrf4zHFTKal63jlfuYNTpoh6sxaLb3MZH6ZG/dBNy9BgGLd2f48JsdOZpu1Kqx+K6dpY2JDM9ir21suGZCZliduW04BYztqlOzFqwjQeLagCyNIhdMgkT0i9/fLyzOWSuf4zA/BipFYFUjvi8K5tcLqfrZ075UifX5pAYtjpBAs5aQtH2dTkurZw==",
+ "total_ms": 3148,
+ "verify": {
+  "台北": true,
+  "左營": true,
+  "10/05": false,
+  "車次": true
+ }
+}
